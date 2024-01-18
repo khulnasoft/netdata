@@ -91,7 +91,7 @@ jobs:
         with:
           load: true
           push: false
-          tags: netdata/netdata:test
+          tags: khulnasoft/netdata:test
       - name: Test Image
         id: test
         if: needs.file-check.outputs.run == 'true'
@@ -116,7 +116,7 @@ jobs:
             failure()
             && github.event_name != 'pull_request'
             && startsWith(github.ref, 'refs/heads/master')
-            && github.repository == 'netdata/netdata'
+            && github.repository == 'khulnasoft/netdata'
             && needs.file-check.outputs.run == 'true'
           }}
 
@@ -161,7 +161,7 @@ jobs:
           platforms: ${{ matrix.platforms }}
           load: false
           push: false
-          tags: netdata/netdata:test
+          tags: khulnasoft/netdata:test
       - name: Failure Notification
         uses: rtCamp/action-slack-notify@v2
         env:
@@ -182,7 +182,7 @@ jobs:
             failure()
             && github.event_name != 'pull_request'
             && startsWith(github.ref, 'refs/heads/master')
-            && github.repository == 'netdata/netdata'
+            && github.repository == 'khulnasoft/netdata'
             && needs.file-check.outputs.run == 'true'
           }}
 
@@ -219,16 +219,16 @@ jobs:
         id: release-tags
         if: github.event.inputs.version != 'nightly'
         run: |
-          echo "tags=netdata/netdata:latest,netdata/netdata:stable,ghcr.io/netdata/netdata:latest,ghcr.io/netdata/netdata:stable,quay.io/netdata/netdata:latest,quay.io/netdata/netdata:stable,$(.github/scripts/gen-docker-tags.py ${{ needs.normalize-tag.outputs.tag }} '')" \
+          echo "tags=khulnasoft/netdata:latest,khulnasoft/netdata:stable,ghcr.io/khulnasoft/netdata:latest,ghcr.io/khulnasoft/netdata:stable,quay.io/khulnasoft/netdata:latest,quay.io/khulnasoft/netdata:stable,$(.github/scripts/gen-docker-tags.py ${{ needs.normalize-tag.outputs.tag }} '')" \
               >> "${GITHUB_ENV}"
       - name: Determine which tags to use
         id: nightly-tags
         if: github.event.inputs.version == 'nightly'
         run: |
-          echo "tags=netdata/netdata:latest,netdata/netdata:edge,ghcr.io/netdata/netdata:latest,ghcr.io/netdata/netdata:edge,quay.io/netdata/netdata:latest,quay.io/netdata/netdata:edge" >> "${GITHUB_ENV}"
+          echo "tags=khulnasoft/netdata:latest,khulnasoft/netdata:edge,ghcr.io/khulnasoft/netdata:latest,ghcr.io/khulnasoft/netdata:edge,quay.io/khulnasoft/netdata:latest,quay.io/khulnasoft/netdata:edge" >> "${GITHUB_ENV}"
       - name: Mark image as official
         id: env
-        if: github.repository == 'netdata/netdata'
+        if: github.repository == 'khulnasoft/netdata'
         run: echo "OFFICIAL_IMAGE=true" >> "${GITHUB_ENV}"
       - name: Setup QEMU
         id: qemu
@@ -238,14 +238,14 @@ jobs:
         uses: docker/setup-buildx-action@v3
       - name: Docker Hub Login
         id: docker-hub-login
-        if: github.repository == 'netdata/netdata'
+        if: github.repository == 'khulnasoft/netdata'
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: GitHub Container Registry Login
         id: ghcr-login
-        if: github.repository == 'netdata/netdata'
+        if: github.repository == 'khulnasoft/netdata'
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
@@ -253,7 +253,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Quay.io Login
         id: quay-login
-        if: github.repository == 'netdata/netdata'
+        if: github.repository == 'khulnasoft/netdata'
         uses: docker/login-action@v3
         with:
           registry: quay.io
@@ -264,7 +264,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           platforms: linux/amd64,linux/i386,linux/arm/v7,linux/arm64,linux/ppc64le
-          push: ${{ github.repository == 'netdata/netdata' }}
+          push: ${{ github.repository == 'khulnasoft/netdata' }}
           tags: ${{ env.tags }}
           build-args: OFFICIAL_IMAGE=${{ env.OFFICIAL_IMAGE }}
       - name: Failure Notification
@@ -293,22 +293,22 @@ jobs:
             failure()
             && github.event_name != 'pull_request'
             && startsWith(github.ref, 'refs/heads/master')
-            && github.repository == 'netdata/netdata'
+            && github.repository == 'khulnasoft/netdata'
           }}
       - name: Trigger Helmchart PR
-        if: github.event_name == 'workflow_dispatch' && github.event.inputs.version != 'nightly' && github.repository == 'netdata/netdata'
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.version != 'nightly' && github.repository == 'khulnasoft/netdata'
         uses: benc-uk/workflow-dispatch@v121
         with:
-          token: ${{ secrets.NETDATABOT_GITHUB_TOKEN }}
+          token: ${{ secrets.ORG_REPO_TOKEN }}
           repo: netdata/helmchart
           workflow: Agent Version PR
           ref: refs/heads/master
           inputs: '{"agent_version": "${{ needs.normalize-tag.outputs.tag }}"}'
       - name: Trigger MSI build
-        if: github.event_name == 'workflow_dispatch' && github.event.inputs.version != 'nightly' && github.repository == 'netdata/netdata'
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.version != 'nightly' && github.repository == 'khulnasoft/netdata'
         uses: benc-uk/workflow-dispatch@v121
         with:
-          token: ${{ secrets.NETDATABOT_GITHUB_TOKEN }}
+          token: ${{ secrets.ORG_REPO_TOKEN }}
           repo: netdata/msi-installer
           workflow: Build
           ref: refs/heads/master
@@ -331,16 +331,16 @@ jobs:
         id: release-tags
         if: github.event.inputs.version != 'nightly'
         run: |
-          echo "tags=netdata/netdata-debug:latest,netdata/netdata-debug:stable,ghcr.io/netdata/netdata-debug:latest,ghcr.io/netdata/netdata-debug:stable,quay.io/netdata/netdata-debug:latest,quay.io/netdata/netdata-debug:stable,$(.github/scripts/gen-docker-tags.py ${{ needs.normalize-tag.outputs.tag }} '-debug')" \
+          echo "tags=khulnasoft/netdata-debug:latest,khulnasoft/netdata-debug:stable,ghcr.io/khulnasoft/netdata-debug:latest,ghcr.io/khulnasoft/netdata-debug:stable,quay.io/khulnasoft/netdata-debug:latest,quay.io/khulnasoft/netdata-debug:stable,$(.github/scripts/gen-docker-tags.py ${{ needs.normalize-tag.outputs.tag }} '-debug')" \
               >> "${GITHUB_ENV}"
       - name: Determine which tags to use
         id: nightly-tags
         if: github.event.inputs.version == 'nightly'
         run: |
-          echo "tags=netdata/netdata-debug:latest,netdata/netdata-debug:edge,ghcr.io/netdata/netdata-debug:latest,ghcr.io/netdata/netdata-debug:edge,quay.io/netdata/netdata-debug:latest,quay.io/netdata/netdata-debug:edge" >> "${GITHUB_ENV}"
+          echo "tags=khulnasoft/netdata-debug:latest,khulnasoft/netdata-debug:edge,ghcr.io/khulnasoft/netdata-debug:latest,ghcr.io/khulnasoft/netdata-debug:edge,quay.io/khulnasoft/netdata-debug:latest,quay.io/khulnasoft/netdata-debug:edge" >> "${GITHUB_ENV}"
       - name: Mark image as official
         id: env
-        if: github.repository == 'netdata/netdata'
+        if: github.repository == 'khulnasoft/netdata'
         run: echo "OFFICIAL_IMAGE=true" >> "${GITHUB_ENV}"
       - name: Setup QEMU
         id: qemu
@@ -350,14 +350,14 @@ jobs:
         uses: docker/setup-buildx-action@v3
       - name: Docker Hub Login
         id: docker-hub-login
-        if: github.repository == 'netdata/netdata'
+        if: github.repository == 'khulnasoft/netdata'
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: GitHub Container Registry Login
         id: ghcr-login
-        if: github.repository == 'netdata/netdata'
+        if: github.repository == 'khulnasoft/netdata'
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
@@ -365,7 +365,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Quay.io Login
         id: quay-login
-        if: github.repository == 'netdata/netdata'
+        if: github.repository == 'khulnasoft/netdata'
         uses: docker/login-action@v3
         with:
           registry: quay.io
@@ -376,7 +376,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           platforms: linux/amd64,linux/i386,linux/arm/v7,linux/arm64,linux/ppc64le
-          push: ${{ github.repository == 'netdata/netdata' }}
+          push: ${{ github.repository == 'khulnasoft/netdata' }}
           tags: ${{ env.tags }}
           build-args: |
             OFFICIAL_IMAGE=${{ env.OFFICIAL_IMAGE }}
@@ -407,5 +407,5 @@ jobs:
             failure()
             && github.event_name != 'pull_request'
             && startsWith(github.ref, 'refs/heads/master')
-            && github.repository == 'netdata/netdata'
+            && github.repository == 'khulnasoft/netdata'
           }}
