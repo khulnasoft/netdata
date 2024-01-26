@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/integrations/ip_virtual_server.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/integrations/ip_virtual_server.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
 sidebar_label: "IP Virtual Server"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/Network"

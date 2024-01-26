@@ -33,11 +33,11 @@
 
 The Netdata logs management engine enables collection, processing, storage, streaming and querying of logs through the Netdata agent. The following pipeline depicts a high-level overview of the different stages that collected logs propagate through for this to be achieved:
 
-![Logs management pipeline](https://github.com/netdata/netdata/assets/5953192/dd73382c-af4b-4840-a3fe-1ba5069304e8 "Logs management pipeline")
+![Logs management pipeline](https://github.com/khulnasoft/netdata/assets/5953192/dd73382c-af4b-4840-a3fe-1ba5069304e8 "Logs management pipeline")
 
 The [Fluent Bit](https://github.com/fluent/fluent-bit) project has been used as the logs collection and exporting / streaming engine, due to its stability and the variety of [collection (input) plugins](https://docs.fluentbit.io/manual/pipeline/inputs) that it offers. Each collected log record passes through the Fluent Bit engine first, before it gets buffered, parsed, compressed and (optionally) stored locally by the logs management engine. It can also be streamed to another Netdata or Fluent Bit instance (using Fluent Bit's [Forward](https://docs.fluentbit.io/manual/pipeline/outputs/forward) protocol), or exported using any other [Fluent Bit output](https://docs.fluentbit.io/manual/pipeline/outputs).
 
-A bespoke circular buffering implementation has been used to maximize performance and optimize memory utilization. More technical details about how it works can be found [here](https://github.com/netdata/netdata/pull/13291#buffering).
+A bespoke circular buffering implementation has been used to maximize performance and optimize memory utilization. More technical details about how it works can be found [here](https://github.com/khulnasoft/netdata/pull/13291#buffering).
 
 To configure Netdata's logs management engine properly, please make sure you are aware of the following points first:
 
@@ -81,7 +81,7 @@ There are also some example configurations that can be listed using `./edit-conf
 
 To get familiar with the Logs Management functionality, the user is advised to read at least the [Summary](#summary) and the [General Configuration](#general-configuration) sections and also any [Collector-specific Configuration](#collector-configuration) subsections, according to each use case.
 
-For any issues, please refer to [Troubleshooting](#troubleshooting) or open a new support ticket on [Github](https://github.com/netdata/netdata/issues) or one of Netdata's support channels.
+For any issues, please refer to [Troubleshooting](#troubleshooting) or open a new support ticket on [Github](https://github.com/khulnasoft/netdata/issues) or one of Netdata's support channels.
 
 <a name="package-requirements"/>
 
@@ -380,7 +380,7 @@ Netdata supports 2 incoming streaming configurations:
 
 For option 1, please refer to the [syslog collector](#collector-configuration-syslog) section. This section will be focused on using option 2.
 
-A Netdata agent can be used as a logs aggregation parent to listen to `Forward` messages, using either Unix or network sockets. This option is separate to [Netdata's metrics streaming](https://github.com/netdata/netdata/blob/master/docs/metrics-storage-management/enable-streaming.md) and can be used independently of whether that's enabled or not (and it uses a different listening socket too). 
+A Netdata agent can be used as a logs aggregation parent to listen to `Forward` messages, using either Unix or network sockets. This option is separate to [Netdata's metrics streaming](https://github.com/khulnasoft/netdata/blob/master/docs/metrics-storage-management/enable-streaming.md) and can be used independently of whether that's enabled or not (and it uses a different listening socket too). 
 
 This setting can be enabled under the `[forward input]` section in `logsmanagement.d.conf`:
 
@@ -658,7 +658,7 @@ If during the Fluent Bit build step you are seeing the following message:
 ```
 -- Could NOT find Journald (missing: JOURNALD_LIBRARY JOURNALD_INCLUDE_DIR)
 ``` 
-it means that the systemd development libraries are missing from your system. Please see [how to install them alongside other required packages](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/manual.md).
+it means that the systemd development libraries are missing from your system. Please see [how to install them alongside other required packages](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/manual.md).
 
 2. I am observing very high CPU usage when monitoring a log source using `flb_tail` or `flb_web_log`.
 

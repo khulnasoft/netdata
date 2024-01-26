@@ -7,7 +7,7 @@ To generate a copy of `integrations.js` locally, you will need:
     - `referencing`
     - `jinja2`
     - `ruamel.yaml`
-- A local checkout of https://github.com/netdata/netdata
+- A local checkout of https://github.com/khulnasoft/netdata
 - A local checkout of https://github.com/netdata/go.d.plugin. The script
   expects this to be checked out in a directory called `go.d.plugin`
   in the root directory of the agent repo, though a symlink with that

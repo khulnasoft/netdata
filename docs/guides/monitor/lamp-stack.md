@@ -51,7 +51,7 @@ To follow this tutorial, you need:
 ## Install the Netdata Agent
 
 If you don't have the free, open-source Netdata monitoring agent installed on your node yet, get started with a [single
-kickstart command](https://github.com/netdata/netdata/blob/master/packaging/installer/README.md):
+kickstart command](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/README.md):
 
 <OneLineInstallWget/>
 
@@ -61,10 +61,10 @@ replacing `NODE` with the hostname or IP address of your system.
 
 ## Enable hardware and Linux system monitoring
 
-There's nothing you need to do to enable [system monitoring](https://github.com/netdata/netdata/blob/master/docs/collect/system-metrics.md) and Linux monitoring with
+There's nothing you need to do to enable [system monitoring](https://github.com/khulnasoft/netdata/blob/master/docs/collect/system-metrics.md) and Linux monitoring with
 the Netdata Agent, which autodetects metrics from CPUs, memory, disks, networking devices, and Linux processes like
 systemd without any configuration. If you're using containers, Netdata automatically collects resource utilization
-metrics from each using the [cgroups data collector](https://github.com/netdata/netdata/blob/master/collectors/cgroups.plugin/README.md).
+metrics from each using the [cgroups data collector](https://github.com/khulnasoft/netdata/blob/master/collectors/cgroups.plugin/README.md).
 
 ## Enable Apache monitoring
 
@@ -105,12 +105,12 @@ FLUSH PRIVILEGES;
 ```
 
 Run `sudo systemctl restart netdata`, or the [appropriate alternative for your
-system](https://github.com/netdata/netdata/blob/master/docs/configure/start-stop-restart.md), to collect dozens of metrics every second for robust MySQL monitoring.
+system](https://github.com/khulnasoft/netdata/blob/master/docs/configure/start-stop-restart.md), to collect dozens of metrics every second for robust MySQL monitoring.
 
 ## Enable PHP monitoring
 
 Unlike Apache or MySQL, PHP isn't a service that you can monitor directly, unless you instrument a PHP-based application
-with [StatsD](https://github.com/netdata/netdata/blob/master/collectors/statsd.plugin/README.md).
+with [StatsD](https://github.com/khulnasoft/netdata/blob/master/collectors/statsd.plugin/README.md).
 
 However, if you use [PHP-FPM](https://php-fpm.org/) in your LAMP stack, you can monitor that process with our [PHP-FPM
 data collector](https://github.com/netdata/go.d.plugin/blob/master/modules/phpfpm/README.md).
@@ -159,12 +159,12 @@ If the Netdata Agent isn't already open in your browser, open a new tab and navi
 
 > If you [signed up](https://app.netdata.cloud/sign-up?cloudRoute=/spaces) for Netdata Cloud earlier, you can also view
 > the exact same LAMP stack metrics there, plus additional features, like drag-and-drop custom dashboards. Be sure to
-> [connecting your node](https://github.com/netdata/netdata/blob/master/claim/README.md) to start streaming metrics to your browser through Netdata Cloud.
+> [connecting your node](https://github.com/khulnasoft/netdata/blob/master/claim/README.md) to start streaming metrics to your browser through Netdata Cloud.
 
 Netdata automatically organizes all metrics and charts onto a single page for easy navigation. Peek at gauges to see
 overall system performance, then scroll down to see more. Click-and-drag with your mouse to pan _all_ charts back and
 forth through different time intervals, or hold `SHIFT` and use the scrollwheel (or two-finger scroll) to zoom in and
-out. Check out our doc on [interacting with charts](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/interact-new-charts.md) for all the details.
+out. Check out our doc on [interacting with charts](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/interact-new-charts.md) for all the details.
 
 ![The Netdata dashboard](https://user-images.githubusercontent.com/1153921/109520555-98e17800-7a69-11eb-86ec-16f689da4527.png)
 
@@ -197,15 +197,15 @@ Here's a quick reference for what charts you might want to focus on after settin
 The Netdata Agent comes with hundreds of pre-configured alerts to help you keep tabs on your system, including 19 alerts
 designed for smarter LAMP stack monitoring.
 
-Click the 🔔 icon in the top navigation to [see active alerts](https://github.com/netdata/netdata/blob/master/docs/monitor/view-active-alerts.md). The **Active** tabs
+Click the 🔔 icon in the top navigation to [see active alerts](https://github.com/khulnasoft/netdata/blob/master/docs/monitor/view-active-alerts.md). The **Active** tabs
 shows any alerts currently triggered, while the **All** tab displays a list of _every_ pre-configured alert. The 
 
 ![An example of LAMP stack
 alerts](https://user-images.githubusercontent.com/1153921/109524120-5883f900-7a6d-11eb-830e-0e7baaa28163.png)
 
-[Tweak alerts](https://github.com/netdata/netdata/blob/master/health/REFERENCE.md) based on your infrastructure monitoring needs, and to see these alerts
+[Tweak alerts](https://github.com/khulnasoft/netdata/blob/master/health/REFERENCE.md) based on your infrastructure monitoring needs, and to see these alerts
 in other places, like your inbox or a Slack channel, [enable a notification
-method](https://github.com/netdata/netdata/blob/master/docs/monitor/enable-notifications.md).
+method](https://github.com/khulnasoft/netdata/blob/master/docs/monitor/enable-notifications.md).
 
 ## What's next?
 
@@ -225,12 +225,12 @@ we're not covering it here, but it _does_ work in a single-node setup. Just don'
 node crashed.
 
 If you're planning on managing more than one node, or want to take advantage of advanced features, like finding the
-source of issues faster with [Metric Correlations](https://github.com/netdata/netdata/blob/master/docs/cloud/insights/metric-correlations.md),
+source of issues faster with [Metric Correlations](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/insights/metric-correlations.md),
 [sign up](https://app.netdata.cloud/sign-up?cloudRoute=/spaces) for a free Netdata Cloud account.
 
 ### Related reference documentation
 
-- [Netdata Agent · Get started](https://github.com/netdata/netdata/blob/master/packaging/installer/README.md)
+- [Netdata Agent · Get started](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/README.md)
 - [Netdata Agent · Apache data collector](https://github.com/netdata/go.d.plugin/blob/master/modules/apache/README.md)
 - [Netdata Agent · Web log collector](https://github.com/netdata/go.d.plugin/blob/master/modules/weblog/README.md)
 - [Netdata Agent · MySQL data collector](https://github.com/netdata/go.d.plugin/blob/master/modules/mysql/README.md)

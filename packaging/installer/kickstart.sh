@@ -29,10 +29,10 @@ STATIC_INSTALL_ARCHES="x86_64 armv7l aarch64 ppc64le"
 # ======================================================================
 # URLs used throughout the script
 
-AGENT_BUG_REPORT_URL="https://github.com/netdata/netdata/issues/new/choose"
-CLOUD_BUG_REPORT_URL="https://github.com/netdata/netdata-cloud/issues/new/choose"
+AGENT_BUG_REPORT_URL="https://github.com/khulnasoft/netdata/issues/new/choose"
+CLOUD_BUG_REPORT_URL="https://github.com/khulnasoft/netdata-cloud/issues/new/choose"
 DISCORD_INVITE="https://discord.gg/5ygS846fR6"
-DISCUSSIONS_URL="https://github.com/netdata/netdata/discussions"
+DISCUSSIONS_URL="https://github.com/khulnasoft/netdata/discussions"
 DOCS_URL="https://learn.netdata.cloud/docs/"
 FORUM_URL="https://community.netdata.cloud/"
 INSTALL_DOC_URL="https://learn.netdata.cloud/docs/install-the-netdata-agent/one-line-installer-for-all-linux-systems"
@@ -69,7 +69,7 @@ else
   NETDATA_DISABLE_TELEMETRY=0
 fi
 
-NETDATA_TARBALL_BASEURL="${NETDATA_TARBALL_BASEURL:-https://github.com/netdata/netdata-nightlies/releases}"
+NETDATA_TARBALL_BASEURL="${NETDATA_TARBALL_BASEURL:-https://github.com/khulnasoft/netdata-nightlies/releases}"
 
 if echo "${0}" | grep -q 'kickstart-static64'; then
   NETDATA_FORCE_METHOD='static'
@@ -1625,16 +1625,16 @@ set_static_archive_urls() {
     export NETDATA_STATIC_ARCHIVE_CHECKSUM_URL="file://${path}/sha256sums.txt"
   elif [ "${1}" = "stable" ]; then
     if [ -n "${INSTALL_VERSION}" ]; then
-      export NETDATA_STATIC_ARCHIVE_URL="https://github.com/netdata/netdata/releases/download/v${INSTALL_VERSION}/netdata-${arch}-v${INSTALL_VERSION}.gz.run"
-      export NETDATA_STATIC_ARCHIVE_OLD_URL="https://github.com/netdata/netdata/releases/download/v${INSTALL_VERSION}/netdata-v${INSTALL_VERSION}.gz.run"
+      export NETDATA_STATIC_ARCHIVE_URL="https://github.com/khulnasoft/netdata/releases/download/v${INSTALL_VERSION}/netdata-${arch}-v${INSTALL_VERSION}.gz.run"
+      export NETDATA_STATIC_ARCHIVE_OLD_URL="https://github.com/khulnasoft/netdata/releases/download/v${INSTALL_VERSION}/netdata-v${INSTALL_VERSION}.gz.run"
       export NETDATA_STATIC_ARCHIVE_NAME="netdata-${arch}-v${INSTALL_VERSION}.gz.run"
       export NETDATA_STATIC_ARCHIVE_OLD_NAME="netdata-v${INSTALL_VERSION}.gz.run"
-      export NETDATA_STATIC_ARCHIVE_CHECKSUM_URL="https://github.com/netdata/netdata/releases/download/v${INSTALL_VERSION}/sha256sums.txt"
+      export NETDATA_STATIC_ARCHIVE_CHECKSUM_URL="https://github.com/khulnasoft/netdata/releases/download/v${INSTALL_VERSION}/sha256sums.txt"
     else
-      latest="$(get_redirect "https://github.com/netdata/netdata/releases/latest")"
-      export NETDATA_STATIC_ARCHIVE_URL="https://github.com/netdata/netdata/releases/download/${latest}/netdata-${arch}-latest.gz.run"
+      latest="$(get_redirect "https://github.com/khulnasoft/netdata/releases/latest")"
+      export NETDATA_STATIC_ARCHIVE_URL="https://github.com/khulnasoft/netdata/releases/download/${latest}/netdata-${arch}-latest.gz.run"
       export NETDATA_STATIC_ARCHIVE_NAME="netdata-${arch}-latest.gz.run"
-      export NETDATA_STATIC_ARCHIVE_CHECKSUM_URL="https://github.com/netdata/netdata/releases/download/${latest}/sha256sums.txt"
+      export NETDATA_STATIC_ARCHIVE_CHECKSUM_URL="https://github.com/khulnasoft/netdata/releases/download/${latest}/sha256sums.txt"
     fi
   else
     if [ -n "${INSTALL_VERSION}" ]; then
@@ -1724,12 +1724,12 @@ try_static_install() {
 set_source_archive_urls() {
   if [ "$1" = "stable" ]; then
     if [ -n "${INSTALL_VERSION}" ]; then
-      export NETDATA_SOURCE_ARCHIVE_URL="https://github.com/netdata/netdata/releases/download/v${INSTALL_VERSION}/netdata-v${INSTALL_VERSION}.tar.gz"
-      export NETDATA_SOURCE_ARCHIVE_CHECKSUM_URL="https://github.com/netdata/netdata/releases/download/v${INSTALL_VERSION}/sha256sums.txt"
+      export NETDATA_SOURCE_ARCHIVE_URL="https://github.com/khulnasoft/netdata/releases/download/v${INSTALL_VERSION}/netdata-v${INSTALL_VERSION}.tar.gz"
+      export NETDATA_SOURCE_ARCHIVE_CHECKSUM_URL="https://github.com/khulnasoft/netdata/releases/download/v${INSTALL_VERSION}/sha256sums.txt"
     else
-      latest="$(get_redirect "https://github.com/netdata/netdata/releases/latest")"
-      export NETDATA_SOURCE_ARCHIVE_URL="https://github.com/netdata/netdata/releases/download/${latest}/netdata-${latest}.tar.gz"
-      export NETDATA_SOURCE_ARCHIVE_CHECKSUM_URL="https://github.com/netdata/netdata/releases/download/${latest}/sha256sums.txt"
+      latest="$(get_redirect "https://github.com/khulnasoft/netdata/releases/latest")"
+      export NETDATA_SOURCE_ARCHIVE_URL="https://github.com/khulnasoft/netdata/releases/download/${latest}/netdata-${latest}.tar.gz"
+      export NETDATA_SOURCE_ARCHIVE_CHECKSUM_URL="https://github.com/khulnasoft/netdata/releases/download/${latest}/sha256sums.txt"
     fi
   else
     if [ -n "${INSTALL_VERSION}" ]; then

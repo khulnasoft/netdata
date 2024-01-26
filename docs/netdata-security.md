@@ -48,7 +48,7 @@ investigated, and any identified vulnerabilities trigger a Security Release Proc
 We aim to fully disclose any bugs as soon as a user mitigation is available, typically within a week of the report. In
 case of security fixes, we promptly release a new version of the software. Users can subscribe to our releases on GitHub
 to stay updated about all security incidents. More details about our vulnerability response process can be
-found [here](https://github.com/netdata/netdata/security/policy).
+found [here](https://github.com/khulnasoft/netdata/security/policy).
 
 ### Adherence to Open Source Security Foundation Best Practices
 
@@ -108,7 +108,7 @@ If a security vulnerability is found in the Netdata Agent, the Netdata team ackn
 three working days, kicking off a Security Release Process. Any vulnerability information shared with the Netdata team
 stays within the Netdata project and is not disseminated to other projects unless necessary for fixing the issue. The
 reporter is kept updated as the security issue moves from triage to identified fix, to release planning. More
-information can be found [here](https://github.com/netdata/netdata/security/policy).
+information can be found [here](https://github.com/khulnasoft/netdata/security/policy).
 
 ### Protection Against Common Security Threats
 

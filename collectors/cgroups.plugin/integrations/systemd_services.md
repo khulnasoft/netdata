@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/cgroups.plugin/integrations/systemd_services.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/cgroups.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/cgroups.plugin/integrations/systemd_services.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/cgroups.plugin/metadata.yaml"
 sidebar_label: "Systemd Services"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Systemd"

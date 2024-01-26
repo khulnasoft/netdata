@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/ipfs/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/ipfs/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/ipfs/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/ipfs/metadata.yaml"
 sidebar_label: "IPFS"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Storage, Mount Points and Filesystems"
@@ -81,7 +81,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ ipfs_datastore_usage ](https://github.com/netdata/netdata/blob/master/health/health.d/ipfs.conf) | ipfs.repo_size | IPFS datastore utilization |
+| [ ipfs_datastore_usage ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/ipfs.conf) | ipfs.repo_size | IPFS datastore utilization |
 
 
 ## Setup
@@ -98,7 +98,7 @@ The configuration file name for this integration is `python.d/ipfs.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

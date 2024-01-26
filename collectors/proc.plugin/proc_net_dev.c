@@ -1063,7 +1063,7 @@ int do_proc_net_dev(int update_every, usec_t dt) {
         if(!d->cgroup_netdev_link)
             netdev_rename_this_device(d);
 
-        // See https://github.com/netdata/netdata/issues/15206
+        // See https://github.com/khulnasoft/netdata/issues/15206
         // This is necessary to prevent the creation of charts for virtual interfaces that will later be 
         // recreated as container interfaces (create container) or
         // rediscovered and recreated only to be deleted almost immediately (stop/remove container)

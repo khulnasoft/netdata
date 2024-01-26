@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/integrations/socket_statistics.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/integrations/socket_statistics.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
 sidebar_label: "Socket statistics"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/Network"
@@ -82,8 +82,8 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ tcp_orphans ](https://github.com/netdata/netdata/blob/master/health/health.d/tcp_orphans.conf) | ipv4.sockstat_tcp_sockets | orphan IPv4 TCP sockets utilization |
-| [ tcp_memory ](https://github.com/netdata/netdata/blob/master/health/health.d/tcp_mem.conf) | ipv4.sockstat_tcp_mem | TCP memory utilization |
+| [ tcp_orphans ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/tcp_orphans.conf) | ipv4.sockstat_tcp_sockets | orphan IPv4 TCP sockets utilization |
+| [ tcp_memory ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/tcp_mem.conf) | ipv4.sockstat_tcp_mem | TCP memory utilization |
 
 
 ## Setup

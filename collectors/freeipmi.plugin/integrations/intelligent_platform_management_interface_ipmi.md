@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/freeipmi.plugin/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/freeipmi.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/freeipmi.plugin/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/freeipmi.plugin/metadata.yaml"
 sidebar_label: "Intelligent Platform Management Interface (IPMI)"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Hardware Devices and Sensors"
@@ -103,7 +103,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ ipmi_sensor_state ](https://github.com/netdata/netdata/blob/master/health/health.d/ipmi.conf) | ipmi.sensor_state | IPMI sensor ${label:sensor} (${label:component}) state |
+| [ ipmi_sensor_state ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/ipmi.conf) | ipmi.sensor_state | IPMI sensor ${label:sensor} (${label:component}) state |
 
 
 ## Setup
@@ -144,7 +144,7 @@ The file format is a modified INI syntax. The general structure is:
     option3 = some third value
 ```
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

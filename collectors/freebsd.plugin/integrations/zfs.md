@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/integrations/zfs.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/integrations/zfs.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
 sidebar_label: "zfs"
 learn_status: "Published"
 learn_rel_path: "Data Collection/FreeBSD"
@@ -101,7 +101,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ zfs_memory_throttle ](https://github.com/netdata/netdata/blob/master/health/health.d/zfs.conf) | zfs.memory_ops | number of times ZFS had to limit the ARC growth in the last 10 minutes |
+| [ zfs_memory_throttle ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/zfs.conf) | zfs.memory_ops | number of times ZFS had to limit the ARC growth in the last 10 minutes |
 
 
 ## Setup
@@ -128,7 +128,7 @@ The file format is a modified INI syntax. The general structure is:
     option3 = some third value
 ```
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/integrations/nfs_client.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/integrations/nfs_client.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
 sidebar_label: "NFS Client"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/Filesystem/NFS"

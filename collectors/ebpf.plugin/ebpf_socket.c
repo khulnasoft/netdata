@@ -1040,7 +1040,7 @@ void ebpf_socket_send_apps_data(ebpf_module_t *em, struct ebpf_target *root)
     UNUSED(em);
 
     struct ebpf_target *w;
-    // This algorithm is improved in https://github.com/netdata/netdata/pull/16030
+    // This algorithm is improved in https://github.com/khulnasoft/netdata/pull/16030
     collected_number values[9];
 
     for (w = root; w; w = w->next) {
@@ -1048,7 +1048,7 @@ void ebpf_socket_send_apps_data(ebpf_module_t *em, struct ebpf_target *root)
             continue;
 
         struct ebpf_pid_on_target *move = w->root_pid;
-        // Simplify algorithm, but others will appear only in https://github.com/netdata/netdata/pull/16030
+        // Simplify algorithm, but others will appear only in https://github.com/khulnasoft/netdata/pull/16030
         memset(values, 0, sizeof(values));
         while (move) {
             int32_t pid = move->pid;

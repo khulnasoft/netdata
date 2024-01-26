@@ -367,7 +367,7 @@ class Service(SimpleService):
 
 
 def get_osd_perf_infos(osd_perf):
-    # https://github.com/netdata/netdata/issues/8247
+    # https://github.com/khulnasoft/netdata/issues/8247
     # module uses 'osd_perf_infos' data, its been moved under 'osdstats` since Ceph v14.2
     if 'osd_perf_infos' in osd_perf:
         return osd_perf['osd_perf_infos']

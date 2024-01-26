@@ -179,7 +179,7 @@ int main(int argc, char **argv)
 
     // FIXME: should first check if /sys/kernel/debug is mounted
 
-    // FIXME: remove debugfs_check_sys_permission() after https://github.com/netdata/netdata/issues/15048 is fixed
+    // FIXME: remove debugfs_check_sys_permission() after https://github.com/khulnasoft/netdata/issues/15048 is fixed
     if (!debugfs_check_capabilities() && !debugfs_am_i_running_as_root() && !debugfs_check_sys_permission()) {
         uid_t uid = getuid(), euid = geteuid();
 #ifdef HAVE_SYS_CAPABILITY_H

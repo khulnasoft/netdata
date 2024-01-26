@@ -89,7 +89,7 @@ modules:
                 2:48 NetworkControl
                 ```
 
-                You can read more about setting up the tc rules in rc.local in this [GitHub issue](https://github.com/netdata/netdata/issues/4563#issuecomment-455711973).
+                You can read more about setting up the tc rules in rc.local in this [GitHub issue](https://github.com/khulnasoft/netdata/issues/4563#issuecomment-455711973).
 
               config: |
                 [plugin:tc]

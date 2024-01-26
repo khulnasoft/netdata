@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/gearman/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/gearman/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/gearman/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/gearman/metadata.yaml"
 sidebar_label: "Gearman"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Distributed Computing Systems"
@@ -86,7 +86,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ gearman_workers_queued ](https://github.com/netdata/netdata/blob/master/health/health.d/gearman.conf) | gearman.single_job | average number of queued jobs over the last 10 minutes |
+| [ gearman_workers_queued ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/gearman.conf) | gearman.single_job | average number of queued jobs over the last 10 minutes |
 
 
 ## Setup
@@ -106,7 +106,7 @@ The configuration file name for this integration is `python.d/gearman.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

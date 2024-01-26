@@ -1,7 +1,7 @@
 <!--
 title: "Single (or Simple) Exponential Smoothing (`ses`)"
 sidebar_label: "Single (or Simple) Exponential Smoothing (`ses`)"
-custom_edit_url: https://github.com/netdata/netdata/edit/master/web/api/queries/ses/README.md
+custom_edit_url: https://github.com/khulnasoft/netdata/edit/master/web/api/queries/ses/README.md
 learn_status: "Published"
 learn_topic_type: "References"
 learn_rel_path: "Developers/Web/Api/Queries"

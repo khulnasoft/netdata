@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/riakkv/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/riakkv/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/riakkv/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/riakkv/metadata.yaml"
 sidebar_label: "RiakKV"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Databases"
@@ -99,12 +99,12 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ riakkv_1h_kv_get_mean_latency ](https://github.com/netdata/netdata/blob/master/health/health.d/riakkv.conf) | riak.kv.latency.get | average time between reception of client GET request and subsequent response to client over the last hour |
-| [ riakkv_kv_get_slow ](https://github.com/netdata/netdata/blob/master/health/health.d/riakkv.conf) | riak.kv.latency.get | average time between reception of client GET request and subsequent response to the client over the last 3 minutes, compared to the average over the last hour |
-| [ riakkv_1h_kv_put_mean_latency ](https://github.com/netdata/netdata/blob/master/health/health.d/riakkv.conf) | riak.kv.latency.put | average time between reception of client PUT request and subsequent response to the client over the last hour |
-| [ riakkv_kv_put_slow ](https://github.com/netdata/netdata/blob/master/health/health.d/riakkv.conf) | riak.kv.latency.put | average time between reception of client PUT request and subsequent response to the client over the last 3 minutes, compared to the average over the last hour |
-| [ riakkv_vm_high_process_count ](https://github.com/netdata/netdata/blob/master/health/health.d/riakkv.conf) | riak.vm | number of processes running in the Erlang VM |
-| [ riakkv_list_keys_active ](https://github.com/netdata/netdata/blob/master/health/health.d/riakkv.conf) | riak.core.fsm_active | number of currently running list keys finite state machines |
+| [ riakkv_1h_kv_get_mean_latency ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/riakkv.conf) | riak.kv.latency.get | average time between reception of client GET request and subsequent response to client over the last hour |
+| [ riakkv_kv_get_slow ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/riakkv.conf) | riak.kv.latency.get | average time between reception of client GET request and subsequent response to the client over the last 3 minutes, compared to the average over the last hour |
+| [ riakkv_1h_kv_put_mean_latency ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/riakkv.conf) | riak.kv.latency.put | average time between reception of client PUT request and subsequent response to the client over the last hour |
+| [ riakkv_kv_put_slow ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/riakkv.conf) | riak.kv.latency.put | average time between reception of client PUT request and subsequent response to the client over the last 3 minutes, compared to the average over the last hour |
+| [ riakkv_vm_high_process_count ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/riakkv.conf) | riak.vm | number of processes running in the Erlang VM |
+| [ riakkv_list_keys_active ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/riakkv.conf) | riak.core.fsm_active | number of currently running list keys finite state machines |
 
 
 ## Setup
@@ -127,7 +127,7 @@ The configuration file name for this integration is `python.d/riakkv.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

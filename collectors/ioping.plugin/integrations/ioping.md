@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/ioping.plugin/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/ioping.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/ioping.plugin/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/ioping.plugin/metadata.yaml"
 sidebar_label: "IOPing"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Synthetic Checks"
@@ -74,7 +74,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ ioping_disk_latency ](https://github.com/netdata/netdata/blob/master/health/health.d/ioping.conf) | ioping.latency | average I/O latency over the last 10 seconds |
+| [ ioping_disk_latency ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/ioping.conf) | ioping.latency | average I/O latency over the last 10 seconds |
 
 
 ## Setup
@@ -95,7 +95,7 @@ The configuration file name for this integration is `ioping.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

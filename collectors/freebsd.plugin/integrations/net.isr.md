@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/integrations/net.isr.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/integrations/net.isr.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
 sidebar_label: "net.isr"
 learn_status: "Published"
 learn_rel_path: "Data Collection/FreeBSD"
@@ -86,9 +86,9 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ 1min_netdev_backlog_exceeded ](https://github.com/netdata/netdata/blob/master/health/health.d/softnet.conf) | system.softnet_stat | average number of dropped packets in the last minute due to exceeded net.core.netdev_max_backlog |
-| [ 1min_netdev_budget_ran_outs ](https://github.com/netdata/netdata/blob/master/health/health.d/softnet.conf) | system.softnet_stat | average number of times ksoftirq ran out of sysctl net.core.netdev_budget or net.core.netdev_budget_usecs with work remaining over the last minute (this can be a cause for dropped packets) |
-| [ 10min_netisr_backlog_exceeded ](https://github.com/netdata/netdata/blob/master/health/health.d/softnet.conf) | system.softnet_stat | average number of drops in the last minute due to exceeded sysctl net.route.netisr_maxqlen (this can be a cause for dropped packets) |
+| [ 1min_netdev_backlog_exceeded ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/softnet.conf) | system.softnet_stat | average number of dropped packets in the last minute due to exceeded net.core.netdev_max_backlog |
+| [ 1min_netdev_budget_ran_outs ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/softnet.conf) | system.softnet_stat | average number of times ksoftirq ran out of sysctl net.core.netdev_budget or net.core.netdev_budget_usecs with work remaining over the last minute (this can be a cause for dropped packets) |
+| [ 10min_netisr_backlog_exceeded ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/softnet.conf) | system.softnet_stat | average number of drops in the last minute due to exceeded sysctl net.route.netisr_maxqlen (this can be a cause for dropped packets) |
 
 
 ## Setup
@@ -115,7 +115,7 @@ The file format is a modified INI syntax. The general structure is:
     option3 = some third value
 ```
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

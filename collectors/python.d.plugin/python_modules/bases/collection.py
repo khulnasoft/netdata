@@ -106,11 +106,11 @@ def unicode_str(arg):
     """
     # TODO: fix
     try:
-        # https://github.com/netdata/netdata/issues/7613
+        # https://github.com/khulnasoft/netdata/issues/7613
         if isinstance(arg, unicode):
             return arg
         return unicode(arg, errors='ignore')
-    # https://github.com/netdata/netdata/issues/7642
+    # https://github.com/khulnasoft/netdata/issues/7642
     except TypeError:
         return unicode(arg)
     except NameError:

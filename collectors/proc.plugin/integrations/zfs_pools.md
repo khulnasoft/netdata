@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/integrations/zfs_pools.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/integrations/zfs_pools.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
 sidebar_label: "ZFS Pools"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/Filesystem/ZFS"
@@ -78,8 +78,8 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ zfs_pool_state_warn ](https://github.com/netdata/netdata/blob/master/health/health.d/zfs.conf) | zfspool.state | ZFS pool ${label:pool} state is degraded |
-| [ zfs_pool_state_crit ](https://github.com/netdata/netdata/blob/master/health/health.d/zfs.conf) | zfspool.state | ZFS pool ${label:pool} state is faulted or unavail |
+| [ zfs_pool_state_warn ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/zfs.conf) | zfspool.state | ZFS pool ${label:pool} state is degraded |
+| [ zfs_pool_state_crit ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/zfs.conf) | zfspool.state | ZFS pool ${label:pool} state is faulted or unavail |
 
 
 ## Setup

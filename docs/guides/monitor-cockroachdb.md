@@ -1,7 +1,7 @@
 <!--
 title: "Monitor CockroachDB metrics with Netdata"
 sidebar_label: "Monitor CockroachDB metrics with Netdata"
-custom_edit_url: https://github.com/netdata/netdata/edit/master/docs/guides/monitor-cockroachdb.md
+custom_edit_url: https://github.com/khulnasoft/netdata/edit/master/docs/guides/monitor-cockroachdb.md
 learn_status: "Published"
 learn_topic_type: "Tasks"
 learn_rel_path: "Miscellaneous"
@@ -38,7 +38,7 @@ display them on the dashboard.
 
 If your CockroachDB instance is accessible through `http://localhost:8080/` or `http://127.0.0.1:8080`, your setup is
 complete. Restart Netdata with `sudo systemctl restart netdata`, or the [appropriate
-method](https://github.com/netdata/netdata/blob/master/docs/configure/start-stop-restart.md) for your system, and refresh your browser. You should see CockroachDB
+method](https://github.com/khulnasoft/netdata/blob/master/docs/configure/start-stop-restart.md) for your system, and refresh your browser. You should see CockroachDB
 metrics in your Netdata dashboard!
 
 <figure>
@@ -115,4 +115,4 @@ cd /etc/netdata/ # Replace with your Netdata configuration directory, if not /et
 ./edit-config health.d/cockroachdb.conf # You may need to use `sudo` for write privileges
 ```
 
-For more information about editing the defaults or writing new alert entities, see our documentation on [configuring health alerts](https://github.com/netdata/netdata/blob/master/health/REFERENCE.md).
+For more information about editing the defaults or writing new alert entities, see our documentation on [configuring health alerts](https://github.com/khulnasoft/netdata/blob/master/health/REFERENCE.md).

@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/integrations/power_supply.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/integrations/power_supply.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
 sidebar_label: "Power Supply"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/Power Supply"
@@ -81,7 +81,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ linux_power_supply_capacity ](https://github.com/netdata/netdata/blob/master/health/health.d/linux_power_supply.conf) | powersupply.capacity | percentage of remaining power supply capacity |
+| [ linux_power_supply_capacity ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/linux_power_supply.conf) | powersupply.capacity | percentage of remaining power supply capacity |
 
 
 ## Setup

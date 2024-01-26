@@ -3,7 +3,7 @@ title: "Monitor Pi-hole (and a Raspberry Pi) with Netdata"
 sidebar_label: "Monitor Pi-hole (and a Raspberry Pi) with Netdata"
 description: "Monitor Pi-hole metrics, plus Raspberry Pi system metrics, in minutes and completely for free with Netdata's open-source monitoring agent."
 image: /img/seo/guides/monitor/netdata-pi-hole-raspberry-pi.png
-custom_edit_url: https://github.com/netdata/netdata/edit/master/docs/guides/monitor/pi-hole-raspberry-pi.md
+custom_edit_url: https://github.com/khulnasoft/netdata/edit/master/docs/guides/monitor/pi-hole-raspberry-pi.md
 learn_status: "Published"
 learn_rel_path: "Miscellaneous"
 -->
@@ -24,7 +24,7 @@ Most Pi-hole users run it on a [Raspberry Pi](https://www.raspberrypi.org/produc
 name), a credit card-sized, super-capable computer that costs about $35.
 
 And to keep tabs on how both Pi-hole and the Raspberry Pi are working to protect your network, you can use the
-open-source [Netdata monitoring agent](https://github.com/netdata/netdata). 
+open-source [Netdata monitoring agent](https://github.com/khulnasoft/netdata). 
 
 To get started, all you need is a [Raspberry Pi](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/) with
 Raspbian installed. This guide uses a Raspberry Pi 4 Model B and Raspbian GNU/Linux 10 (buster). This guide assumes
@@ -55,7 +55,7 @@ possible historic data.
 > this package, and can't guarantee it works properly.
 
 On Raspberry Pis running Raspbian, the best way to install Netdata is our one-line kickstart script. This script asks
-you to install dependencies, then compiles Netdata from source via [GitHub](https://github.com/netdata/netdata).
+you to install dependencies, then compiles Netdata from source via [GitHub](https://github.com/khulnasoft/netdata).
 
 <OneLineInstallWget/>
 
@@ -100,14 +100,14 @@ part of your system might affect another.
 ![The Netdata dashboard in
 action](https://user-images.githubusercontent.com/1153921/80827388-b9fee100-8b98-11ea-8f60-0d7824667cd3.gif)
 
-If you're completely new to Netdata, look at the [Introduction](https://github.com/netdata/netdata/blob/master/docs/getting-started/introduction.md) section for a walkthrough of all its features. For a more expedited tour, see the [get started documentation](https://github.com/netdata/netdata/blob/master/packaging/installer/README.md).
+If you're completely new to Netdata, look at the [Introduction](https://github.com/khulnasoft/netdata/blob/master/docs/getting-started/introduction.md) section for a walkthrough of all its features. For a more expedited tour, see the [get started documentation](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/README.md).
 
 ### Enable temperature sensor monitoring
 
 You need to manually enable Netdata's built-in [temperature sensor
-collector](https://github.com/netdata/netdata/blob/master/collectors/charts.d.plugin/sensors/README.md) to start collecting metrics.
+collector](https://github.com/khulnasoft/netdata/blob/master/collectors/charts.d.plugin/sensors/README.md) to start collecting metrics.
 
-> Netdata uses a few plugins to manage its [collectors](https://github.com/netdata/netdata/blob/master/collectors/REFERENCE.md), each using a different language: Go,
+> Netdata uses a few plugins to manage its [collectors](https://github.com/khulnasoft/netdata/blob/master/collectors/REFERENCE.md), each using a different language: Go,
 > Python, Node.js, and Bash. While our Go collectors are undergoing the most active development, we still support the
 > other languages. In this case, you need to enable a temperature sensor collector that's written in Bash.
 
@@ -125,7 +125,7 @@ Raspberry Pi temperature sensor monitoring.
 ### Storing historical metrics on your Raspberry Pi
 
 By default, Netdata allocates 256 MiB in disk space to store historical metrics inside the [database
-engine](https://github.com/netdata/netdata/blob/master/database/engine/README.md). On the Raspberry Pi used for this guide, Netdata collects 1,500 metrics every
+engine](https://github.com/khulnasoft/netdata/blob/master/database/engine/README.md). On the Raspberry Pi used for this guide, Netdata collects 1,500 metrics every
 second, which equates to storing 3.5 days worth of historical metrics.
 
 You can increase this allocation by editing `netdata.conf` and increasing the `dbengine multihost disk space` setting to
@@ -137,6 +137,6 @@ more than 256.
 ```
 
 Use our [database sizing
-calculator](https://github.com/netdata/netdata/blob/master/docs/store/change-metrics-storage.md#calculate-the-system-resources-ram-disk-space-needed-to-store-metrics)
-and the [Database configuration documentation](https://github.com/netdata/netdata/blob/master/database/README.md) to help you determine the right
+calculator](https://github.com/khulnasoft/netdata/blob/master/docs/store/change-metrics-storage.md#calculate-the-system-resources-ram-disk-space-needed-to-store-metrics)
+and the [Database configuration documentation](https://github.com/khulnasoft/netdata/blob/master/database/README.md) to help you determine the right
 setting for your Raspberry Pi.

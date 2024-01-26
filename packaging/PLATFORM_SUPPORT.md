@@ -1,7 +1,7 @@
 <!--
 title: "Platform support policy"
 sidebar_label: "Platform support policy"
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/packaging/PLATFORM_SUPPORT.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/packaging/PLATFORM_SUPPORT.md"
 learn_status: "Published"
 sidebar_position: "1"
 learn_topic_type: "Tasks"
@@ -64,7 +64,7 @@ to work on these platforms with minimal user effort.
 | Amazon Linux             | 2023           | x86\_64, AArch64                       |                                                                                                                                                    |
 | Amazon Linux             | 2              | x86\_64, AArch64                       |                                                                                                                                                    |
 | CentOS                   | 7.x            | x86\_64                                |                                                                                                                                                    |
-| Docker                   | 19.03 or newer | x86\_64, i386, ARMv7, AArch64, POWER8+ | See our [Docker documentation](https://github.com/netdata/netdata/blob/master/packaging/docker/README.md) for more info on using Netdata on Docker |
+| Docker                   | 19.03 or newer | x86\_64, i386, ARMv7, AArch64, POWER8+ | See our [Docker documentation](https://github.com/khulnasoft/netdata/blob/master/packaging/docker/README.md) for more info on using Netdata on Docker |
 | Debian                   | 12.x           | x86\_64, i386, ARMv7, AArch64          |                                                                                                                                                    |
 | Debian                   | 11.x           | x86\_64, i386, ARMv7, AArch64          |                                                                                                                                                    |
 | Debian                   | 10.x           | x86\_64, i386, ARMv7, AArch64          |                                                                                                                                                    |

@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/charts.d.plugin/ap/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/charts.d.plugin/ap/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/charts.d.plugin/ap/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/charts.d.plugin/ap/metadata.yaml"
 sidebar_label: "Access Points"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/Network"
@@ -85,7 +85,7 @@ There are no alerts configured by default for this integration.
 
 #### Install charts.d plugin
 
-If [using our official native DEB/RPM packages](https://github.com/netdata/netdata/blob/master/packaging/installer/UPDATE.md#determine-which-installation-method-you-used), make sure `netdata-plugin-chartsd` is installed.
+If [using our official native DEB/RPM packages](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/UPDATE.md#determine-which-installation-method-you-used), make sure `netdata-plugin-chartsd` is installed.
 
 
 #### `iw` utility.
@@ -101,7 +101,7 @@ The configuration file name for this integration is `charts.d/ap.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

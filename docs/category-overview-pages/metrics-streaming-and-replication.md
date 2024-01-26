@@ -134,7 +134,7 @@ When a parent receives a Function request, it forwards it to the plugin that exp
 
 There are 2 reasons you may have gaps in your data after you bring it back online:
 
-1. Replication does not replicate metrics that are not actively collected. So, when the parent comes back, if there are samples that this parent does not have, for metrics that are not currently being collected, these samples will not be propagated to that parent. [We are working to fix this issue](https://github.com/netdata/netdata/issues/15198).
+1. Replication does not replicate metrics that are not actively collected. So, when the parent comes back, if there are samples that this parent does not have, for metrics that are not currently being collected, these samples will not be propagated to that parent. [We are working to fix this issue](https://github.com/khulnasoft/netdata/issues/15198).
 2. If the parent has been offline for a long time and the child nodes run in db mode `alloc`, you need to plan how you will bring this parent back online. Child nodes in this mode do not have enough retention to backfill the parent and if they connect to it before the other parent, you will end up with missing information on that parent.
 
 The simplest way to solve this is to block at the firewall all connections to port 19999 from child nodes, but allow connections from the other parent nodes. Once replication finishes for all nodes, you can unblock the connections from child nodes to it.

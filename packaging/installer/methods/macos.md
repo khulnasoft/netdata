@@ -1,6 +1,6 @@
 <!--
 title: "Install Netdata on macOS"
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/packaging/installer/methods/macos.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/packaging/installer/methods/macos.md"
 sidebar_label: "macOS"
 learn_status: "Published"
 learn_rel_path: "Installation/Install on specific environments"
@@ -9,8 +9,8 @@ learn_rel_path: "Installation/Install on specific environments"
 # Install Netdata on macOS
 
 Netdata works on macOS, albeit with some limitations. 
-The number of charts displaying system metrics is limited, but you can use any of Netdata's [external plugins](https://github.com/netdata/netdata/blob/master/collectors/plugins.d/README.md) to monitor any services you might have installed on your macOS system. 
-You could also use a macOS system as the parent node in a [streaming configuration](https://github.com/netdata/netdata/blob/master/streaming/README.md).
+The number of charts displaying system metrics is limited, but you can use any of Netdata's [external plugins](https://github.com/khulnasoft/netdata/blob/master/collectors/plugins.d/README.md) to monitor any services you might have installed on your macOS system. 
+You could also use a macOS system as the parent node in a [streaming configuration](https://github.com/khulnasoft/netdata/blob/master/streaming/README.md).
 
 You can install Netdata in one of the three following ways: 
 
@@ -21,12 +21,12 @@ You can install Netdata in one of the three following ways:
 Each of these installation option requires [Homebrew](https://brew.sh/) for handling dependencies. 
 
 > The Netdata Homebrew package is community-created and -maintained.
-> Community-maintained packages _may_ receive support from Netdata, but are only a best-effort affair. Learn more about [Netdata's platform support policy](https://github.com/netdata/netdata/blob/master/packaging/PLATFORM_SUPPORT.md).
+> Community-maintained packages _may_ receive support from Netdata, but are only a best-effort affair. Learn more about [Netdata's platform support policy](https://github.com/khulnasoft/netdata/blob/master/packaging/PLATFORM_SUPPORT.md).
 
 ## Install Netdata with our automatic one-line installation script
 
 **Local Netdata Agent installation**
-To install Netdata using our automatic [kickstart](https://github.com/netdata/netdata/blob/master/packaging/installer/README.md#automatic-one-line-installation-script) open a new terminal and run:
+To install Netdata using our automatic [kickstart](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/README.md#automatic-one-line-installation-script) open a new terminal and run:
 
 ```bash
 curl https://get.netdata.cloud/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh
@@ -35,16 +35,16 @@ The Netdata Agent is installed under `/usr/local/netdata`. Dependencies are hand
 
 **Automatically connect to Netdata Cloud during installation**
 
-The `kickstart.sh` script accepts additional parameters to automatically [connect](https://github.com/netdata/netdata/blob/master/claim/README.md) your node to Netdata
+The `kickstart.sh` script accepts additional parameters to automatically [connect](https://github.com/khulnasoft/netdata/blob/master/claim/README.md) your node to Netdata
 Cloud immediately after installation. Find the `token` and `rooms` strings by [signing in to Netdata
 Cloud](https://app.netdata.cloud/sign-in?cloudRoute=/spaces), then clicking on **Connect Nodes** in the [Spaces management
-area](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/organize-your-infrastrucutre-invite-your-team.md#netdata-cloud-spaces).
+area](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/organize-your-infrastrucutre-invite-your-team.md#netdata-cloud-spaces).
 
 - `--claim-token`: Specify a unique claiming token associated with your Space in Netdata Cloud to be used to connect to the node
   after the install.
 - `--claim-rooms`: Specify a comma-separated list of tokens for each War Room this node should appear in.
 - `--claim-proxy`: Specify a proxy to use when connecting to the cloud in the form of `http://[user:pass@]host:ip` for an HTTP(S) proxy.
-  See [connecting through a proxy](https://github.com/netdata/netdata/blob/master/claim/README.md#connect-through-a-proxy) for details.
+  See [connecting through a proxy](https://github.com/khulnasoft/netdata/blob/master/claim/README.md#connect-through-a-proxy) for details.
 - `--claim-url`: Specify a URL to use when connecting to the cloud. Defaults to `https://app.netdata.cloud`.
 
 For example: 
@@ -53,7 +53,7 @@ curl https://get.netdata.cloud/kickstart.sh > /tmp/netdata-kickstart.sh && sh /t
 ```
 The Netdata Agent is installed under `/usr/local/netdata` on your machine. Your machine will also show up as a node in your Netdata Cloud.
 
-If you experience issues while claiming your node, follow the steps in our [Troubleshooting](https://github.com/netdata/netdata/blob/master/claim/README.md#troubleshooting) documentation.
+If you experience issues while claiming your node, follow the steps in our [Troubleshooting](https://github.com/khulnasoft/netdata/blob/master/claim/README.md#troubleshooting) documentation.
 ## Install Netdata via Homebrew
 
 ### For macOS Intel
@@ -94,7 +94,7 @@ We don't recommend installing Netdata from source on macOS, as it can be difficu
    ```
 
 2. Click **Install** on the Software Update popup window that appears. 
-3. Use the same terminal session to install some of Netdata's prerequisites using Homebrew. If you don't want to use [Netdata Cloud](https://github.com/netdata/netdata/blob/master/docs/quickstart/infrastructure.md), you can omit `cmake`.
+3. Use the same terminal session to install some of Netdata's prerequisites using Homebrew. If you don't want to use [Netdata Cloud](https://github.com/khulnasoft/netdata/blob/master/docs/quickstart/infrastructure.md), you can omit `cmake`.
 
    ```bash
    brew install ossp-uuid autoconf automake pkg-config libuv lz4 json-c openssl libtool cmake
@@ -103,7 +103,7 @@ We don't recommend installing Netdata from source on macOS, as it can be difficu
 4. Download Netdata from our GitHub repository:
 
    ```bash
-   git clone https://github.com/netdata/netdata.git --recursive
+   git clone https://github.com/khulnasoft/netdata.git --recursive
    ```
 
 5. `cd` into the newly-created directory and then start the installer script:

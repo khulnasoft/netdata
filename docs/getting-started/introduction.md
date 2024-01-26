@@ -63,12 +63,12 @@ Netdata works with tons of applications, notifications platforms, and other time
 
 - **300+ system, container, and application endpoints**: Collectors autodetect metrics from default endpoints and
     immediately visualize them into meaningful charts designed for troubleshooting. See [everything we
-    support](https://github.com/netdata/netdata/blob/master/collectors/COLLECTORS.md).
+    support](https://github.com/khulnasoft/netdata/blob/master/collectors/COLLECTORS.md).
 - **20+ notification platforms**: Netdata's health watchdog sends warning and critical alerts to your [favorite
-    platform](https://github.com/netdata/netdata/blob/master/docs/monitor/enable-notifications.md) to inform you of anomalies just seconds
+    platform](https://github.com/khulnasoft/netdata/blob/master/docs/monitor/enable-notifications.md) to inform you of anomalies just seconds
     after they affect your node.
 - **30+ external time-series databases**: Export resampled metrics as they're collected to other [local- and
-    Cloud-based databases](https://github.com/netdata/netdata/blob/master/docs/export/external-databases.md) for best-in-class
+    Cloud-based databases](https://github.com/khulnasoft/netdata/blob/master/docs/export/external-databases.md) for best-in-class
     interoperability.
 
 ## How it works
@@ -86,7 +86,7 @@ functionality](https://user-images.githubusercontent.com/1153921/95367248-5f7559
 
 You can even visit this slightly dated [interactive infographic](https://my-netdata.io/infographic.html) and get lost in a rabbit hole.
 
-But the best way to get under the hood or in the steering wheel of our highly efficient, low-latency system (supporting multiple readers and one writer on each metric) is to read the rest of our docs, or just to jump in and [get started](https://github.com/netdata/netdata/blob/master/packaging/installer/README.md). But here's a good breakdown:
+But the best way to get under the hood or in the steering wheel of our highly efficient, low-latency system (supporting multiple readers and one writer on each metric) is to read the rest of our docs, or just to jump in and [get started](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/README.md). But here's a good breakdown:
 
 ### Netdata Agent
 
@@ -168,17 +168,17 @@ You can also find Netdata on:
 
 Contributions are the lifeblood of open-source projects. While we continue to invest in and improve Netdata, we need help to democratize monitoring!
 
-- Check our [Security Policy](https://github.com/netdata/netdata/security/policy).
-- Found a bug? Open a [GitHub issue](https://github.com/netdata/netdata/issues/new?assignees=&labels=bug%2Cneeds+triage&template=BUG_REPORT.yml&title=%5BBug%5D%3A+).
+- Check our [Security Policy](https://github.com/khulnasoft/netdata/security/policy).
+- Found a bug? Open a [GitHub issue](https://github.com/khulnasoft/netdata/issues/new?assignees=&labels=bug%2Cneeds+triage&template=BUG_REPORT.yml&title=%5BBug%5D%3A+).
 - Read our [Contributing Guide](https://github.com/netdata/.github/blob/main/CONTRIBUTING.md), which contains all the information you need to contribute to Netdata, such as improving our documentation, engaging in the community, and developing new features. We've made it as frictionless as possible, but if you need help, just ping us on our community forums!
 
-Package maintainers should read the guide on [building Netdata from source](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/source.md) for
+Package maintainers should read the guide on [building Netdata from source](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/source.md) for
 instructions on building each Netdata component from source and preparing a package.
 
 ## License
 
-The Netdata Agent is an open source project distributed under [GPLv3+](https://github.com/netdata/netdata/blob/master/LICENSE). Netdata re-distributes other open-source tools and libraries. Please check the
-[third party licenses](https://github.com/netdata/netdata/blob/master/REDISTRIBUTED.md).
+The Netdata Agent is an open source project distributed under [GPLv3+](https://github.com/khulnasoft/netdata/blob/master/LICENSE). Netdata re-distributes other open-source tools and libraries. Please check the
+[third party licenses](https://github.com/khulnasoft/netdata/blob/master/REDISTRIBUTED.md).
 
 ## Is it any good?
 

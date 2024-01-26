@@ -9,7 +9,7 @@ The process involves the usual piping of shell commands, to get and process the 
 
 The result is like this: nginx logs into systemd-journal:
 
-![image](https://github.com/netdata/netdata/assets/2662304/16b471ff-c5a1-4fcc-bcd5-83551e089f6c)
+![image](https://github.com/khulnasoft/netdata/assets/2662304/16b471ff-c5a1-4fcc-bcd5-83551e089f6c)
 
 
 The overall process looks like this:
@@ -522,7 +522,7 @@ journalctl -f --namespace=nginx-logs
 
 Netdata will automatically pick the new namespace and present it at the list of sources of the dashboard.
 
-You can also instruct `systemd-cat-native` to log to a remote system, sending the logs to a `systemd-journal-remote` instance running on another server. Check [the manual of systemd-cat-native](https://github.com/netdata/netdata/blob/master/libnetdata/log/systemd-cat-native.md).
+You can also instruct `systemd-cat-native` to log to a remote system, sending the logs to a `systemd-journal-remote` instance running on another server. Check [the manual of systemd-cat-native](https://github.com/khulnasoft/netdata/blob/master/libnetdata/log/systemd-cat-native.md).
 
 
 ## Performance
@@ -905,8 +905,8 @@ You can find the most common fields at 'man systemd.journal-fields'.
 
 ```
 
-`log2journal` supports YAML configuration files, like the ones found [in this directory](https://github.com/netdata/netdata/tree/master/collectors/log2journal/log2journal.d).
+`log2journal` supports YAML configuration files, like the ones found [in this directory](https://github.com/khulnasoft/netdata/tree/master/collectors/log2journal/log2journal.d).
 
 ## `systemd-cat-native` options
 
-Read [the manual of systemd-cat-native](https://github.com/netdata/netdata/blob/master/libnetdata/log/systemd-cat-native.md).
+Read [the manual of systemd-cat-native](https://github.com/khulnasoft/netdata/blob/master/libnetdata/log/systemd-cat-native.md).

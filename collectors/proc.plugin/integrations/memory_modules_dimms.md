@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/integrations/memory_modules_dimms.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/integrations/memory_modules_dimms.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
 sidebar_label: "Memory modules (DIMMs)"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/Memory"
@@ -117,10 +117,10 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ ecc_memory_mc_noinfo_correctable ](https://github.com/netdata/netdata/blob/master/health/health.d/memory.conf) | mem.edac_mc | memory controller ${label:controller} ECC correctable errors (unknown DIMM slot) in the last 10 minutes |
-| [ ecc_memory_mc_noinfo_uncorrectable ](https://github.com/netdata/netdata/blob/master/health/health.d/memory.conf) | mem.edac_mc | memory controller ${label:controller} ECC uncorrectable errors (unknown DIMM slot) in the last 10 minutes |
-| [ ecc_memory_dimm_correctable ](https://github.com/netdata/netdata/blob/master/health/health.d/memory.conf) | mem.edac_mc_dimm | DIMM ${label:dimm} controller ${label:controller} (location ${label:dimm_location}) ECC correctable errors in the last 10 minutes |
-| [ ecc_memory_dimm_uncorrectable ](https://github.com/netdata/netdata/blob/master/health/health.d/memory.conf) | mem.edac_mc_dimm | DIMM ${label:dimm} controller ${label:controller} (location ${label:dimm_location}) ECC uncorrectable errors in the last 10 minutes |
+| [ ecc_memory_mc_noinfo_correctable ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/memory.conf) | mem.edac_mc | memory controller ${label:controller} ECC correctable errors (unknown DIMM slot) in the last 10 minutes |
+| [ ecc_memory_mc_noinfo_uncorrectable ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/memory.conf) | mem.edac_mc | memory controller ${label:controller} ECC uncorrectable errors (unknown DIMM slot) in the last 10 minutes |
+| [ ecc_memory_dimm_correctable ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/memory.conf) | mem.edac_mc_dimm | DIMM ${label:dimm} controller ${label:controller} (location ${label:dimm_location}) ECC correctable errors in the last 10 minutes |
+| [ ecc_memory_dimm_uncorrectable ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/memory.conf) | mem.edac_mc_dimm | DIMM ${label:dimm} controller ${label:controller} (location ${label:dimm_location}) ECC uncorrectable errors in the last 10 minutes |
 
 
 ## Setup

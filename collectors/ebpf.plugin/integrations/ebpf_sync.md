@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/ebpf.plugin/integrations/ebpf_sync.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/ebpf.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/ebpf.plugin/integrations/ebpf_sync.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/ebpf.plugin/metadata.yaml"
 sidebar_label: "eBPF Sync"
 learn_status: "Published"
 learn_rel_path: "Data Collection/eBPF"
@@ -80,7 +80,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ sync_freq ](https://github.com/netdata/netdata/blob/master/health/health.d/synchronization.conf) | mem.sync | number of sync() system calls. Every call causes all pending modifications to filesystem metadata and cached file data to be written to the underlying filesystems. |
+| [ sync_freq ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/synchronization.conf) | mem.sync | number of sync() system calls. Every call causes all pending modifications to filesystem metadata and cached file data to be written to the underlying filesystems. |
 
 
 ## Setup
@@ -118,7 +118,7 @@ The configuration file name for this integration is `ebpf.d/sync.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

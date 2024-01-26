@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/integrations/cloud-notifications/integrations/mattermost.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/integrations/cloud-notifications/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/integrations/cloud-notifications/integrations/mattermost.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/integrations/cloud-notifications/metadata.yaml"
 sidebar_label: "Mattermost"
 learn_status: "Published"
 learn_rel_path: "Alerting/Notifications/Centralized Cloud Notifications"

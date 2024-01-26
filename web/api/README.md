@@ -8,5 +8,5 @@ You can explore it using the **[Swagger UI](https://learn.netdata.cloud/api)**, 
 
 ## Netdata cloud API
 
-A very basic Netdata cloud REST API supports the [Grafana data source plugin](https://github.com/netdata/netdata-grafana-datasource-plugin/blob/master/README.md), 
+A very basic Netdata cloud REST API supports the [Grafana data source plugin](https://github.com/khulnasoft/netdata-grafana-datasource-plugin/blob/master/README.md), 
 but has not yet been expanded for wider use. We intend to provide a properly documented API in the future.

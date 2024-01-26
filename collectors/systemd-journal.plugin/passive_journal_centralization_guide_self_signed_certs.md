@@ -20,7 +20,7 @@ This means, that if both certificates are issued by the same certificate authori
 
 ## Self-signed certificates
 
-To simplify the process of creating and managing self-signed certificates, we have created [this bash script](https://github.com/netdata/netdata/blob/master/collectors/systemd-journal.plugin/systemd-journal-self-signed-certs.sh).
+To simplify the process of creating and managing self-signed certificates, we have created [this bash script](https://github.com/khulnasoft/netdata/blob/master/collectors/systemd-journal.plugin/systemd-journal-self-signed-certs.sh).
 
 This helps to also automate the distribution of the certificates to your servers (it generates a new bash script for each of your servers, which includes everything required, including the certificates).
 
@@ -196,7 +196,7 @@ The client should now be pushing logs to the central server.
 
 Here it is in action, in Netdata:
 
-![2023-10-18 16-23-05](https://github.com/netdata/netdata/assets/2662304/83bec232-4770-455b-8f1c-46b5de5f93a2)
+![2023-10-18 16-23-05](https://github.com/khulnasoft/netdata/assets/2662304/83bec232-4770-455b-8f1c-46b5de5f93a2)
 
 
 ## Verify it works

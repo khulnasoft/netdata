@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/integrations/system.ram.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/integrations/system.ram.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
 sidebar_label: "system.ram"
 learn_status: "Published"
 learn_rel_path: "Data Collection/FreeBSD"
@@ -75,10 +75,10 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ ram_in_use ](https://github.com/netdata/netdata/blob/master/health/health.d/ram.conf) | system.ram | system memory utilization |
-| [ ram_in_use ](https://github.com/netdata/netdata/blob/master/health/health.d/ram.conf) | system.ram | system memory utilization |
-| [ ram_available ](https://github.com/netdata/netdata/blob/master/health/health.d/ram.conf) | mem.available | percentage of estimated amount of RAM available for userspace processes, without causing swapping |
-| [ ram_available ](https://github.com/netdata/netdata/blob/master/health/health.d/ram.conf) | mem.available | percentage of estimated amount of RAM available for userspace processes, without causing swapping |
+| [ ram_in_use ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/ram.conf) | system.ram | system memory utilization |
+| [ ram_in_use ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/ram.conf) | system.ram | system memory utilization |
+| [ ram_available ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/ram.conf) | mem.available | percentage of estimated amount of RAM available for userspace processes, without causing swapping |
+| [ ram_available ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/ram.conf) | mem.available | percentage of estimated amount of RAM available for userspace processes, without causing swapping |
 
 
 ## Setup
@@ -105,7 +105,7 @@ The file format is a modified INI syntax. The general structure is:
     option3 = some third value
 ```
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

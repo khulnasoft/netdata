@@ -779,10 +779,10 @@ int help(int exitcode) {
             " All rights reserved.\n"
             "\n"
             " Home Page  : https://netdata.cloud\n"
-            " Source Code: https://github.com/netdata/netdata\n"
+            " Source Code: https://github.com/khulnasoft/netdata\n"
             " Docs       : https://learn.netdata.cloud\n"
-            " Support    : https://github.com/netdata/netdata/issues\n"
-            " License    : https://github.com/netdata/netdata/blob/master/LICENSE.md\n"
+            " Support    : https://github.com/khulnasoft/netdata/issues\n"
+            " License    : https://github.com/khulnasoft/netdata/blob/master/LICENSE.md\n"
             "\n"
             " Twitter    : https://twitter.com/netdatahq\n"
             " LinkedIn   : https://linkedin.com/company/netdata-cloud/\n"
@@ -1250,7 +1250,7 @@ static void get_netdata_configured_variables() {
     rrdhost_free_ephemeral_time_s = config_get_number(CONFIG_SECTION_DB, "cleanup ephemeral hosts after secs", rrdhost_free_ephemeral_time_s);
     // Current chart locking and invalidation scheme doesn't prevent Netdata from segmentation faults if a short
     // cleanup delay is set. Extensive stress tests showed that 10 seconds is quite a safe delay. Look at
-    // https://github.com/netdata/netdata/pull/11222#issuecomment-868367920 for more information.
+    // https://github.com/khulnasoft/netdata/pull/11222#issuecomment-868367920 for more information.
     if (rrdset_free_obsolete_time_s < 10) {
         rrdset_free_obsolete_time_s = 10;
         netdata_log_info("The \"cleanup obsolete charts after seconds\" option was set to 10 seconds.");

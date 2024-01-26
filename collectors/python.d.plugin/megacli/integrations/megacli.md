@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/megacli/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/megacli/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/megacli/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/megacli/metadata.yaml"
 sidebar_label: "MegaCLI"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Storage, Mount Points and Filesystems"
@@ -96,11 +96,11 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ megacli_adapter_state ](https://github.com/netdata/netdata/blob/master/health/health.d/megacli.conf) | megacli.adapter_degraded | adapter is in the degraded state (0: false, 1: true) |
-| [ megacli_pd_media_errors ](https://github.com/netdata/netdata/blob/master/health/health.d/megacli.conf) | megacli.pd_media_error | number of physical drive media errors |
-| [ megacli_pd_predictive_failures ](https://github.com/netdata/netdata/blob/master/health/health.d/megacli.conf) | megacli.pd_predictive_failure | number of physical drive predictive failures |
-| [ megacli_bbu_relative_charge ](https://github.com/netdata/netdata/blob/master/health/health.d/megacli.conf) | megacli.bbu_relative_charge | average battery backup unit (BBU) relative state of charge over the last 10 seconds |
-| [ megacli_bbu_cycle_count ](https://github.com/netdata/netdata/blob/master/health/health.d/megacli.conf) | megacli.bbu_cycle_count | average battery backup unit (BBU) charge cycles count over the last 10 seconds |
+| [ megacli_adapter_state ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/megacli.conf) | megacli.adapter_degraded | adapter is in the degraded state (0: false, 1: true) |
+| [ megacli_pd_media_errors ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/megacli.conf) | megacli.pd_media_error | number of physical drive media errors |
+| [ megacli_pd_predictive_failures ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/megacli.conf) | megacli.pd_predictive_failure | number of physical drive predictive failures |
+| [ megacli_bbu_relative_charge ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/megacli.conf) | megacli.bbu_relative_charge | average battery backup unit (BBU) relative state of charge over the last 10 seconds |
+| [ megacli_bbu_cycle_count ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/megacli.conf) | megacli.bbu_cycle_count | average battery backup unit (BBU) charge cycles count over the last 10 seconds |
 
 
 ## Setup
@@ -142,7 +142,7 @@ The configuration file name for this integration is `python.d/megacli.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

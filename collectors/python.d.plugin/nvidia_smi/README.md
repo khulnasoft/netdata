@@ -1,6 +1,6 @@
 <!--
 title: "Nvidia GPU monitoring with Netdata"
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/nvidia_smi/README.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/nvidia_smi/README.md"
 sidebar_label: "nvidia_smi-python.d.plugin"
 learn_status: "Published"
 learn_topic_type: "References"
@@ -22,10 +22,10 @@ Monitors performance metrics (memory usage, fan speed, pcie bandwidth utilizatio
     Remove the '#' before nvidia_smi so it reads: `nvidia_smi: yes`.
 
 -   On some systems when the GPU is idle the `nvidia-smi` tool unloads and there is added latency again when it is next queried. If you are running GPUs under constant workload this isn't likely to be an issue.
--   Currently the `nvidia-smi` tool is being queried via cli. Updating the plugin to use the nvidia c/c++ API directly should resolve this issue. See discussion here: <https://github.com/netdata/netdata/pull/4357>
+-   Currently the `nvidia-smi` tool is being queried via cli. Updating the plugin to use the nvidia c/c++ API directly should resolve this issue. See discussion here: <https://github.com/khulnasoft/netdata/pull/4357>
 -   Contributions are welcome.
 -   Make sure `netdata` user can execute `/usr/bin/nvidia-smi` or wherever your binary is.
--   If `nvidia-smi` process [is not killed after netdata restart](https://github.com/netdata/netdata/issues/7143) you need to off `loop_mode`.
+-   If `nvidia-smi` process [is not killed after netdata restart](https://github.com/khulnasoft/netdata/issues/7143) you need to off `loop_mode`.
 -   `poll_seconds` is how often in seconds the tool is polled for as an integer.
 
 ## Charts
@@ -48,7 +48,7 @@ It produces the following charts:
 ## Configuration
 
 Edit the `python.d/nvidia_smi.conf` configuration file using `edit-config` from the Netdata [config
-directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md), which is typically at `/etc/netdata`.
+directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md), which is typically at `/etc/netdata`.
 
 ```bash
 cd /etc/netdata   # Replace this path with your Netdata config directory, if different

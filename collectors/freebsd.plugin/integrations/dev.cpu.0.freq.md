@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/integrations/dev.cpu.0.freq.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/integrations/dev.cpu.0.freq.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
 sidebar_label: "dev.cpu.0.freq"
 learn_status: "Published"
 learn_rel_path: "Data Collection/FreeBSD"
@@ -87,7 +87,7 @@ Configuration for this specific integration is located in the `[plugin:freebsd]`
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

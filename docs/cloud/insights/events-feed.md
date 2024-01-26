@@ -1,7 +1,7 @@
 <!--
 title: "Events feed"
 sidebar_label: "Events feed"
-custom_edit_url: "https://github.com/netdata/netdata/blob/master/docs/cloud/insights/events-feed.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/blob/master/docs/cloud/insights/events-feed.md"
 sidebar_position: "2800"
 learn_status: "Published"
 learn_topic_type: "Concepts"
@@ -69,7 +69,7 @@ At a high-level view, these are the domains from which the Events feed will prov
 
 ## Who can access the events?
 
-All users will be able to see events from the Topology and Alerts domain but Auditing events, once these are added, only be accessible to administrators. For more details checkout [Netdata Role-Based Access model](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/role-based-access.md).
+All users will be able to see events from the Topology and Alerts domain but Auditing events, once these are added, only be accessible to administrators. For more details checkout [Netdata Role-Based Access model](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/role-based-access.md).
 
 ## How to use the events feed
 

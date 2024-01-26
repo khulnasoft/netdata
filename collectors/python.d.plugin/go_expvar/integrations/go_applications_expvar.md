@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/go_expvar/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/go_expvar/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/go_expvar/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/go_expvar/metadata.yaml"
 sidebar_label: "Go applications (EXPVAR)"
 learn_status: "Published"
 learn_rel_path: "Data Collection/APM"
@@ -84,14 +84,14 @@ There are no alerts configured by default for this integration.
 
 #### Enable the go_expvar collector
 
-The `go_expvar` collector is disabled by default. To enable it, use `edit-config` from the Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md), which is typically at `/etc/netdata`, to edit the `python.d.conf` file.
+The `go_expvar` collector is disabled by default. To enable it, use `edit-config` from the Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md), which is typically at `/etc/netdata`, to edit the `python.d.conf` file.
 
 ```bash
 cd /etc/netdata   # Replace this path with your Netdata config directory, if different
 sudo ./edit-config python.d.conf
 ```
 
-Change the value of the `go_expvar` setting to `yes`. Save the file and restart the Netdata Agent with `sudo systemctl restart netdata`, or the [appropriate method](https://github.com/netdata/netdata/blob/master/docs/configure/start-stop-restart.md) for your system.
+Change the value of the `go_expvar` setting to `yes`. Save the file and restart the Netdata Agent with `sudo systemctl restart netdata`, or the [appropriate method](https://github.com/khulnasoft/netdata/blob/master/docs/configure/start-stop-restart.md) for your system.
 
 
 #### Sample `expvar` usage in a Go application
@@ -172,7 +172,7 @@ The configuration file name for this integration is `python.d/go_expvar.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata
@@ -227,12 +227,12 @@ lines:      a list of line definitions
 ```
 
 **Note: please do not use dots in the chart or line ID field.
-See [this issue](https://github.com/netdata/netdata/pull/1902#issuecomment-284494195) for explanation.**
+See [this issue](https://github.com/khulnasoft/netdata/pull/1902#issuecomment-284494195) for explanation.**
 
 Please see these two links to the official Netdata documentation for more information about the values:
 
--   [External plugins - charts](https://github.com/netdata/netdata/blob/master/collectors/plugins.d/README.md#chart)
--   [Chart variables](https://github.com/netdata/netdata/blob/master/collectors/python.d.plugin/README.md#global-variables-order-and-chart)
+-   [External plugins - charts](https://github.com/khulnasoft/netdata/blob/master/collectors/plugins.d/README.md#chart)
+-   [Chart variables](https://github.com/khulnasoft/netdata/blob/master/collectors/python.d.plugin/README.md#global-variables-order-and-chart)
 
 **Line definitions**
 
@@ -255,7 +255,7 @@ hidden: False
 ```
 
 Please see the following link for more information about the options and their default values:
-[External plugins - dimensions](https://github.com/netdata/netdata/blob/master/collectors/plugins.d/README.md#dimension)
+[External plugins - dimensions](https://github.com/khulnasoft/netdata/blob/master/collectors/plugins.d/README.md#dimension)
 
 Apart from top-level expvars, this plugin can also parse expvars stored in a multi-level map;
 All dicts in the resulting JSON document are then flattened to one level.

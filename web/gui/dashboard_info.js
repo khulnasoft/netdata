@@ -36,7 +36,7 @@ netdataDashboard.menu = {
         title: 'Quality of Service',
         icon: '<i class="fas fa-globe"></i>',
         info: 'Netdata collects and visualizes <code>tc</code> class utilization using its ' +
-            '<a href="https://github.com/netdata/netdata/blob/master/collectors/tc.plugin/tc-qos-helper.sh.in" target="_blank">tc-helper plugin</a>. ' +
+            '<a href="https://github.com/khulnasoft/netdata/blob/master/collectors/tc.plugin/tc-qos-helper.sh.in" target="_blank">tc-helper plugin</a>. ' +
             'If you also use <a href="http://firehol.org/#fireqos" target="_blank">FireQOS</a> for setting up QoS, ' +
             'netdata automatically collects interface and class names. If your QoS configuration includes overheads ' +
             'calculation, the values shown here will include these overheads (the total bandwidth for the same ' +
@@ -702,13 +702,13 @@ netdataDashboard.menu = {
     'anomalies': {
         title: 'Anomalies',
         icon: '<i class="fas fa-flask"></i>',
-        info: 'Anomaly scores relating to key system metrics. A high anomaly probability indicates strange behaviour and may trigger an anomaly prediction from the trained models. Read the <a href="https://github.com/netdata/netdata/tree/master/collectors/python.d.plugin/anomalies" target="_blank">anomalies collector docs</a> for more details.'
+        info: 'Anomaly scores relating to key system metrics. A high anomaly probability indicates strange behaviour and may trigger an anomaly prediction from the trained models. Read the <a href="https://github.com/khulnasoft/netdata/tree/master/collectors/python.d.plugin/anomalies" target="_blank">anomalies collector docs</a> for more details.'
     },
 
     'alarms': {
         title: 'Alarms',
         icon: '<i class="fas fa-bell"></i>',
-        info: 'Charts showing alarm status over time. More details <a href="https://github.com/netdata/netdata/blob/master/collectors/python.d.plugin/alarms/README.md" target="_blank">here</a>.'
+        info: 'Charts showing alarm status over time. More details <a href="https://github.com/khulnasoft/netdata/blob/master/collectors/python.d.plugin/alarms/README.md" target="_blank">here</a>.'
     },
 
     'statsd': { 
@@ -739,7 +739,7 @@ netdataDashboard.menu = {
     'changefinder': {
         title: 'ChangeFinder',
         icon: '<i class="fas fa-flask"></i>',
-        info: 'Online changepoint detection using machine learning. More details <a href="https://github.com/netdata/netdata/blob/master/collectors/python.d.plugin/changefinder/README.md" target="_blank">here</a>.'
+        info: 'Online changepoint detection using machine learning. More details <a href="https://github.com/khulnasoft/netdata/blob/master/collectors/python.d.plugin/changefinder/README.md" target="_blank">here</a>.'
     },
 
     'zscores': {
@@ -2840,13 +2840,13 @@ netdataDashboard.context = {
 
     'apps.vmem': {
         info: 'Virtual memory allocated by applications. '+
-        'Check <a href="https://github.com/netdata/netdata/tree/master/daemon#virtual-memory" target="_blank">this article</a> for more information.'
+        'Check <a href="https://github.com/khulnasoft/netdata/tree/master/daemon#virtual-memory" target="_blank">this article</a> for more information.'
     },
     'groups.vmem': {
-        info: 'Virtual memory allocated per user group since the Netdata restart. Please check <a href="https://github.com/netdata/netdata/tree/master/daemon#virtual-memory" target="_blank">this article</a> for more information.'
+        info: 'Virtual memory allocated per user group since the Netdata restart. Please check <a href="https://github.com/khulnasoft/netdata/tree/master/daemon#virtual-memory" target="_blank">this article</a> for more information.'
     },
     'users.vmem': {
-        info: 'Virtual memory allocated per user since the Netdata restart. Please check <a href="https://github.com/netdata/netdata/tree/master/daemon#virtual-memory" target="_blank">this article</a> for more information.'
+        info: 'Virtual memory allocated per user since the Netdata restart. Please check <a href="https://github.com/khulnasoft/netdata/tree/master/daemon#virtual-memory" target="_blank">this article</a> for more information.'
     },
 
     'apps.minor_faults': {
@@ -6108,7 +6108,7 @@ netdataDashboard.context = {
             '<code>4xx</code> are bad requests, ' +
             '<code>5xx</code> are internal server errors, ' +
             '<code>other</code> are non-standard responses, ' +
-            '<code>unmatched</code> counts the lines in the log file that are not matched by the plugin (<a href="https://github.com/netdata/netdata/issues/new?title=web_log%20reports%20unmatched%20lines&body=web_log%20plugin%20reports%20unmatched%20lines.%0A%0AThis%20is%20my%20log:%0A%0A%60%60%60txt%0A%0Aplease%20paste%20your%20web%20server%20log%20here%0A%0A%60%60%60" target="_blank">let us know</a> if you have any unmatched).'
+            '<code>unmatched</code> counts the lines in the log file that are not matched by the plugin (<a href="https://github.com/khulnasoft/netdata/issues/new?title=web_log%20reports%20unmatched%20lines&body=web_log%20plugin%20reports%20unmatched%20lines.%0A%0AThis%20is%20my%20log:%0A%0A%60%60%60txt%0A%0Aplease%20paste%20your%20web%20server%20log%20here%0A%0A%60%60%60" target="_blank">let us know</a> if you have any unmatched).'
     },
 
     'web_log.response_time': {
@@ -6243,7 +6243,7 @@ netdataDashboard.context = {
             'Squid also defines <code>000</code> mostly for UDP requests, and ' +
             '<code>6xx</code> for broken upstream servers sending wrong headers. ' +
             'Finally, <code>other</code> are non-standard responses, and ' +
-            '<code>unmatched</code> counts the lines in the log file that are not matched by the plugin (<a href="https://github.com/netdata/netdata/issues/new?title=web_log%20reports%20unmatched%20lines&body=web_log%20plugin%20reports%20unmatched%20lines.%0A%0AThis%20is%20my%20log:%0A%0A%60%60%60txt%0A%0Aplease%20paste%20your%20web%20server%20log%20here%0A%0A%60%60%60" target="_blank">let us know</a> if you have any unmatched).'
+            '<code>unmatched</code> counts the lines in the log file that are not matched by the plugin (<a href="https://github.com/khulnasoft/netdata/issues/new?title=web_log%20reports%20unmatched%20lines&body=web_log%20plugin%20reports%20unmatched%20lines.%0A%0AThis%20is%20my%20log:%0A%0A%60%60%60txt%0A%0Aplease%20paste%20your%20web%20server%20log%20here%0A%0A%60%60%60" target="_blank">let us know</a> if you have any unmatched).'
     },
 
     'web_log.squid_duration': {
@@ -6987,7 +6987,7 @@ netdataDashboard.context = {
     },
 
     'squidlog.excluded_requests': {
-        info: '<code>unmatched</code> counts the lines in the log file that are not matched by the plugin parser (<a href="https://github.com/netdata/netdata/issues/new?title=squidlog%20reports%20unmatched%20lines&body=squidlog%20plugin%20reports%20unmatched%20lines.%0A%0AThis%20is%20my%20log:%0A%0A%60%60%60txt%0A%0Aplease%20paste%20your%20squid%20server%20log%20here%0A%0A%60%60%60" target="_blank">let us know</a> if you have any unmatched).'
+        info: '<code>unmatched</code> counts the lines in the log file that are not matched by the plugin parser (<a href="https://github.com/khulnasoft/netdata/issues/new?title=squidlog%20reports%20unmatched%20lines&body=squidlog%20plugin%20reports%20unmatched%20lines.%0A%0AThis%20is%20my%20log:%0A%0A%60%60%60txt%0A%0Aplease%20paste%20your%20squid%20server%20log%20here%0A%0A%60%60%60" target="_blank">let us know</a> if you have any unmatched).'
     },
 
     'squidlog.type_requests': {

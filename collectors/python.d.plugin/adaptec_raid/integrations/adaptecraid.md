@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/adaptec_raid/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/adaptec_raid/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/adaptec_raid/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/adaptec_raid/metadata.yaml"
 sidebar_label: "AdaptecRAID"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Storage, Mount Points and Filesystems"
@@ -84,8 +84,8 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ adaptec_raid_ld_status ](https://github.com/netdata/netdata/blob/master/health/health.d/adaptec_raid.conf) | adaptec_raid.ld_status | logical device status is failed or degraded |
-| [ adaptec_raid_pd_state ](https://github.com/netdata/netdata/blob/master/health/health.d/adaptec_raid.conf) | adaptec_raid.pd_state | physical device state is not online |
+| [ adaptec_raid_ld_status ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/adaptec_raid.conf) | adaptec_raid.ld_status | logical device status is failed or degraded |
+| [ adaptec_raid_pd_state ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/adaptec_raid.conf) | adaptec_raid.pd_state | physical device state is not online |
 
 
 ## Setup
@@ -127,7 +127,7 @@ The configuration file name for this integration is `python.d/adaptec_raid.conf`
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

@@ -265,8 +265,8 @@ following:
 </VirtualHost>
 ```
 
-See issues [#2011](https://github.com/netdata/netdata/issues/2011) and
-[#7658](https://github.com/netdata/netdata/issues/7568) for more information.
+See issues [#2011](https://github.com/khulnasoft/netdata/issues/2011) and
+[#7658](https://github.com/khulnasoft/netdata/issues/7568) for more information.
 
 # Netdata configuration
 
@@ -342,7 +342,7 @@ If your apache server is not on localhost, you can set:
 
 *note: Netdata v1.9+ support `allow connections from`*
 
-`allow connections from` accepts [Netdata simple patterns](https://github.com/netdata/netdata/blob/master/libnetdata/simple_pattern/README.md) to match against the connection IP address.
+`allow connections from` accepts [Netdata simple patterns](https://github.com/khulnasoft/netdata/blob/master/libnetdata/simple_pattern/README.md) to match against the connection IP address.
 
 ## Prevent the double access.log
 

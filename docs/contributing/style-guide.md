@@ -3,7 +3,7 @@
 The _Netdata style guide_ establishes editorial guidelines for any writing produced by the Netdata team or the Netdata community, including documentation, articles, in-product UX copy, and more.
 
 > ### Note
-> This document is meant to be accompanied by the [Documentation Guidelines](https://github.com/netdata/netdata/blob/master/docs/guidelines.md). If you want to contribute to Netdata's documentation, please read it too.
+> This document is meant to be accompanied by the [Documentation Guidelines](https://github.com/khulnasoft/netdata/blob/master/docs/guidelines.md). If you want to contribute to Netdata's documentation, please read it too.
 
 Both internal Netdata teams and external contributors to any of Netdata's open-source projects should reference and adhere to this style guide as much as possible.
 
@@ -229,7 +229,7 @@ Do not mention future releases or upcoming features in writing unless they have 
 public roadmap.
 
 In particular, documentation must describe, as accurately as possible, the Netdata Agent _as of the [latest
-commit](https://github.com/netdata/netdata/commits/master) in the GitHub repository_. For Netdata Cloud, documentation
+commit](https://github.com/khulnasoft/netdata/commits/master) in the GitHub repository_. For Netdata Cloud, documentation
 must reflect the _current state of [production](https://app.netdata.cloud).
 
 ### Informational links
@@ -239,8 +239,8 @@ reader.
 
 |                 |                                                                                                                                         |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Not recommended | To install Netdata, click [here](https://github.com/netdata/netdata/blob/master/packaging/installer/README.md).                         |
-| **Recommended** | To install Netdata, read the [installation instructions](https://github.com/netdata/netdata/blob/master/packaging/installer/README.md). |
+| Not recommended | To install Netdata, click [here](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/README.md).                         |
+| **Recommended** | To install Netdata, read the [installation instructions](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/README.md). |
 
 Use links as often as required to provide necessary context. Blog posts and guides require less hyperlinks than
 documentation. See the section on [linking between documentation](#linking-between-documentation) for guidance on the
@@ -295,7 +295,7 @@ Netdata Agent installation will have commands under the same paths. When applica
 path, providing a recommendation or instructions on how to view the running configuration, which includes the correct
 paths.
 
-For example, the [configuration](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md) doc first
+For example, the [configuration](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md) doc first
 teaches users how to find the Netdata config
 directory and navigate to it, then runs commands from the `/etc/netdata` path so that the instructions are more
 universal.
@@ -305,7 +305,7 @@ Don't include full paths, beginning from the system's root (`/`), as these might
 |                 |                                                                                                                                                                                                                                                                                                    |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Not recommended | Use `edit-config` to edit Netdata's configuration: `sudo /etc/netdata/edit-config netdata.conf`.                                                                                                                                                                                                   |
-| **Recommended** | Use `edit-config` to edit Netdata's configuration by first navigating to your [Netdata config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory), which is typically at `/etc/netdata`, then running `sudo edit-config netdata.conf`. |
+| **Recommended** | Use `edit-config` to edit Netdata's configuration by first navigating to your [Netdata config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory), which is typically at `/etc/netdata`, then running `sudo edit-config netdata.conf`. |
 
 ### `sudo`
 
@@ -343,7 +343,7 @@ The Netdata team uses [`remark-lint`](https://github.com/remarkjs/remark-lint) f
 - Tables should be padded so that pipes line up vertically with added whitespace.
 
 If you want to see all the settings, open the
-[`remarkrc.js`](https://github.com/netdata/netdata/blob/master/.remarkrc.js) file in the `netdata/netdata` repository.
+[`remarkrc.js`](https://github.com/khulnasoft/netdata/blob/master/.remarkrc.js) file in the `netdata/netdata` repository.
 
 ### References to UI elements
 
@@ -366,7 +366,7 @@ In Markdown, use the standard image syntax, `![]()`, and place the alt text betw
 using our logo:
 
 ```markdown
-![The Netdata logo](https://github.com/netdata/netdata/blob/master/web/gui/static/img/netdata-logomark.svg)
+![The Netdata logo](https://github.com/khulnasoft/netdata/blob/master/web/gui/static/img/netdata-logomark.svg)
 ```
 
 Reference in-product text, code samples, and terminal output with actual text content, not screen captures or other
@@ -466,14 +466,14 @@ The following tables describe the standard spelling, capitalization, and usage o
 
 | Term                        | Definition                                                                                                                                                                                                                                                                                                                                                                                                            |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **claimed node**            | A node that you've proved ownership of by completing the [connecting to Cloud process](https://github.com/netdata/netdata/blob/master/claim/README.md). The claimed node will then appear in your Space and any War Rooms you added it to.                                                                                                                                                                            |
+| **claimed node**            | A node that you've proved ownership of by completing the [connecting to Cloud process](https://github.com/khulnasoft/netdata/blob/master/claim/README.md). The claimed node will then appear in your Space and any War Rooms you added it to.                                                                                                                                                                            |
 | **Netdata**                 | The company behind the open-source Netdata Agent and the Netdata Cloud web application. Never use _netdata_ or _NetData_. <br /><br />In general, focus on the user's goals, actions, and solutions rather than what the company provides. For example, write _Learn more about enabling alert notifications on your preferred platforms_ instead of _Netdata sends alert notifications to your preferred platforms_. |
-| **Netdata Agent**           | The free and open source [monitoring agent](https://github.com/netdata/netdata) that you can install on all of your distributed systems, whether they're physical, virtual, containerized, ephemeral, and more. The Agent monitors systems running Linux, Docker, Kubernetes, macOS, FreeBSD, and more, and collects metrics from hundreds of popular services and applications.                                      |
+| **Netdata Agent**           | The free and open source [monitoring agent](https://github.com/khulnasoft/netdata) that you can install on all of your distributed systems, whether they're physical, virtual, containerized, ephemeral, and more. The Agent monitors systems running Linux, Docker, Kubernetes, macOS, FreeBSD, and more, and collects metrics from hundreds of popular services and applications.                                      |
 | **Netdata Cloud**           | The web application hosted at [https://app.netdata.cloud](https://app.netdata.cloud) that helps you monitor an entire infrastructure of distributed systems in real time. <br /><br />Never use _Cloud_ without the preceding _Netdata_ to avoid ambiguity.                                                                                                                                                           |
 | **Netdata community forum** | The Discourse-powered forum for feature requests, Netdata Cloud technical support, and conversations about Netdata's monitoring and troubleshooting products.                                                                                                                                                                                                                                                         |
 | **node**                    | A system on which the Netdata Agent is installed. The system can be physical, virtual, in a Docker container, and more. Depending on your infrastructure, you may have one, dozens, or hundreds of nodes. Some nodes are _ephemeral_, in that they're created/destroyed automatically by an orchestrator service.                                                                                                     |
 | **Space**                   | The highest level container within Netdata Cloud for a user to organize their team members and nodes within their infrastructure. A Space likely represents an entire organization or a large team. <br /><br />_Space_ is always capitalized.                                                                                                                                                                        |
-| **unreachable node**        | A connected node with a disrupted [Agent-Cloud link](https://github.com/netdata/netdata/blob/master/aclk/README.md). Unreachable could mean the node no longer exists or is experiencing network connectivity issues with Cloud.                                                                                                                                                                                      |
+| **unreachable node**        | A connected node with a disrupted [Agent-Cloud link](https://github.com/khulnasoft/netdata/blob/master/aclk/README.md). Unreachable could mean the node no longer exists or is experiencing network connectivity issues with Cloud.                                                                                                                                                                                      |
 | **visited node**            | A node which has had its Agent dashboard directly visited by a user. A list of these is maintained on a per-user basis.                                                                                                                                                                                                                                                                                               |
 | **War Room**                | A smaller grouping of nodes where users can view key metrics in real-time and monitor the health of many nodes with their alert status. War Rooms can be used to organize nodes in any way that makes sense for your infrastructure, such as by a service, purpose, physical location, and more.  <br /><br />_War Room_ is always capitalized.                                                                       |
 

@@ -1,6 +1,6 @@
 <!--
 title: "Netdata for IoT"
-custom_edit_url: https://github.com/netdata/netdata/edit/master/docs/netdata-for-IoT.md
+custom_edit_url: https://github.com/khulnasoft/netdata/edit/master/docs/netdata-for-IoT.md
 sidebar_label: "Netdata for IoT"
 learn_status: "Published"
 learn_rel_path: "Miscellaneous"
@@ -28,7 +28,7 @@ learn_rel_path: "Miscellaneous"
 
 ---
 
-Netdata is a [very efficient](https://github.com/netdata/netdata/blob/master/docs/guides/configure/performance.md)
+Netdata is a [very efficient](https://github.com/khulnasoft/netdata/blob/master/docs/guides/configure/performance.md)
 server performance monitoring solution. When running in server hardware, it can collect
 thousands of system and application metrics **per second** with just 1% CPU utilization of a single core. Its web server
 responds to most data requests in about **half a millisecond** making its web dashboards spontaneous, amazingly fast!
@@ -48,7 +48,7 @@ provider so it can directly be used by google sheets, google charts, google widg
 
 Although Netdata has been significantly optimized to lower the CPU and RAM resources it consumes, the plethora of data
 collection plugins may be inappropriate for weak IoT devices. Please follow
-the [Netdata Agent performance guide](https://github.com/netdata/netdata/blob/master/docs/guides/configure/performance.md)
+the [Netdata Agent performance guide](https://github.com/khulnasoft/netdata/blob/master/docs/guides/configure/performance.md)
 
 ## Monitoring RPi temperature
 

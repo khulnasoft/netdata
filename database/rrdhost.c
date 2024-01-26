@@ -1446,7 +1446,7 @@ static void rrdhost_load_auto_labels(void) {
     add_aclk_host_labels();
 
     // The source should be CONF, but when it is set, these labels are exported by default ('send configured labels' in exporting.conf).
-    // Their export seems to break exporting to Graphite, see https://github.com/netdata/netdata/issues/14084.
+    // Their export seems to break exporting to Graphite, see https://github.com/khulnasoft/netdata/issues/14084.
 
     int is_ephemeral = appconfig_get_boolean(&netdata_config, CONFIG_SECTION_GLOBAL, "is ephemeral node", CONFIG_BOOLEAN_NO);
     rrdlabels_add(labels, "_is_ephemeral", is_ephemeral ? "true" : "false", RRDLABEL_SRC_AUTO);

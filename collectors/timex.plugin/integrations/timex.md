@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/timex.plugin/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/timex.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/timex.plugin/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/timex.plugin/metadata.yaml"
 sidebar_label: "Timex"
 learn_status: "Published"
 learn_rel_path: "Data Collection/System Clock and NTP"
@@ -76,7 +76,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ system_clock_sync_state ](https://github.com/netdata/netdata/blob/master/health/health.d/timex.conf) | system.clock_sync_state | when set to 0, the system kernel believes the system clock is not properly synchronized to a reliable server |
+| [ system_clock_sync_state ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/timex.conf) | system.clock_sync_state | when set to 0, the system kernel believes the system clock is not properly synchronized to a reliable server |
 
 
 ## Setup
@@ -103,7 +103,7 @@ The file format is a modified INI syntax. The general structure is:
     option3 = some third value
 ```
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

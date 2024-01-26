@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/integrations/kern.cp_time.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/integrations/kern.cp_time.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
 sidebar_label: "kern.cp_time"
 learn_status: "Published"
 learn_rel_path: "Data Collection/FreeBSD"
@@ -86,10 +86,10 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ 10min_cpu_usage ](https://github.com/netdata/netdata/blob/master/health/health.d/cpu.conf) | system.cpu | average CPU utilization over the last 10 minutes (excluding iowait, nice and steal) |
-| [ 10min_cpu_iowait ](https://github.com/netdata/netdata/blob/master/health/health.d/cpu.conf) | system.cpu | average CPU iowait time over the last 10 minutes |
-| [ 20min_steal_cpu ](https://github.com/netdata/netdata/blob/master/health/health.d/cpu.conf) | system.cpu | average CPU steal time over the last 20 minutes |
-| [ 10min_cpu_usage ](https://github.com/netdata/netdata/blob/master/health/health.d/cpu.conf) | system.cpu | average CPU utilization over the last 10 minutes (excluding nice) |
+| [ 10min_cpu_usage ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/cpu.conf) | system.cpu | average CPU utilization over the last 10 minutes (excluding iowait, nice and steal) |
+| [ 10min_cpu_iowait ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/cpu.conf) | system.cpu | average CPU iowait time over the last 10 minutes |
+| [ 20min_steal_cpu ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/cpu.conf) | system.cpu | average CPU steal time over the last 20 minutes |
+| [ 10min_cpu_usage ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/cpu.conf) | system.cpu | average CPU utilization over the last 10 minutes (excluding nice) |
 
 
 ## Setup
@@ -115,7 +115,7 @@ The file format is a modified INI syntax. The general structure is:
     option3 = some third value
 ```
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

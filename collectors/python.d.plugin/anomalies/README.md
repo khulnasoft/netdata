@@ -1,7 +1,7 @@
 <!--
 title: "Anomaly detection with Netdata"
 description: "Use ML-driven anomaly detection to narrow your focus to only affected metrics and services/processes on your node to shorten root cause analysis."
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/anomalies/README.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/anomalies/README.md"
 sidebar_url: "Anomalies"
 sidebar_label: "anomalies"
 learn_status: "Published"
@@ -10,7 +10,7 @@ learn_rel_path: "Integrations/Monitor/Anything"
 
 # Anomaly detection with Netdata
 
-**Note**: Check out the [Netdata Anomaly Advisor](https://github.com/netdata/netdata/blob/master/docs/cloud/insights/anomaly-advisor.md) for a more native anomaly detection experience within Netdata.
+**Note**: Check out the [Netdata Anomaly Advisor](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/insights/anomaly-advisor.md) for a more native anomaly detection experience within Netdata.
 
 This collector uses the Python [PyOD](https://pyod.readthedocs.io/en/latest/index.html) library to perform unsupervised [anomaly detection](https://en.wikipedia.org/wiki/Anomaly_detection) on your Netdata charts and/or dimensions.
 
@@ -73,7 +73,7 @@ The configuration for the anomalies collector defines how it will behave on your
 _**Note**: If you are unsure about any of the below configuration options then it's best to just ignore all this and leave the `anomalies.conf` file alone to begin with. Then you can return to it later if you would like to tune things a bit more once the collector is running for a while and you have a feeling for its performance on your node._
 
 Edit the `python.d/anomalies.conf` configuration file using `edit-config` from the your agent's [config
-directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md), which is usually at `/etc/netdata`.
+directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md), which is usually at `/etc/netdata`.
 
 ```bash
 cd /etc/netdata   # Replace this path with your Netdata config directory, if different
@@ -180,7 +180,7 @@ In the `anomalies.conf` file you can also define some "custom models" which you 
 
 To define a custom model you would include configuration like below in `anomalies.conf`. By default there should already be some commented out examples in there. 
 
-`name` is a name you give your custom model, this is what will appear alongside any other specified charts in the `anomalies.probability` and `anomalies.anomaly` charts. `dimensions` is a string of metrics you want to include in your custom model. By default the [netdata-pandas](https://github.com/netdata/netdata-pandas) library used to pull the data from Netdata uses a "chart.a|dim.1" type of naming convention in the pandas columns it returns, hence the `dimensions` string should look like "chart.name|dimension.name,chart.name|dimension.name". The examples below hopefully make this clear.
+`name` is a name you give your custom model, this is what will appear alongside any other specified charts in the `anomalies.probability` and `anomalies.anomaly` charts. `dimensions` is a string of metrics you want to include in your custom model. By default the [netdata-pandas](https://github.com/khulnasoft/netdata-pandas) library used to pull the data from Netdata uses a "chart.a|dim.1" type of naming convention in the pandas columns it returns, hence the `dimensions` string should look like "chart.name|dimension.name,chart.name|dimension.name". The examples below hopefully make this clear.
 
 ```yaml
 custom_models:
@@ -219,7 +219,7 @@ If you would like to go deeper on what exactly the anomalies collector is doing 
 
 ## Notes
 
-- Python 3 is required as the [`netdata-pandas`](https://github.com/netdata/netdata-pandas) package uses Python async libraries ([asks](https://pypi.org/project/asks/) and [trio](https://pypi.org/project/trio/)) to make asynchronous calls to the [Netdata REST API](https://github.com/netdata/netdata/blob/master/web/api/README.md) to get the required data for each chart.
+- Python 3 is required as the [`netdata-pandas`](https://github.com/khulnasoft/netdata-pandas) package uses Python async libraries ([asks](https://pypi.org/project/asks/) and [trio](https://pypi.org/project/trio/)) to make asynchronous calls to the [Netdata REST API](https://github.com/khulnasoft/netdata/blob/master/web/api/README.md) to get the required data for each chart.
 - Python 3 is also required for the underlying ML libraries of [numba](https://pypi.org/project/numba/), [scikit-learn](https://pypi.org/project/scikit-learn/), and [PyOD](https://pypi.org/project/pyod/).
 - It may take a few hours or so (depending on your choice of `train_secs_n`) for the collector to 'settle' into it's typical behaviour in terms of the trained models and probabilities you will see in the normal running of your node.
 - As this collector does most of the work in Python itself, with [PyOD](https://pyod.readthedocs.io/en/latest/) leveraging [numba](https://numba.pydata.org/) under the hood, you may want to try it out first on a test or development system to get a sense of its performance characteristics on a node similar to where you would like to use it.
@@ -234,7 +234,7 @@ If you would like to go deeper on what exactly the anomalies collector is doing 
 - If you activate this collector on a fresh node, it might take a little while to build up enough data to calculate a realistic and useful model.
 - Some models like `iforest` can be comparatively expensive (on same n1-standard-2 system above ~2s runtime during predict, ~40s training time, ~50% cpu on both train and predict) so if you would like to use it you might be advised to set a relatively high `update_every` maybe 10, 15 or 30 in `anomalies.conf`.
 - Setting a higher `train_every_n` and `update_every` is an easy way to devote less resources on the node to anomaly detection. Specifying less charts and a lower `train_n_secs` will also help reduce resources at the expense of covering less charts and maybe a more noisy model if you set `train_n_secs` to be too small for how your node tends to behave.
-- If you would like to enable this on a Raspberry Pi, then check out [this guide](https://github.com/netdata/netdata/blob/master/docs/guides/monitor/raspberry-pi-anomaly-detection.md) which will guide you through first installing LLVM.
+- If you would like to enable this on a Raspberry Pi, then check out [this guide](https://github.com/khulnasoft/netdata/blob/master/docs/guides/monitor/raspberry-pi-anomaly-detection.md) which will guide you through first installing LLVM.
 
 ## Useful links and further reading
 

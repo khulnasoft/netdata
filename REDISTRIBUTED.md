@@ -1,6 +1,6 @@
 <!--
 title: "Redistributed software"
-custom_edit_url: https://github.com/netdata/netdata/edit/master/REDISTRIBUTED.md
+custom_edit_url: https://github.com/khulnasoft/netdata/edit/master/REDISTRIBUTED.md
 sidebar_label: "Redistributed Software"
 learn_status: "Published"
 learn_topic_type: "Concepts"

@@ -526,7 +526,7 @@ void *socket_listen_main_static_threaded(void *ptr) {
     if (static_threaded_workers_count < 1) static_threaded_workers_count = 1;
 
 #ifdef ENABLE_HTTPS
-    // See https://github.com/netdata/netdata/issues/11081#issuecomment-831998240 for more details
+    // See https://github.com/khulnasoft/netdata/issues/11081#issuecomment-831998240 for more details
     if (OPENSSL_VERSION_NUMBER < OPENSSL_VERSION_110) {
         static_threaded_workers_count = 1;
         netdata_log_info("You are running an OpenSSL older than 1.1.0, web server will not enable multithreading.");

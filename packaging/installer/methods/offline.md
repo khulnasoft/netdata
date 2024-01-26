@@ -1,7 +1,7 @@
 <!--
 title: "Install Netdata on offline systems"
 description: "Install the Netdata Agent on offline/air gapped systems to benefit from real-time, per-second monitoring without connecting to the internet."
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/packaging/installer/methods/offline.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/packaging/installer/methods/offline.md"
 sidebar_label: "Offline systems"
 learn_status: "Published"
 learn_rel_path: "Installation/Installation methods"
@@ -54,6 +54,6 @@ target system. This can be done in any manner you like, as long as filenames are
 
 After copying the files, simply run the `install.sh` script located in the
 offline install source directory. It accepts all the [same options as the kickstart
-script](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/kickstart.md#optional-parameters-to-alter-your-installation) for further
+script](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/kickstart.md#optional-parameters-to-alter-your-installation) for further
 customization of the installation, though it will default to not enabling automatic updates (as they are not
 supported on offline installs).

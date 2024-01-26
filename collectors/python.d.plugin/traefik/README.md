@@ -1,6 +1,6 @@
 <!--
 title: "Traefik monitoring with Netdata"
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/traefik/README.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/traefik/README.md"
 sidebar_label: "traefik-python.d.plugin"
 learn_status: "Published"
 learn_topic_type: "References"
@@ -51,7 +51,7 @@ It produces:
 ## Configuration
 
 Edit the `python.d/traefik.conf` configuration file using `edit-config` from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md), which is typically
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md), which is typically
 at `/etc/netdata`.
 
 ```bash

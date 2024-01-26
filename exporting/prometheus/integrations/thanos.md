@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/exporting/prometheus/integrations/thanos.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/exporting/prometheus/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/exporting/prometheus/integrations/thanos.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/exporting/prometheus/metadata.yaml"
 sidebar_label: "Thanos"
 learn_status: "Published"
 learn_rel_path: "Exporting"
@@ -43,7 +43,7 @@ The configuration file name for this integration is `exporting.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata
@@ -67,7 +67,7 @@ The following options can be defined for this exporter.
 | update every | Frequency of sending sending data to the external database, in seconds. | 10 | no |
 | buffer on failures | The number of iterations (`update every` seconds) to buffer data, when the external database server is not available. | 10 | no |
 | timeout ms | The timeout in milliseconds to wait for the external database server to process the data. | 20000 | no |
-| send hosts matching | Hosts filter. Determines which hosts will be sent to the external database. The syntax is [simple patterns](https://github.com/netdata/netdata/tree/master/libnetdata/simple_pattern#simple-patterns). | localhost * | no |
+| send hosts matching | Hosts filter. Determines which hosts will be sent to the external database. The syntax is [simple patterns](https://github.com/khulnasoft/netdata/tree/master/libnetdata/simple_pattern#simple-patterns). | localhost * | no |
 | send charts matching | One or more space separated patterns (use * as wildcard) checked against both chart id and chart name. | * | no |
 | send names instead of ids | Controls the metric names Netdata should send to the external database (yes/no). |  | no |
 | send configured labels | Controls if host labels defined in the `[host labels]` section in `netdata.conf` should be sent to the external database (yes/no). |  | no |

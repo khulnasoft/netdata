@@ -232,7 +232,7 @@ Each chart can get data from a different Netdata server. You can specify the Net
  ></div>
 ```
 
-If you have ephemeral monitoring setup ([More info here](https://github.com/netdata/netdata/blob/master/streaming/README.md#monitoring-ephemeral-nodes)) and have no
+If you have ephemeral monitoring setup ([More info here](https://github.com/khulnasoft/netdata/blob/master/streaming/README.md#monitoring-ephemeral-nodes)) and have no
 direct access to the nodes dashboards, you can use the following:
 
 ```html
@@ -258,15 +258,15 @@ you should investigate the documentation of the given chart library, or visit
 the appropriate JavaScript file that defines the library's options. These files
 are concatenated into the monolithic `dashboard.js` for deployment.
 
--   [Dygraph](https://github.com/netdata/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L2034)
--   [d3](https://github.com/netdata/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L4095)
--   [d3pie](https://github.com/netdata/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L3753)
--   [Gauge.js](https://github.com/netdata/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L3065)
--   [Google Charts](https://github.com/netdata/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L2936)
--   [EasyPieChart](https://github.com/netdata/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L3531)
--   [Peity](https://github.com/netdata/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L4137)
--   [Sparkline](https://github.com/netdata/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L2779)
--   [Text-only](https://github.com/netdata/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L4200)
+-   [Dygraph](https://github.com/khulnasoft/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L2034)
+-   [d3](https://github.com/khulnasoft/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L4095)
+-   [d3pie](https://github.com/khulnasoft/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L3753)
+-   [Gauge.js](https://github.com/khulnasoft/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L3065)
+-   [Google Charts](https://github.com/khulnasoft/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L2936)
+-   [EasyPieChart](https://github.com/khulnasoft/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L3531)
+-   [Peity](https://github.com/khulnasoft/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L4137)
+-   [Sparkline](https://github.com/khulnasoft/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L2779)
+-   [Text-only](https://github.com/khulnasoft/netdata/blob/5b57fc441c40959514c4e2d0863be2e6a417e352/web/gui/dashboard.js#L4200)
 
 ### Data points
 
@@ -356,7 +356,7 @@ select specific dimensions using this:
 ```
 
 Netdata supports coma (`,`) or pipe (`|`) separated [simple
-patterns](https://github.com/netdata/netdata/blob/master/libnetdata/simple_pattern/README.md) for dimensions. By default it
+patterns](https://github.com/khulnasoft/netdata/blob/master/libnetdata/simple_pattern/README.md) for dimensions. By default it
 searches for both dimension IDs and dimension NAMEs. You can control the target
 of the match with: `data-append-options="match-ids"` or
 `data-append-options="match-names"`. Spaces in `data-dimensions=""` are matched
@@ -424,7 +424,7 @@ it, using this:
 
 ### API options
 
-You can append Netdata **[REST API v1](https://github.com/netdata/netdata/blob/master/web/api/README.md)** data options, using this:
+You can append Netdata **[REST API v1](https://github.com/khulnasoft/netdata/blob/master/web/api/README.md)** data options, using this:
 
 ```html
 <div data-netdata="unique.id"

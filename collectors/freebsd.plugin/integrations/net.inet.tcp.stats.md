@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/integrations/net.inet.tcp.stats.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/integrations/net.inet.tcp.stats.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
 sidebar_label: "net.inet.tcp.stats"
 learn_status: "Published"
 learn_rel_path: "Data Collection/FreeBSD"
@@ -81,10 +81,10 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ 1m_ipv4_tcp_resets_sent ](https://github.com/netdata/netdata/blob/master/health/health.d/tcp_resets.conf) | ipv4.tcphandshake | average number of sent TCP RESETS over the last minute |
-| [ 10s_ipv4_tcp_resets_sent ](https://github.com/netdata/netdata/blob/master/health/health.d/tcp_resets.conf) | ipv4.tcphandshake | average number of sent TCP RESETS over the last 10 seconds. This can indicate a port scan, or that a service running on this host has crashed. Netdata will not send a clear notification for this alarm. |
-| [ 1m_ipv4_tcp_resets_received ](https://github.com/netdata/netdata/blob/master/health/health.d/tcp_resets.conf) | ipv4.tcphandshake | average number of received TCP RESETS over the last minute |
-| [ 10s_ipv4_tcp_resets_received ](https://github.com/netdata/netdata/blob/master/health/health.d/tcp_resets.conf) | ipv4.tcphandshake | average number of received TCP RESETS over the last 10 seconds. This can be an indication that a service this host needs has crashed. Netdata will not send a clear notification for this alarm. |
+| [ 1m_ipv4_tcp_resets_sent ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/tcp_resets.conf) | ipv4.tcphandshake | average number of sent TCP RESETS over the last minute |
+| [ 10s_ipv4_tcp_resets_sent ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/tcp_resets.conf) | ipv4.tcphandshake | average number of sent TCP RESETS over the last 10 seconds. This can indicate a port scan, or that a service running on this host has crashed. Netdata will not send a clear notification for this alarm. |
+| [ 1m_ipv4_tcp_resets_received ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/tcp_resets.conf) | ipv4.tcphandshake | average number of received TCP RESETS over the last minute |
+| [ 10s_ipv4_tcp_resets_received ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/tcp_resets.conf) | ipv4.tcphandshake | average number of received TCP RESETS over the last 10 seconds. This can be an indication that a service this host needs has crashed. Netdata will not send a clear notification for this alarm. |
 
 
 ## Setup
@@ -111,7 +111,7 @@ The file format is a modified INI syntax. The general structure is:
     option3 = some third value
 ```
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

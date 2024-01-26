@@ -1,6 +1,6 @@
 <!--
 title: "Monitor Cgroups (cgroups.plugin)"
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/cgroups.plugin/README.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/cgroups.plugin/README.md"
 sidebar_label: "Monitor Cgroups"
 learn_status: "Published"
 learn_topic_type: "References"
@@ -78,7 +78,7 @@ currently unsupported when using unified cgroups.
 ### Enabled cgroups
 
 To provide a sane default, Netdata uses the
-following [pattern list](https://github.com/netdata/netdata/blob/master/libnetdata/simple_pattern/README.md):
+following [pattern list](https://github.com/khulnasoft/netdata/blob/master/libnetdata/simple_pattern/README.md):
 
 - Checks the pattern against the path of the cgroup
 
@@ -299,4 +299,4 @@ a few errors in error.log complaining about files it cannot find, but immediatel
 - I/O full pressure
 
 Network interfaces are monitored by means of
-the [proc plugin](https://github.com/netdata/netdata/blob/master/collectors/proc.plugin/README.md#monitored-network-interface-metrics).
+the [proc plugin](https://github.com/khulnasoft/netdata/blob/master/collectors/proc.plugin/README.md#monitored-network-interface-metrics).

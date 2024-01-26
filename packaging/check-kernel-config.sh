@@ -60,7 +60,7 @@ if [ -n "${CONFIG_PATH}" ]; then
   REQUIRED_CONFIG="KPROBES KPROBES_ON_FTRACE HAVE_KPROBES BPF BPF_SYSCALL BPF_JIT"
 
   for required_config in ${REQUIRED_CONFIG}; do
-    # Fix issue https://github.com/netdata/netdata/issues/14668
+    # Fix issue https://github.com/khulnasoft/netdata/issues/14668
     # if ! "${GREP}" -q "CONFIG_${required_config}=y" "${CONFIG_PATH}"; then
     if ! { "${CAT}" "${CONFIG_PATH}" | "${GREP}" -q "CONFIG_${required_config}=y" >&2 >/dev/null; } ;then
       echo >&2 " Missing Kernel Config: ${required_config}"

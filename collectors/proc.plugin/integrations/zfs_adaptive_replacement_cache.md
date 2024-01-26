@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/integrations/zfs_adaptive_replacement_cache.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/integrations/zfs_adaptive_replacement_cache.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
 sidebar_label: "ZFS Adaptive Replacement Cache"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/Filesystem/ZFS"
@@ -99,7 +99,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ zfs_memory_throttle ](https://github.com/netdata/netdata/blob/master/health/health.d/zfs.conf) | zfs.memory_ops | number of times ZFS had to limit the ARC growth in the last 10 minutes |
+| [ zfs_memory_throttle ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/zfs.conf) | zfs.memory_ops | number of times ZFS had to limit the ARC growth in the last 10 minutes |
 
 
 ## Setup

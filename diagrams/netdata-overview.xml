@@ -10,7 +10,7 @@
             <mxGeometry x="1154" y="2050" width="82" height="86" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/messagebird" id="6">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/messagebird" id="6">
           <mxCell style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cloud.githubusercontent.com/assets/2662304/26528607/80773520-43b8-11e7-8010-5219c75fbe9b.png;" parent="1" vertex="1">
             <mxGeometry x="576" y="410" width="195" height="38" as="geometry" />
           </mxCell>
@@ -18,12 +18,12 @@
         <mxCell id="7" value="" style="whiteSpace=wrap;html=1;strokeColor=#59DE9C;fillColor=none;gradientColor=#CCFFFF;fontSize=13;align=center;dashed=1;perimeterSpacing=0;opacity=30;rounded=0;shadow=0;glass=0;comic=0;strokeWidth=3;dashPattern=1 1;" parent="1" vertex="1">
           <mxGeometry x="70" y="552" width="1171" height="471" as="geometry" />
         </mxCell>
-        <UserObject label="&lt;font&gt;&lt;b&gt;APM&lt;br&gt;Application Metrics&lt;/b&gt;&lt;/font&gt;&lt;div&gt;statsd protocol&lt;/div&gt;&lt;div&gt;(TCP or UDP)&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/collectors/statsd.plugin" id="9">
+        <UserObject label="&lt;font&gt;&lt;b&gt;APM&lt;br&gt;Application Metrics&lt;/b&gt;&lt;/font&gt;&lt;div&gt;statsd protocol&lt;/div&gt;&lt;div&gt;(TCP or UDP)&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors/statsd.plugin" id="9">
           <mxCell style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=#59DE9C;fillColor=#FFFFFF;fontSize=14;align=center;gradientColor=#CCFFFF;" parent="1" vertex="1">
             <mxGeometry x="1022" y="1032" width="208" height="158" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;Streaming&lt;/font&gt;&lt;/b&gt;&lt;div&gt;Database Replication&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/streaming" id="10">
+        <UserObject label="&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;Streaming&lt;/font&gt;&lt;/b&gt;&lt;div&gt;Database Replication&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/streaming" id="10">
           <mxCell style="whiteSpace=wrap;html=1;strokeColor=#59DE9C;fillColor=#FFFFFF;fontSize=14;align=center;" parent="1" vertex="1">
             <mxGeometry x="1034" y="690" width="202" height="97" as="geometry" />
           </mxCell>
@@ -33,12 +33,12 @@
             <mxGeometry x="484.33349609375" y="1034" width="110" height="60" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;freeipmi.plugin&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;enterprise h/w&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;monitoring&lt;/span&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/collectors/freeipmi.plugin" id="14">
+        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;freeipmi.plugin&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;enterprise h/w&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;monitoring&lt;/span&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors/freeipmi.plugin" id="14">
           <mxCell style="whiteSpace=wrap;html=1;fontSize=12;fillColor=#FFFFFF;strokeColor=#59DE9C;" parent="1" vertex="1">
             <mxGeometry x="163" y="1034" width="110" height="60" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;span&gt;To another&lt;/span&gt;&lt;div&gt;netdata&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/streaming#options-for-the-sending-node" id="15">
+        <UserObject label="&lt;span&gt;To another&lt;/span&gt;&lt;div&gt;netdata&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/streaming#options-for-the-sending-node" id="15">
           <mxCell style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=#59DE9C;fillColor=#FFFFFF;fontSize=14;align=center;" parent="1" vertex="1">
             <mxGeometry x="1090" y="557" width="150" height="120" as="geometry" />
           </mxCell>
@@ -73,32 +73,32 @@
         <mxCell id="30" value="" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#59DE9C;" parent="1" vertex="1">
           <mxGeometry x="674" y="887" width="557" height="130" as="geometry" />
         </mxCell>
-        <UserObject label="&lt;font style=&quot;font-size: 20px&quot;&gt;metrics database&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;(organized in hosts, charts and dimensions)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/database#netdata-database" id="31">
+        <UserObject label="&lt;font style=&quot;font-size: 20px&quot;&gt;metrics database&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;(organized in hosts, charts and dimensions)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/database#netdata-database" id="31">
           <mxCell style="whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;fillColor=#FFFFFF;strokeColor=#59DE9C;" parent="1" vertex="1">
             <mxGeometry x="254" y="690" width="770" height="93" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;div&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;plugins.d&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;external plugins API&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;text format, over pipes&lt;/font&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/collectors/plugins.d" id="32">
+        <UserObject label="&lt;div&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;plugins.d&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;external plugins API&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;text format, over pipes&lt;/font&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors/plugins.d" id="32">
           <mxCell style="whiteSpace=wrap;html=1;fontSize=16;fillColor=#FFFFFF;strokeColor=#59DE9C;" parent="1" vertex="1">
             <mxGeometry x="74" y="887" width="580" height="130" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;internal&amp;nbsp;&lt;/b&gt;&lt;b&gt;data collection API&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;(with add-only access to the database)&lt;/font&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/collectors#internal-plugins-api" id="33">
+        <UserObject label="&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;internal&amp;nbsp;&lt;/b&gt;&lt;b&gt;data collection API&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;(with add-only access to the database)&lt;/font&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors#internal-plugins-api" id="33">
           <mxCell style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#59DE9C;" parent="1" vertex="1">
             <mxGeometry x="74" y="796" width="1160" height="77" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;Linux&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;data collection&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(mainly /proc and /sys)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/collectors/proc.plugin#procplugin" id="34">
+        <UserObject label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;Linux&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;data collection&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(mainly /proc and /sys)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors/proc.plugin#procplugin" id="34">
           <mxCell style="whiteSpace=wrap;html=1;strokeColor=#59DE9C;fillColor=#FFFFFF;" parent="1" vertex="1">
             <mxGeometry x="684" y="897" width="177" height="60" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;FreeBSD&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;data collection&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(mainly sysctl)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/collectors/freebsd.plugin" id="35">
+        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;FreeBSD&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;data collection&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(mainly sysctl)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors/freebsd.plugin" id="35">
           <mxCell style="whiteSpace=wrap;html=1;strokeColor=#59DE9C;fillColor=#FFFFFF;" parent="1" vertex="1">
             <mxGeometry x="871" y="897" width="110" height="60" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;MacOS&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;data collection&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(mainly sysctl)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/collectors/macos.plugin" id="36">
+        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;MacOS&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;data collection&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(mainly sysctl)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors/macos.plugin" id="36">
           <mxCell style="whiteSpace=wrap;html=1;strokeColor=#59DE9C;fillColor=#FFFFFF;" parent="1" vertex="1">
             <mxGeometry x="991" y="897" width="110" height="60" as="geometry" />
           </mxCell>
@@ -109,12 +109,12 @@
         <mxCell id="38" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;span&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;netdata internal plugins&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;(running as threads inside netdata)&lt;/div&gt;" style="text;html=1;resizable=0;points=[];autosize=1;align=center;verticalAlign=top;spacingTop=-4;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="883" y="967" width="230" height="40" as="geometry" />
         </mxCell>
-        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px&quot;&gt;statsd&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(udp/tcp)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/collectors/statsd.plugin" id="39">
+        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px&quot;&gt;statsd&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(udp/tcp)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors/statsd.plugin" id="39">
           <mxCell style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#59DE9C;" parent="1" vertex="1">
             <mxGeometry x="1111" y="897" width="110" height="110" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;charts.d&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(bash plugins)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/collectors/charts.d.plugin" id="40">
+        <UserObject label="&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;charts.d&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(bash plugins)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors/charts.d.plugin" id="40">
           <mxCell style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#59DE9C;" parent="1" vertex="1">
             <mxGeometry x="85" y="1115" width="110" height="60" as="geometry" />
           </mxCell>
@@ -124,12 +124,12 @@
             <mxGeometry x="244" y="1116" width="110" height="60" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;python.d&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(python plugins)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/collectors/python.d.plugin" id="42">
+        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;python.d&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(python plugins)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors/python.d.plugin" id="42">
           <mxCell style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#59DE9C;" parent="1" vertex="1">
             <mxGeometry x="404" y="1119" width="110" height="60" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;b&gt;remote netdata servers&lt;/b&gt;&lt;div&gt;database replication, streaming metrics in realtime&lt;br&gt;over TCP&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/streaming" id="43">
+        <UserObject label="&lt;b&gt;remote netdata servers&lt;/b&gt;&lt;div&gt;database replication, streaming metrics in realtime&lt;br&gt;over TCP&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/streaming" id="43">
           <mxCell style="whiteSpace=wrap;html=1;fontSize=16;fillColor=#FFFFFF;strokeColor=#59DE9C;" parent="1" vertex="1">
             <mxGeometry x="706" y="1200" width="420" height="90" as="geometry" />
           </mxCell>
@@ -140,7 +140,7 @@
         <mxCell id="45" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.jumpInArrow;dy=15.21;dx=32.57;arrowHead=55;fontSize=16;direction=north;flipH=1;fillColor=#59DE9C;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="1150" y="997" width="75" height="93" as="geometry" />
         </mxCell>
-        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;cgroups&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/collectors/cgroups.plugin#cgroupsplugin" id="46">
+        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;cgroups&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors/cgroups.plugin#cgroupsplugin" id="46">
           <mxCell style="whiteSpace=wrap;html=1;strokeColor=#59DE9C;fillColor=#FFFFFF;" parent="1" vertex="1">
             <mxGeometry x="774" y="957" width="87" height="53" as="geometry" />
           </mxCell>
@@ -160,7 +160,7 @@
         <mxCell id="55" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.51;dx=19.57;direction=north;notch=8.29;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="1" vertex="1">
           <mxGeometry x="264" y="1007" width="70" height="120" as="geometry" />
         </mxCell>
-        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;apps.plugin&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;process tree&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;monitoring&lt;/span&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/collectors/apps.plugin" id="56">
+        <UserObject label="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;apps.plugin&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;process tree&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;monitoring&lt;/span&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors/apps.plugin" id="56">
           <mxCell style="whiteSpace=wrap;html=1;fontSize=12;fillColor=#FFFFFF;strokeColor=#59DE9C;" parent="1" vertex="1">
             <mxGeometry x="324" y="1034" width="110" height="60" as="geometry" />
           </mxCell>
@@ -171,7 +171,7 @@
         <mxCell id="58" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.51;dx=19.57;direction=north;notch=0;fillColor=#59DE9C;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="424" y="1007" width="70" height="120" as="geometry" />
         </mxCell>
-        <UserObject label="&lt;span style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;QoS&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(tc classes)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/collectors/tc.plugin#tcplugin" id="59">
+        <UserObject label="&lt;span style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;QoS&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;(tc classes)&lt;/span&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors/tc.plugin#tcplugin" id="59">
           <mxCell style="whiteSpace=wrap;html=1;strokeColor=#59DE9C;fillColor=#FFFFFF;" parent="1" vertex="1">
             <mxGeometry x="684" y="957" width="80" height="53" as="geometry" />
           </mxCell>
@@ -189,12 +189,12 @@
             <mxGeometry x="650" y="607" width="211" height="70" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;HTTP API&lt;/font&gt;&lt;/b&gt;" link="https://github.com/netdata/netdata/tree/master/web/api" id="76">
+        <UserObject label="&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;HTTP API&lt;/font&gt;&lt;/b&gt;" link="https://github.com/khulnasoft/netdata/tree/master/web/api" id="76">
           <mxCell style="whiteSpace=wrap;html=1;strokeColor=#59DE9C;fillColor=#FFFFFF;fontSize=14;align=center;" parent="1" vertex="1">
             <mxGeometry x="74" y="557" width="800" height="40" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; Notifications&lt;/font&gt;&lt;/b&gt;" link="https://github.com/netdata/netdata/tree/master/health/notifications" id="77">
+        <UserObject label="&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; Notifications&lt;/font&gt;&lt;/b&gt;" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications" id="77">
           <mxCell style="whiteSpace=wrap;html=1;strokeColor=#59DE9C;fillColor=#FFFFFF;fontSize=14;align=center;" parent="1" vertex="1">
             <mxGeometry x="675" y="470" width="163" height="77" as="geometry" />
           </mxCell>
@@ -219,7 +219,7 @@
             <mxGeometry x="1106" y="300" width="114" height="40" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="netdata&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;registry&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;my-netdata menu&lt;/font&gt;&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/registry#netdata-registry" id="89">
+        <UserObject label="netdata&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;registry&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;my-netdata menu&lt;/font&gt;&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/registry#netdata-registry" id="89">
           <mxCell style="whiteSpace=wrap;html=1;strokeColor=#59DE9C;fillColor=#FFFFFF;fontSize=14;align=center;" parent="1" vertex="1">
             <mxGeometry x="74" y="607" width="170" height="176" as="geometry" />
           </mxCell>
@@ -239,7 +239,7 @@
         <mxCell id="98" value="store &amp;amp;&lt;div&gt;forward&lt;/div&gt;" style="text;html=1;resizable=0;points=[];autosize=1;align=center;verticalAlign=top;spacingTop=-4;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="953" y="721" width="60" height="30" as="geometry" />
         </mxCell>
-        <UserObject label="&lt;span&gt;from another&lt;/span&gt;&lt;div&gt;netdata&lt;/div&gt;" link="https://github.com/netdata/netdata/tree/master/streaming#options-for-the-receiving-node" id="99">
+        <UserObject label="&lt;span&gt;from another&lt;/span&gt;&lt;div&gt;netdata&lt;/div&gt;" link="https://github.com/khulnasoft/netdata/tree/master/streaming#options-for-the-receiving-node" id="99">
           <mxCell style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=#59DE9C;fillColor=#FFFFFF;fontSize=14;align=center;" parent="1" vertex="1">
             <mxGeometry x="1083" y="1184" width="150" height="120" as="geometry" />
           </mxCell>
@@ -255,32 +255,32 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/slack" id="101">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/slack" id="101">
           <mxCell style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cloud.githubusercontent.com/assets/2662304/26529341/ebcbc5d0-43c6-11e7-9056-df89e0c10e6a.png;" parent="1" vertex="1">
             <mxGeometry x="530" y="302" width="162" height="48" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/pushbullet" id="102">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/pushbullet" id="102">
           <mxCell style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cloud.githubusercontent.com/assets/2662304/26528627/81813ef2-43b8-11e7-9371-9dfcfb1f27f8.png;" parent="1" vertex="1">
             <mxGeometry x="553" y="363" width="188" height="32" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/discord" id="103">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/discord" id="103">
           <mxCell style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://cloud.githubusercontent.com/assets/2662304/26528628/8195a284-43b8-11e7-8582-e94e53feb1c7.png;" parent="1" vertex="1">
             <mxGeometry x="440" y="227" width="146" height="40" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/pagerduty" id="104">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/pagerduty" id="104">
           <mxCell style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://cloud.githubusercontent.com/assets/2662304/26528630/81a3e33a-43b8-11e7-89a0-53c9d89ef2d6.png;" parent="1" vertex="1">
             <mxGeometry x="500" y="188" width="140" height="26" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/telegram" id="105">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/telegram" id="105">
           <mxCell style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://cloud.githubusercontent.com/assets/2662304/26529349/256417f2-43c7-11e7-8036-9aa59efe0605.png;" parent="1" vertex="1">
             <mxGeometry x="452" y="363" width="77" height="83" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/twilio" id="106">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/twilio" id="106">
           <mxCell style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://cloud.githubusercontent.com/assets/2662304/26528631/81c0f9b6-43b8-11e7-9088-77d895f50346.png;" parent="1" vertex="1">
             <mxGeometry x="600" y="250" width="134" height="40" as="geometry" />
           </mxCell>
@@ -421,7 +421,7 @@
         <mxCell id="161" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://cloud.githubusercontent.com/assets/2662304/26529042/23528fa8-43c1-11e7-94bd-d01e7ded928d.png;" parent="1" vertex="1">
           <mxGeometry x="1134" y="1991" width="116" height="40" as="geometry" />
         </mxCell>
-        <UserObject label="&lt;font style=&quot;font-size: 20px&quot;&gt;system&lt;u&gt;d&lt;/u&gt;&lt;/font&gt;" link="https://github.com/netdata/netdata/tree/master/collectors/cgroups.plugin#monitoring-systemd-services" id="162">
+        <UserObject label="&lt;font style=&quot;font-size: 20px&quot;&gt;system&lt;u&gt;d&lt;/u&gt;&lt;/font&gt;" link="https://github.com/khulnasoft/netdata/tree/master/collectors/cgroups.plugin#monitoring-systemd-services" id="162">
           <mxCell style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=13;fontStyle=1" parent="1" vertex="1">
             <mxGeometry x="797" y="1145" width="90" height="20" as="geometry" />
           </mxCell>
@@ -489,7 +489,7 @@
         <mxCell id="182" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.51;dx=19.57;direction=north;notch=0;fillColor=#59DE9C;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="357" y="533" width="70" height="30" as="geometry" />
         </mxCell>
-        <UserObject label="SVG badges from metrics" link="https://github.com/netdata/netdata/tree/master/web/api/badges" id="183">
+        <UserObject label="SVG badges from metrics" link="https://github.com/khulnasoft/netdata/tree/master/web/api/badges" id="183">
           <mxCell style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cloud.githubusercontent.com/assets/2662304/26528965/8993b082-43bf-11e7-8d5b-3eea117bbd55.png;fontSize=14;spacingTop=-3;" parent="1" vertex="1">
             <mxGeometry x="469" y="485" width="161" height="25" as="geometry" />
           </mxCell>
@@ -497,7 +497,7 @@
         <mxCell id="184" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.51;dx=19.57;direction=north;notch=0;fillColor=#59DE9C;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="512" y="534" width="70" height="30" as="geometry" />
         </mxCell>
-        <UserObject label="use metrics&#xa;in your scripts" link="https://github.com/netdata/netdata/tree/master/web/api/exporters/shell" id="187">
+        <UserObject label="use metrics&#xa;in your scripts" link="https://github.com/khulnasoft/netdata/tree/master/web/api/exporters/shell" id="187">
           <mxCell style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cloud.githubusercontent.com/assets/2662304/26528672/84d2eda8-43b8-11e7-8385-6ad78be4d7cc.png;fontSize=14;spacing=2;spacingTop=-14;" parent="1" vertex="1">
             <mxGeometry x="352" y="438" width="77" height="66" as="geometry" />
           </mxCell>
@@ -505,12 +505,12 @@
         <mxCell id="188" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cloud.githubusercontent.com/assets/2662304/26528673/84d4fc60-43b8-11e7-9512-5db073e72e9f.png;" parent="1" vertex="1">
           <mxGeometry x="283" y="1956" width="58" height="77" as="geometry" />
         </mxCell>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/email" id="189">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/email" id="189">
           <mxCell style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cloud.githubusercontent.com/assets/2662304/26528675/84f226d2-43b8-11e7-9de6-6d7c391aaa8d.png;rounded=0;shadow=0;glass=0;dashed=1;dashPattern=1 1;comic=0;strokeColor=#C7D1E0;strokeWidth=3;fillColor=none;gradientColor=#CCFFFF;fontSize=14;fontColor=#E6E6E6;align=center;" parent="1" vertex="1">
             <mxGeometry x="766" y="250" width="56" height="56" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/pushover" id="191">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/pushover" id="191">
           <mxCell style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cloud.githubusercontent.com/assets/2662304/26528605/80703edc-43b8-11e7-839d-267f613e15b0.png;" parent="1" vertex="1">
             <mxGeometry x="654" y="205" width="134" height="28" as="geometry" />
           </mxCell>
@@ -518,12 +518,12 @@
         <mxCell id="192" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cloud.githubusercontent.com/assets/2662304/26528645/8275abfe-43b8-11e7-9d21-306ab844f7bb.png;strokeColor=#6A9153;fillColor=#CCFFFF;gradientColor=#CCFFFF;fontSize=20;align=center;" parent="1" vertex="1">
           <mxGeometry x="127" y="815" width="61" height="39" as="geometry" />
         </mxCell>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/flock" id="198">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/flock" id="198">
           <mxCell style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://user-images.githubusercontent.com/2662304/32355748-512dda64-c039-11e7-8117-bc31a0cf50eb.png;" parent="1" vertex="1">
             <mxGeometry x="370" y="311" width="142" height="50" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/alerta" id="200">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/alerta" id="200">
           <mxCell style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://user-images.githubusercontent.com/2662304/34533144-9ecf2918-f0c1-11e7-928e-c2654b092303.png;" parent="1" vertex="1">
             <mxGeometry x="420" y="275" width="106" height="27" as="geometry" />
           </mxCell>
@@ -540,7 +540,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/irc" id="204">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/irc" id="204">
           <mxCell style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://user-images.githubusercontent.com/31221999/36795772-8b096efe-1cac-11e8-8d6d-791ee5c88179.png;" parent="1" vertex="1">
             <mxGeometry x="680" y="153" width="69" height="35" as="geometry" />
           </mxCell>
@@ -577,17 +577,17 @@
             <mxGeometry x="940" y="361" width="162" height="40" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/backends/prometheus" id="231">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/backends/prometheus" id="231">
           <mxCell style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://user-images.githubusercontent.com/2662304/47609572-2354df80-da4a-11e8-9121-49d3f1a74fce.png;" parent="1" vertex="1">
             <mxGeometry x="959" y="476" width="274" height="52" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/awssns" id="232">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/awssns" id="232">
           <mxCell style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://user-images.githubusercontent.com/2662304/47609620-26040480-da4b-11e8-8ac3-c1b6a209619f.png;" parent="1" vertex="1">
             <mxGeometry x="510" y="120" width="140" height="56" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" link="https://github.com/netdata/netdata/tree/master/health/notifications/rocketchat" id="233">
+        <UserObject label="" link="https://github.com/khulnasoft/netdata/tree/master/health/notifications/rocketchat" id="233">
           <mxCell style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://user-images.githubusercontent.com/2662304/47609674-ec7fc900-da4b-11e8-84cd-ff47fe586f84.png;" parent="1" vertex="1">
             <mxGeometry x="422" y="143" width="77" height="77" as="geometry" />
           </mxCell>

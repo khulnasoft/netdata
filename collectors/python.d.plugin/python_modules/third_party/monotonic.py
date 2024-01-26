@@ -73,7 +73,7 @@ except AttributeError:
 
 
     def clock_gettime_linux():
-        # see https://github.com/netdata/netdata/issues/7976
+        # see https://github.com/khulnasoft/netdata/issues/7976
         order = [
             clock_clock_gettime_c_library,
             clock_clock_gettime_rt_library,

@@ -1,6 +1,6 @@
 <!--
 title: "Collectors configuration reference"
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/REFERENCE.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/REFERENCE.md"
 sidebar_label: "Collectors configuration"
 learn_status: "Published"
 learn_topic_type: "Tasks"
@@ -9,14 +9,14 @@ learn_rel_path: "Configuration"
 
 # Collectors configuration reference
 
-The list of supported collectors can be found in [the documentation](https://github.com/netdata/netdata/blob/master/collectors/COLLECTORS.md), 
+The list of supported collectors can be found in [the documentation](https://github.com/khulnasoft/netdata/blob/master/collectors/COLLECTORS.md), 
 and on [our website](https://www.netdata.cloud/integrations). The documentation of each collector provides all the 
 necessary configuration options and prerequisites for that collector. In most cases, either the charts are automatically generated 
 without any configuration, or you just fulfil those prerequisites and [configure the collector](#configure-a-collector).
 
 If the application you are interested in monitoring is not listed in our integrations, the collectors list includes 
 the available options to 
-[add your application to Netdata](https://github.com/netdata/netdata/edit/master/collectors/COLLECTORS.md#add-your-application-to-netdata).
+[add your application to Netdata](https://github.com/khulnasoft/netdata/edit/master/collectors/COLLECTORS.md#add-your-application-to-netdata).
 
 If we do support your collector but the charts described in the documentation don't appear on your dashboard, the reason will 
 be one of the following:
@@ -67,7 +67,7 @@ You can enable/disable of the collection modules supported by `go.d`, `python.d`
 configuration file of that orchestrator. For example, you can change the behavior of the Go orchestrator, or any of its 
 collectors, by editing `go.d.conf`.
 
-Use `edit-config` from your [Netdata config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory) 
+Use `edit-config` from your [Netdata config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory) 
 to open the orchestrator primary configuration file:
 
 ```bash
@@ -80,7 +80,7 @@ enable/disable it with `yes` and `no` settings. Uncomment any line you change to
 start.
 
 After you make your changes, restart the Agent with `sudo systemctl restart netdata`, or the [appropriate
-method](https://github.com/netdata/netdata/blob/master/docs/configure/start-stop-restart.md) for your system.
+method](https://github.com/khulnasoft/netdata/blob/master/docs/configure/start-stop-restart.md) for your system.
 
 ## Configure a collector
 
@@ -100,12 +100,12 @@ metrics on that endpoint, the collector begins gathering them.
 However, not every node or infrastructure uses standard ports, paths, files, or naming conventions. You may need to
 enable or configure a collector to gather all available metrics from your systems, containers, or applications.
 
-First, [find the collector](https://github.com/netdata/netdata/blob/master/collectors/COLLECTORS.md) you want to edit 
+First, [find the collector](https://github.com/khulnasoft/netdata/blob/master/collectors/COLLECTORS.md) you want to edit 
 and open its documentation. Some software has collectors written in multiple languages. In these cases, you should always 
 pick the collector written in Go.
 
 Use `edit-config` from your 
-[Netdata config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory) 
+[Netdata config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory) 
 to open a collector's configuration file. For example, edit the Nginx collector with the following:
 
 ```bash
@@ -118,7 +118,7 @@ configure that collector. Uncomment any line you change to ensure the collector'
 read it on start.
 
 After you make your changes, restart the Agent with `sudo systemctl restart netdata`, or the [appropriate
-method](https://github.com/netdata/netdata/blob/master/docs/configure/start-stop-restart.md) for your system.
+method](https://github.com/khulnasoft/netdata/blob/master/docs/configure/start-stop-restart.md) for your system.
 
 ## Troubleshoot a collector
 

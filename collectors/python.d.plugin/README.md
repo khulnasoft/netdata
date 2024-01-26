@@ -1,6 +1,6 @@
 <!--
 title: "python.d.plugin"
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/README.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/README.md"
 sidebar_label: "python.d.plugin"
 learn_status: "Published"
 learn_topic_type: "Tasks"
@@ -68,10 +68,10 @@ Depending on where Netdata was installed, execute one of the following commands 
 /usr/libexec/netdata/plugins.d/python.d.plugin <module> debug trace
 ```
 
-Where `[module]` is the directory name under <https://github.com/netdata/netdata/tree/master/collectors/python.d.plugin> 
+Where `[module]` is the directory name under <https://github.com/khulnasoft/netdata/tree/master/collectors/python.d.plugin> 
 
 **Note**: If you would like execute a collector in debug mode while it is still running by Netdata, you can pass the `nolock` CLI option to the above commands.
 
 ## How to write a new module
 
-See [develop a custom collector in Python](https://github.com/netdata/netdata/edit/master/docs/guides/python-collector.md).
+See [develop a custom collector in Python](https://github.com/khulnasoft/netdata/edit/master/docs/guides/python-collector.md).

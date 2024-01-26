@@ -1,7 +1,7 @@
 <!--
 title: "Kubernetes visualizations"
 description: "Netdata Cloud features rich, zero-configuration Kubernetes monitoring for the resource utilization and application metrics of Kubernetes (k8s) clusters."
-custom_edit_url: "https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/kubernetes.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/kubernetes.md"
 sidebar_label: "Kubernetes visualizations"
 learn_status: "Published"
 learn_topic_type: "Concepts"
@@ -11,12 +11,12 @@ learn_rel_path: "Operations/Visualizations"
 # Kubernetes visualizations
 
 Netdata Cloud features enhanced visualizations for the resource utilization of Kubernetes (k8s) clusters, embedded in
-the default [Overview](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/overview.md) dashboard.
+the default [Overview](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/overview.md) dashboard.
 
 These visualizations include a health map for viewing the status of k8s pods/containers, in addition to composite charts
 for viewing per-second CPU, memory, disk, and networking metrics from k8s nodes.
 
-See our [Kubernetes deployment instructions](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/kubernetes.md) for details on
+See our [Kubernetes deployment instructions](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/kubernetes.md) for details on
 installation and connecting to Netdata Cloud.
 
 ## Available Kubernetes metrics
@@ -79,7 +79,7 @@ and `k8s_node_name`. The default is `k8s_controller_name`.
 
 ### Filtering
 
-Filtering behaves identically to the [node filter in War Rooms](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/node-filter.md), with the ability to
+Filtering behaves identically to the [node filter in War Rooms](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/node-filter.md), with the ability to
 filter pods/containers by `container_id` and `namespace`.
 
 ### Detailed information
@@ -112,7 +112,7 @@ problematic behavior to investigate further, troubleshoot, and remediate with `k
 The Kubernetes composite charts show real-time and historical resource utilization metrics from nodes, pods, or
 containers within your Kubernetes deployment.
 
-See the [Overview](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/overview.md#definition-bar) doc for details on how composite charts work. These
+See the [Overview](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/overview.md#definition-bar) doc for details on how composite charts work. These
 work similarly, but in addition to visualizing _by dimension_ and _by node_, Kubernetes composite charts can also be
 grouped by the following labels:
 

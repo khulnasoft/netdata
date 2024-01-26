@@ -65,7 +65,7 @@ FROM netdata/base:v2 as base
 LABEL org.opencontainers.image.authors="Netdatabot <bot@netdata.cloud>"
 LABEL org.opencontainers.image.url="https://netdata.cloud"
 LABEL org.opencontainers.image.documentation="https://learn.netdata.cloud"
-LABEL org.opencontainers.image.source="https://github.com/netdata/netdata"
+LABEL org.opencontainers.image.source="https://github.com/khulnasoft/netdata"
 LABEL org.opencontainers.image.title="Netdata Agent"
 LABEL org.opencontainers.image.description="Official Netdata Agent Docker Image"
 LABEL org.opencontainers.image.vendor="Netdata Inc."
@@ -99,7 +99,7 @@ RUN mkdir -p /opt/src /var/log/netdata && \
 COPY --from=builder /app /
 
 # Create netdata user and apply the permissions as described in
-# https://docs.netdata.cloud/docs/netdata-security/#netdata-directories, but own everything by root group due to https://github.com/netdata/netdata/pull/6543
+# https://docs.netdata.cloud/docs/netdata-security/#netdata-directories, but own everything by root group due to https://github.com/khulnasoft/netdata/pull/6543
 # hadolint ignore=DL3013
 RUN addgroup --gid ${NETDATA_GID} --system "${DOCKER_GRP}" && \
     adduser --system --no-create-home --shell /usr/sbin/nologin --uid ${NETDATA_UID} --home /etc/netdata --group "${DOCKER_USR}" && \
@@ -127,7 +127,7 @@ RUN addgroup --gid ${NETDATA_GID} --system "${DOCKER_GRP}" && \
                 systemd-journal.plugin; do \
         [ -f "/usr/libexec/netdata/plugins.d/$name" ] && chmod 4755 "/usr/libexec/netdata/plugins.d/$name"; \
     done && \
-    # Group write permissions due to: https://github.com/netdata/netdata/pull/6543
+    # Group write permissions due to: https://github.com/khulnasoft/netdata/pull/6543
     find /var/lib/netdata /var/cache/netdata -type d -exec chmod 0770 {} \; && \
     find /var/lib/netdata /var/cache/netdata -type f -exec chmod 0660 {} \; && \
     cp -va /etc/netdata /etc/netdata.stock

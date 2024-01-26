@@ -125,7 +125,7 @@ int main(int argc, char **argv) {
                     "  --help                  print this message and exit\n"
                     "\n"
                     " For more information:\n"
-                    " https://github.com/netdata/netdata/tree/master/collectors/logs-management.plugin\n"
+                    " https://github.com/khulnasoft/netdata/tree/master/collectors/logs-management.plugin\n"
                     "\n",
                     program_name,
                     VERSION

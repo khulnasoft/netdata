@@ -41,7 +41,7 @@ This page tracks the package maintainers for Netdata, for various operating syst
 
 | Linux Distribution | Netdata Version | Maintainer | Related URL |
 | :-: | :-: | :-: | :-- |
-| Ubuntu             | Release         | @gslin     | [netdata @ gslin ppa](https://launchpad.net/~gslin/+archive/ubuntu/netdata) https://github.com/netdata/netdata/issues/69#issuecomment-217458543 |
+| Ubuntu             | Release         | @gslin     | [netdata @ gslin ppa](https://launchpad.net/~gslin/+archive/ubuntu/netdata) https://github.com/khulnasoft/netdata/issues/69#issuecomment-217458543 |
 ---
 
 ## Embedded Linux

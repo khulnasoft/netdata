@@ -8,7 +8,7 @@ These routines can be used to retrieve additional information to help you troubl
 
 The following is required to be able to run Functions from Netdata Cloud.
 * At least one of the nodes claimed to your Space should be on a Netdata agent version higher than `v1.37.1`
-* Ensure that the node has the collector that exposes the function you want enabled ([see current available functions](https://github.com/netdata/netdata/blob/master/docs/cloud/netdata-functions.md#what-functions-are-currently-available))
+* Ensure that the node has the collector that exposes the function you want enabled ([see current available functions](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/netdata-functions.md#what-functions-are-currently-available))
 
 ### Execute a function (from the Functions tab)
 
@@ -28,7 +28,7 @@ The following is required to be able to run Functions from Netdata Cloud.
 ## Related Topics
 
 ### **Related Concepts**
-- [Netdata Functions](https://github.com/netdata/netdata/blob/master/docs/cloud/netdata-functions.md)
+- [Netdata Functions](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/netdata-functions.md)
 
 #### Related References documentation
-- [External plugins overview](https://github.com/netdata/netdata/blob/master/collectors/plugins.d/README.md#function)
+- [External plugins overview](https://github.com/khulnasoft/netdata/blob/master/collectors/plugins.d/README.md#function)

@@ -28,7 +28,7 @@ If you don't already have a Netdata Cloud account, you don't need to worry about
 After your account is created and you sign in to Netdata, you first are asked to agree to Netdata Cloud's [Privacy
 Policy](https://www.netdata.cloud/privacy/) and [Terms of Use](https://www.netdata.cloud/terms/). Once you agree with these you are directed
 through the Netdata Cloud onboarding process, which is explained in the [Netdata Cloud
-quickstart](https://github.com/netdata/netdata/blob/master/packaging/installer/README.md).
+quickstart](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/README.md).
 
 ### Troubleshooting
 

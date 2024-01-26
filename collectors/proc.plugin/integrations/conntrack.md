@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/integrations/conntrack.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/integrations/conntrack.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
 sidebar_label: "Conntrack"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/Firewall"
@@ -79,7 +79,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ netfilter_conntrack_full ](https://github.com/netdata/netdata/blob/master/health/health.d/netfilter.conf) | netfilter.conntrack_sockets | netfilter connection tracker table size utilization |
+| [ netfilter_conntrack_full ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/netfilter.conf) | netfilter.conntrack_sockets | netfilter connection tracker table size utilization |
 
 
 ## Setup

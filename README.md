@@ -10,11 +10,11 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/netdata/netdata/"><img src="https://img.shields.io/github/stars/netdata/netdata?style=social" alt="GitHub Stars"></a>
+  <a href="https://github.com/khulnasoft/netdata/"><img src="https://img.shields.io/github/stars/netdata/netdata?style=social" alt="GitHub Stars"></a>
   <br />
   <a href="https://app.netdata.cloud/spaces/netdata-demo?utm_campaign=github_readme_demo_badge"><img src="https://img.shields.io/badge/Live Demo-green" alt="Live Demo"></a>
-  <a href="https://github.com/netdata/netdata/releases/latest"><img src="https://img.shields.io/github/release/netdata/netdata.svg" alt="Latest release"></a>
-  <a href="https://github.com/netdata/netdata-nightlies/releases/latest"><img src="https://img.shields.io/github/release/netdata/netdata-nightlies.svg" alt="Latest nightly build"></a>
+  <a href="https://github.com/khulnasoft/netdata/releases/latest"><img src="https://img.shields.io/github/release/netdata/netdata.svg" alt="Latest release"></a>
+  <a href="https://github.com/khulnasoft/netdata-nightlies/releases/latest"><img src="https://img.shields.io/github/release/netdata/netdata-nightlies.svg" alt="Latest nightly build"></a>
   <br />
   <a href="https://bestpractices.coreinfrastructure.org/projects/2231"><img src="https://bestpractices.coreinfrastructure.org/projects/2231/badge" alt="CII Best Practices"></a>
   <a href="https://scan.coverity.com/projects/netdata-netdata?tab=overview"><img alt="Coverity Scan" src="https://img.shields.io/coverity/scan/netdata"></a>
@@ -23,7 +23,7 @@
   <br />
   <a href="https://discord.com/invite/mPZ6WZKKG2"><img alt="Discord" src="https://img.shields.io/discord/847502280503590932?logo=discord&logoColor=white&label=chat%20on%20discord"></a>
   <a href="https://community.netdata.cloud"><img alt="Discourse topics" src="https://img.shields.io/discourse/topics?server=https%3A%2F%2Fcommunity.netdata.cloud%2F&logo=discourse&label=discourse%20forum"></a>
-  <a href="https://github.com/netdata/netdata/discussions"><img alt="GitHub Discussions" src="https://img.shields.io/github/discussions/netdata/netdata?logo=github&label=github%20discussions"></a>
+  <a href="https://github.com/khulnasoft/netdata/discussions"><img alt="GitHub Discussions" src="https://img.shields.io/github/discussions/netdata/netdata?logo=github&label=github%20discussions"></a>
 </p>
 
 <p align="center"><b>Visit the <a href="https://www.netdata.cloud">Project's Home Page</a></b></p>
@@ -107,9 +107,9 @@ On the same workload, Netdata uses **35% less CPU**, **49% less RAM**, **12% les
 
 NEW: **Netdata and LOGS !** 🥳</br>
 
-Check the [systemd-journal plugin of Netdata](https://github.com/netdata/netdata/tree/master/collectors/systemd-journal.plugin), that allows you to view, explore, analyze and query `systemd` journal logs!
+Check the [systemd-journal plugin of Netdata](https://github.com/khulnasoft/netdata/tree/master/collectors/systemd-journal.plugin), that allows you to view, explore, analyze and query `systemd` journal logs!
 
-![image](https://github.com/netdata/netdata/assets/2662304/691b7470-ec56-430c-8b81-0c9e49012679)
+![image](https://github.com/khulnasoft/netdata/assets/2662304/691b7470-ec56-430c-8b81-0c9e49012679)
 
 ---
 
@@ -141,7 +141,7 @@ Check the [systemd-journal plugin of Netdata](https://github.com/netdata/netdata
 	<i>All these run with the default configuration. We only clustered them to have multi-node dashboards.</i>
 </p>
 
-![Netdata Agent](https://github.com/netdata/netdata/assets/2662304/af4caa23-19be-46ef-9779-8fdad8d99d2a)
+![Netdata Agent](https://github.com/khulnasoft/netdata/assets/2662304/af4caa23-19be-46ef-9779-8fdad8d99d2a)
 
 <hr class="solid">
 
@@ -164,28 +164,28 @@ Check the [systemd-journal plugin of Netdata](https://github.com/netdata/netdata
 |          UCUM Units           |                    Migrate all metrics to the Unified Code for Units of Measure.                    |     soon     |                                               in progress                                               |
 |       Click to Activate       |                          Configure Alerts and Data Collectors from the UI!                          |     soon     |                                               in progress                                               |
 | **Netdata Cloud<br/>On-Prem** |                        **Netdata Cloud available for On-Prem installation!**                        |   **available**   |   [fill this form](https://www.netdata.cloud/contact-us/?subject=on-prem)                                            |
-|        `systemd` journal      |                     View the `systemd` journal logs of your systems on the dashboard.               | Oct<br/>2023 |   [v1.43](https://github.com/netdata/netdata/releases/tag/v1.43.0) |
-|         Integrations          |                                  Netdata Integrations Marketplace!                                  | Aug<br/>2023 |           [v1.42](https://github.com/netdata/netdata/releases#v1420-integrations-marketplace)           |
-|         New Agent UI          |                    Now Netdata Cloud and Netdata Agent share the same dashboard!                    | Jul<br/>2023 |          [v1.41](https://github.com/netdata/netdata/releases/tag/v1.41.0#v1410-one-dashboard)           |
-|      Summary Dashboards       |                                    High level tiles everywhere!                                     | Jun<br/>2023 | [v1.40](https://github.com/netdata/netdata/releases/tag/v1.40.0#v1400-visualization-summary-dashboards) |
-|       Machine Learning        |                                   Multiple ML models per metric.                                    | Jun<br/>2023 |       [v1.40](https://github.com/netdata/netdata/releases/tag/v1.40.0#v1400-ml-extended-training)       |
-|              SSL              |                                 Netdata Agent gets a new SSL layer.                                 | Jun<br/>2023 |            [v1.40](https://github.com/netdata/netdata/releases/tag/v1.40.0#v1400-streaming)             |
-|         New Cloud UI          |                      Filter, slice and dice any dataset from the UI! ML-first!                      | May<br/>2023 |                    [v1.39](https://github.com/netdata/netdata/releases/tag/v1.39.0)                     |
-|       Microsoft Windows       |                                   Monitor Windows hosts and apps!                                   | May<br/>2023 |         [v1.39](https://github.com/netdata/netdata/releases/tag/v1.39.0#v1390-windows-support)          |
-|         Virtual Nodes         |                         Go collectors can now be assigned to virtual nodes!                         | May<br/>2023 | [v1.39](https://github.com/netdata/netdata/releases/tag/v1.39.0#v1390-virtual-nodes-and-custom-labels)  |
-|          DBENGINE v2          |                              Faster, more reliable, far more scalable!                              | Feb<br/>2023 |                    [v1.38](https://github.com/netdata/netdata/releases/tag/v1.38.0)                     |
-|       Netdata Functions       |                            Netdata beyond metrics! Monitoring anything!                             | Feb<br/>2023 |            [v1.38](https://github.com/netdata/netdata/releases/tag/v1.38.0#v1380-functions)             |
-|          Events Feed          |                       Live feed of events about topology changes and alerts.                        | Feb<br/>2023 |               [v1.38](https://github.com/netdata/netdata/releases/tag/v1.38.0#v1380-feed)               |
-| Role Based<br/>Access Control |                  More roles, offering finer control over access to infrastructure.                  | Feb<br/>2023 |               [v1.38](https://github.com/netdata/netdata/releases/tag/v1.38.0#v1380-rbac)               |
-|     Infinite Scalability      |                    Streaming compression. Replication. Active-active clustering.                    | Nov<br/>2022 |                    [v1.37](https://github.com/netdata/netdata/releases/tag/v1.37.0)                     |
-|        Grafana Plugin         |                             Netdata Cloud as a data source for Grafana.                             | Nov<br/>2022 |          [v1.37](https://github.com/netdata/netdata/releases/tag/v1.37.0#v1370-grafana-plugin)          |
-|          PostgreSQL           |               Completely rewritten, to reveal all the info, even at the table level.                | Nov<br/>2022 |           [v1.37](https://github.com/netdata/netdata/releases/tag/v1.37.0#v1370-postgressql)            |
-|     Metrics Correlations      |                       Advanced algorithms to find the needle in the haystack.                       | Aug<br/>2022 |                    [v1.36](https://github.com/netdata/netdata/releases/tag/v1.36.0)                     |
-|       Database Tiering        |                                  Netdata gets unlimited retention!                                  | Aug<br/>2022 |             [v1.36](https://github.com/netdata/netdata/releases/tag/v1.36.0#v1360-tiering)              |
-|          Kubernetes           |                                 Monitor your Kubernetes workloads.                                  | Aug<br/>2022 |            [v1.36](https://github.com/netdata/netdata/releases/tag/v1.36.0#v1360-kubernetes)            |
-|       Machine Learning        |                              Anomaly Rate information on every chart.                               | Aug<br/>2022 |      [v1.36](https://github.com/netdata/netdata/releases/tag/v1.36.0#v1360-anomaly-rate-on-charts)      |
-|       Machine Learning        |                     Anomaly Advisor! Bottom-up unsupervised anomaly detection.                      | Jun<br/>2022 |        [v1.35](https://github.com/netdata/netdata/releases/tag/v1.35.0#v1350-anomaly-advisor-ml)        |
-|       Machine Learning        |                                  Metrics Correlation on the Agent.                                  | Jun<br/>2022 |     [v1.35](https://github.com/netdata/netdata/releases/tag/v1.35.0#v1350-metric-correlation-agent)     |
+|        `systemd` journal      |                     View the `systemd` journal logs of your systems on the dashboard.               | Oct<br/>2023 |   [v1.43](https://github.com/khulnasoft/netdata/releases/tag/v1.43.0) |
+|         Integrations          |                                  Netdata Integrations Marketplace!                                  | Aug<br/>2023 |           [v1.42](https://github.com/khulnasoft/netdata/releases#v1420-integrations-marketplace)           |
+|         New Agent UI          |                    Now Netdata Cloud and Netdata Agent share the same dashboard!                    | Jul<br/>2023 |          [v1.41](https://github.com/khulnasoft/netdata/releases/tag/v1.41.0#v1410-one-dashboard)           |
+|      Summary Dashboards       |                                    High level tiles everywhere!                                     | Jun<br/>2023 | [v1.40](https://github.com/khulnasoft/netdata/releases/tag/v1.40.0#v1400-visualization-summary-dashboards) |
+|       Machine Learning        |                                   Multiple ML models per metric.                                    | Jun<br/>2023 |       [v1.40](https://github.com/khulnasoft/netdata/releases/tag/v1.40.0#v1400-ml-extended-training)       |
+|              SSL              |                                 Netdata Agent gets a new SSL layer.                                 | Jun<br/>2023 |            [v1.40](https://github.com/khulnasoft/netdata/releases/tag/v1.40.0#v1400-streaming)             |
+|         New Cloud UI          |                      Filter, slice and dice any dataset from the UI! ML-first!                      | May<br/>2023 |                    [v1.39](https://github.com/khulnasoft/netdata/releases/tag/v1.39.0)                     |
+|       Microsoft Windows       |                                   Monitor Windows hosts and apps!                                   | May<br/>2023 |         [v1.39](https://github.com/khulnasoft/netdata/releases/tag/v1.39.0#v1390-windows-support)          |
+|         Virtual Nodes         |                         Go collectors can now be assigned to virtual nodes!                         | May<br/>2023 | [v1.39](https://github.com/khulnasoft/netdata/releases/tag/v1.39.0#v1390-virtual-nodes-and-custom-labels)  |
+|          DBENGINE v2          |                              Faster, more reliable, far more scalable!                              | Feb<br/>2023 |                    [v1.38](https://github.com/khulnasoft/netdata/releases/tag/v1.38.0)                     |
+|       Netdata Functions       |                            Netdata beyond metrics! Monitoring anything!                             | Feb<br/>2023 |            [v1.38](https://github.com/khulnasoft/netdata/releases/tag/v1.38.0#v1380-functions)             |
+|          Events Feed          |                       Live feed of events about topology changes and alerts.                        | Feb<br/>2023 |               [v1.38](https://github.com/khulnasoft/netdata/releases/tag/v1.38.0#v1380-feed)               |
+| Role Based<br/>Access Control |                  More roles, offering finer control over access to infrastructure.                  | Feb<br/>2023 |               [v1.38](https://github.com/khulnasoft/netdata/releases/tag/v1.38.0#v1380-rbac)               |
+|     Infinite Scalability      |                    Streaming compression. Replication. Active-active clustering.                    | Nov<br/>2022 |                    [v1.37](https://github.com/khulnasoft/netdata/releases/tag/v1.37.0)                     |
+|        Grafana Plugin         |                             Netdata Cloud as a data source for Grafana.                             | Nov<br/>2022 |          [v1.37](https://github.com/khulnasoft/netdata/releases/tag/v1.37.0#v1370-grafana-plugin)          |
+|          PostgreSQL           |               Completely rewritten, to reveal all the info, even at the table level.                | Nov<br/>2022 |           [v1.37](https://github.com/khulnasoft/netdata/releases/tag/v1.37.0#v1370-postgressql)            |
+|     Metrics Correlations      |                       Advanced algorithms to find the needle in the haystack.                       | Aug<br/>2022 |                    [v1.36](https://github.com/khulnasoft/netdata/releases/tag/v1.36.0)                     |
+|       Database Tiering        |                                  Netdata gets unlimited retention!                                  | Aug<br/>2022 |             [v1.36](https://github.com/khulnasoft/netdata/releases/tag/v1.36.0#v1360-tiering)              |
+|          Kubernetes           |                                 Monitor your Kubernetes workloads.                                  | Aug<br/>2022 |            [v1.36](https://github.com/khulnasoft/netdata/releases/tag/v1.36.0#v1360-kubernetes)            |
+|       Machine Learning        |                              Anomaly Rate information on every chart.                               | Aug<br/>2022 |      [v1.36](https://github.com/khulnasoft/netdata/releases/tag/v1.36.0#v1360-anomaly-rate-on-charts)      |
+|       Machine Learning        |                     Anomaly Advisor! Bottom-up unsupervised anomaly detection.                      | Jun<br/>2022 |        [v1.35](https://github.com/khulnasoft/netdata/releases/tag/v1.35.0#v1350-anomaly-advisor-ml)        |
+|       Machine Learning        |                                  Metrics Correlation on the Agent.                                  | Jun<br/>2022 |     [v1.35](https://github.com/khulnasoft/netdata/releases/tag/v1.35.0#v1350-metric-correlation-agent)     |
 
 </details>
 
@@ -287,7 +287,7 @@ navigate to `http://NODE:19999`, replacing `NODE` with the IP address or hostnam
 
 <hr class="solid">
 
-![Netdata Agent 2](https://github.com/netdata/netdata/assets/2662304/49981d85-89b9-4b95-8e45-da7a39e6dd48)
+![Netdata Agent 2](https://github.com/khulnasoft/netdata/assets/2662304/49981d85-89b9-4b95-8e45-da7a39e6dd48)
 
 <hr class="solid">
 
@@ -301,7 +301,7 @@ Netdata is built around a **modular metrics processing pipeline**.
 Each Netdata Agent can perform the following functions:
 
 1. **`COLLECT` metrics from their sources**<br/>
-   Uses [internal](https://github.com/netdata/netdata/tree/master/collectors) and [external](https://github.com/netdata/go.d.plugin/tree/master/modules) plugins to collect data from their sources.
+   Uses [internal](https://github.com/khulnasoft/netdata/tree/master/collectors) and [external](https://github.com/netdata/go.d.plugin/tree/master/modules) plugins to collect data from their sources.
 
    Netdata auto-detects and collects almost everything from the operating system: including CPU, Interrupts, Memory, Disks, Mount Points, Filesystems, Network Stack, Network Interfaces, Containers, VMs, Processes, `systemd` units, Linux Performance Metrics, Linux eBPF, Hardware Sensors, IPMI, and more.
 
@@ -314,7 +314,7 @@ Each Netdata Agent can perform the following functions:
    And it also supports synthetic tests / white box tests, so you can ping servers, check API responses, or even check filesystem files and directories to generate metrics, train ML and run alerts and notifications on their status.
    
 2. **`STORE` metrics to a database**<br/>
-   Uses database engine plugins to store the collected data, either in memory and/or on disk. We have developed our own [`dbengine`](https://github.com/netdata/netdata/tree/master/database/engine#readme) for storing the data in a very efficient manner, allowing Netdata to have less than 1 byte per sample on disk and amazingly fast queries.
+   Uses database engine plugins to store the collected data, either in memory and/or on disk. We have developed our own [`dbengine`](https://github.com/khulnasoft/netdata/tree/master/database/engine#readme) for storing the data in a very efficient manner, allowing Netdata to have less than 1 byte per sample on disk and amazingly fast queries.
    
 3. **`LEARN` the behavior of metrics** (ML)<br/>
    Trains multiple Machine-Learning (ML) models per metric to learn the behavior of each metric individually. Netdata uses the `kmeans` algorithm and creates by default a model per metric per hour, based on the values collected for that metric over the last 6 hours. The trained models are persisted to disk.
@@ -342,28 +342,28 @@ When using Netdata Parents, all the functions of a Netdata Agent (except data co
 The core of Netdata is developed in C. We have our own `libnetdata`, that provides:
 
 - **`DICTIONARY`**<br/>
-  A high-performance algorithm to maintain both indexed and ordered pools of structures Netdata needs. It uses JudyHS arrays for indexing, although it is modular: any hashtable or tree can be integrated into it. Despite being in C, dictionaries follow object-oriented programming principles, so there are constructors, destructors, automatic memory management, garbage collection, and more. For more see [here](https://github.com/netdata/netdata/tree/master/libnetdata/dictionary).
+  A high-performance algorithm to maintain both indexed and ordered pools of structures Netdata needs. It uses JudyHS arrays for indexing, although it is modular: any hashtable or tree can be integrated into it. Despite being in C, dictionaries follow object-oriented programming principles, so there are constructors, destructors, automatic memory management, garbage collection, and more. For more see [here](https://github.com/khulnasoft/netdata/tree/master/libnetdata/dictionary).
   
 - **`ARAL`**<br/>
-  ARray ALlocator (ARAL) is used to minimize the system allocations made by Netdata. ARAL is optimized for peak performance when multi-threaded. It also allows all structures that use it to be allocated in memory-mapped files (shared memory) instead of RAM. For more see [here](https://github.com/netdata/netdata/tree/master/libnetdata/aral).
+  ARray ALlocator (ARAL) is used to minimize the system allocations made by Netdata. ARAL is optimized for peak performance when multi-threaded. It also allows all structures that use it to be allocated in memory-mapped files (shared memory) instead of RAM. For more see [here](https://github.com/khulnasoft/netdata/tree/master/libnetdata/aral).
 
 - **`PROCFILE`**<br/>
-  A high-performance `/proc` (but also any) file parser and text tokenizer. It achieves its performance by keeping files open and adjustings its buffers to read the entire file in one call (which is also required by the Linux kernel). For more see [here](https://github.com/netdata/netdata/tree/master/libnetdata/procfile).
+  A high-performance `/proc` (but also any) file parser and text tokenizer. It achieves its performance by keeping files open and adjustings its buffers to read the entire file in one call (which is also required by the Linux kernel). For more see [here](https://github.com/khulnasoft/netdata/tree/master/libnetdata/procfile).
 
 - **`STRING`**<br/>
-  A string internet mechanism, for string deduplication and indexing (using JudyHS arrays), optimized for multi-threaded usage. For more see [here](https://github.com/netdata/netdata/tree/master/libnetdata/string).
+  A string internet mechanism, for string deduplication and indexing (using JudyHS arrays), optimized for multi-threaded usage. For more see [here](https://github.com/khulnasoft/netdata/tree/master/libnetdata/string).
 
 - **`ARL`**<br/>
-  Adaptive Resortable List (ARL), is a very fast list iterator, that keeps the expected items on the list in the same order they are found in input list. So, the first iteration is somewhat slower, but all the following iterations are perfectly aligned for best performance. For more see [here](https://github.com/netdata/netdata/tree/master/libnetdata/adaptive_resortable_list).
+  Adaptive Resortable List (ARL), is a very fast list iterator, that keeps the expected items on the list in the same order they are found in input list. So, the first iteration is somewhat slower, but all the following iterations are perfectly aligned for best performance. For more see [here](https://github.com/khulnasoft/netdata/tree/master/libnetdata/adaptive_resortable_list).
 
 - **`BUFFER`**<br/>
-  A flexible text buffer management system that allows Netdata to automatically handle dynamically sized text buffer allocations. The same mechanism is used for generating consistent JSON output by the Netdata APIs. For more see [here](https://github.com/netdata/netdata/tree/master/libnetdata/buffer).
+  A flexible text buffer management system that allows Netdata to automatically handle dynamically sized text buffer allocations. The same mechanism is used for generating consistent JSON output by the Netdata APIs. For more see [here](https://github.com/khulnasoft/netdata/tree/master/libnetdata/buffer).
 
 - **`SPINLOCK`**<br/>
   Like POSIX `MUTEX` and `RWLOCK` but a lot faster, based on atomic operations, with significantly smaller memory impact, while being portable.
 
 - **`PGC`**<br/>
-  A caching layer that can be used to cache any kind of time-related data, with automatic indexing (based on a tree of JudyL arrays), memory management, evictions, flushing, pressure management. This is extensively used in `dbengine`. For more see [here](https://github.com/netdata/netdata/blob/master/database/engine/README.md).
+  A caching layer that can be used to cache any kind of time-related data, with automatic indexing (based on a tree of JudyL arrays), memory management, evictions, flushing, pressure management. This is extensively used in `dbengine`. For more see [here](https://github.com/khulnasoft/netdata/blob/master/database/engine/README.md).
 
 The above, and many more, allow Netdata developers to work on the application fast and with confidence. Most of the business logic in Netdata is a work of mixing the above.
 
@@ -385,7 +385,7 @@ We understand that Netdata is a software piece that is installed on millions of 
   - We follow the [Open Source Security Foundation](https://bestpractices.coreinfrastructure.org/en/projects/2231) best practices.
   - We have given great attention to detail when it comes to security design. Check out our [security design](https://learn.netdata.cloud/docs/architecture/security-and-privacy-design).
   - Netdata is a popular open-source project and is frequently tested by many security analysts.
-  - Check also our [security policies and advisories published so far](https://github.com/netdata/netdata/security).
+  - Check also our [security policies and advisories published so far](https://github.com/khulnasoft/netdata/security).
 
 &nbsp;<br/>&nbsp;<br/>
 </details>
@@ -448,7 +448,7 @@ With the streaming feature of the Agent, we can support monitoring ephemeral ser
 
 Example: the following chart comes from a single Netdata Parent. As you can see on it, 244 nodes stream to it metrics of about 20k running containers. On this specific chart there are 3 dimensions per container, so a total of about 60k time-series queries are needed to present it.
 
-![image](https://github.com/netdata/netdata/assets/2662304/33db4aed-86af-4018-a547-e70643308f25)
+![image](https://github.com/khulnasoft/netdata/assets/2662304/33db4aed-86af-4018-a547-e70643308f25)
 
 &nbsp;<br/>&nbsp;<br/>
 </details>
@@ -658,7 +658,7 @@ Netdata is a widely adopted project...
 <details><summary>Click to see detailed answer ...</summary>
 &nbsp;<br/>&nbsp;<br/>
 
-Browse the [Netdata stargazers on GitHub](https://github.com/netdata/netdata/stargazers) to discover users from renowned companies and enterprises, such as ABN AMRO Bank, AMD, Amazon, Baidu, Booking.com, Cisco, Delta, Facebook, Google, IBM, Intel, Logitech, Netflix, Nokia, Qualcomm, Realtek Semiconductor Corp, Redhat, Riot Games, SAP, Samsung, Unity, Valve, and many others.
+Browse the [Netdata stargazers on GitHub](https://github.com/khulnasoft/netdata/stargazers) to discover users from renowned companies and enterprises, such as ABN AMRO Bank, AMD, Amazon, Baidu, Booking.com, Cisco, Delta, Facebook, Google, IBM, Intel, Logitech, Netflix, Nokia, Qualcomm, Realtek Semiconductor Corp, Redhat, Riot Games, SAP, Samsung, Unity, Valve, and many others.
 
 Netdata also enjoys significant usage in academia, with notable institutions including New York University, Columbia University, New Jersey University, Seoul National University, University College London, among several others.
 
@@ -700,7 +700,7 @@ The Netdata Agent is shipped with multiple UI versions:
 
 - `http://agent.ip:19999/v0/`, the original open-source single-node UI, GPLv3+.
 - `http://agent.ip:19999/v1/`, the latest open-source single-node UI, GPLv3+.
-- `http://agent.ip:19999/v2/`, a snapshot of the latest Netdata Cloud UI as it was at the time the agent was released, licensed to be distributed with Netdata Agents under [NCUL1](https://github.com/netdata/netdata/blob/master/web/gui/v2/LICENSE.md).
+- `http://agent.ip:19999/v2/`, a snapshot of the latest Netdata Cloud UI as it was at the time the agent was released, licensed to be distributed with Netdata Agents under [NCUL1](https://github.com/khulnasoft/netdata/blob/master/web/gui/v2/LICENSE.md).
 
 When you access a Netdata Agent via `http://agent.ip:19999/` a splash screen attempts to use the latest live version of Netdata Cloud UI (downloaded from Cloudflare). This only happens when the web browser has internet connectivity and Netdata Cloud is not disabled at the agent configuration. Otherwise, it falls back to `http://agent.ip:19999/v2/`.
 
@@ -754,7 +754,7 @@ to collect metrics, troubleshoot via charts, export to external databases, and m
 <p align="center">
   <a href="https://discord.com/invite/mPZ6WZKKG2"><img alt="Discord" src="https://img.shields.io/discord/847502280503590932?logo=discord&logoColor=white&label=chat%20on%20discord"></a>
   <a href="https://community.netdata.cloud"><img alt="Discourse topics" src="https://img.shields.io/discourse/topics?server=https%3A%2F%2Fcommunity.netdata.cloud%2F&logo=discourse&label=discourse%20forum"></a>
-  <a href="https://github.com/netdata/netdata/discussions"><img alt="GitHub Discussions" src="https://img.shields.io/github/discussions/netdata/netdata?logo=github&label=github%20discussions"></a>
+  <a href="https://github.com/khulnasoft/netdata/discussions"><img alt="GitHub Discussions" src="https://img.shields.io/github/discussions/netdata/netdata?logo=github&label=github%20discussions"></a>
 </p>
 
 Netdata is an inclusive open-source project and community. Please read our [Code of Conduct](https://github.com/netdata/.github/blob/main/CODE_OF_CONDUCT.md).
@@ -762,7 +762,7 @@ Netdata is an inclusive open-source project and community. Please read our [Code
 Join the Netdata community:
 
 - Chat with us and other community members on [Discord](https://discord.com/invite/mPZ6WZKKG2).
-- Start a discussion on [GitHub discussions](https://github.com/netdata/netdata/discussions).
+- Start a discussion on [GitHub discussions](https://github.com/khulnasoft/netdata/discussions).
 - Open a topic to our [community forums](https://community.netdata.cloud).
 
 > **Meet Up** :people_holding_hands::people_holding_hands::people_holding_hands:<br/>
@@ -795,16 +795,16 @@ What is a contribution? All the following are highly valuable to Netdata:
 
 General information about contributions:
 
-- Check our [Security Policy](https://github.com/netdata/netdata/security/policy).
-- Found a bug? Open a [GitHub issue](https://github.com/netdata/netdata/issues/new?assignees=&labels=bug%2Cneeds+triage&template=BUG_REPORT.yml&title=%5BBug%5D%3A+).
+- Check our [Security Policy](https://github.com/khulnasoft/netdata/security/policy).
+- Found a bug? Open a [GitHub issue](https://github.com/khulnasoft/netdata/issues/new?assignees=&labels=bug%2Cneeds+triage&template=BUG_REPORT.yml&title=%5BBug%5D%3A+).
 - Read our [Contributing Guide](https://github.com/netdata/.github/blob/main/CONTRIBUTING.md), which contains all the information you need to contribute to Netdata, such as improving our documentation, engaging in the community, and developing new features. We've made it as frictionless as possible, but if you need help, just ping us on our community forums!
 
-Package maintainers should read the guide on [building Netdata from source](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/source.md) for
+Package maintainers should read the guide on [building Netdata from source](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/source.md) for
 instructions on building each Netdata component from the source and preparing a package.
 
 ## License
 
-Netdata is released under [GPLv3+](https://github.com/netdata/netdata/blob/master/LICENSE). Netdata re-distributes other open-source tools and libraries. Please check the
-[third party licenses](https://github.com/netdata/netdata/blob/master/REDISTRIBUTED.md).
+Netdata is released under [GPLv3+](https://github.com/khulnasoft/netdata/blob/master/LICENSE). Netdata re-distributes other open-source tools and libraries. Please check the
+[third party licenses](https://github.com/khulnasoft/netdata/blob/master/REDISTRIBUTED.md).
 
-The Latest Netdata UI, is distributed under [NCUL1](https://github.com/netdata/netdata/blob/master/web/gui/v2/LICENSE.md). It also uses third party open source components. Check the [UI third party licenses](https://github.com/netdata/netdata/blob/master/web/gui/v2/3D_PARTY_LICENSES.txt)
+The Latest Netdata UI, is distributed under [NCUL1](https://github.com/khulnasoft/netdata/blob/master/web/gui/v2/LICENSE.md). It also uses third party open source components. Check the [UI third party licenses](https://github.com/khulnasoft/netdata/blob/master/web/gui/v2/3D_PARTY_LICENSES.txt)

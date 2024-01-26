@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/integrations/memory_statistics.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/integrations/memory_statistics.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
 sidebar_label: "Memory Statistics"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/Memory"
@@ -111,8 +111,8 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ 30min_ram_swapped_out ](https://github.com/netdata/netdata/blob/master/health/health.d/swap.conf) | mem.swapio | percentage of the system RAM swapped in the last 30 minutes |
-| [ oom_kill ](https://github.com/netdata/netdata/blob/master/health/health.d/ram.conf) | mem.oom_kill | number of out of memory kills in the last 30 minutes |
+| [ 30min_ram_swapped_out ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/swap.conf) | mem.swapio | percentage of the system RAM swapped in the last 30 minutes |
+| [ oom_kill ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/ram.conf) | mem.oom_kill | number of out of memory kills in the last 30 minutes |
 
 
 ## Setup

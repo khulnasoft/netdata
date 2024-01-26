@@ -38,7 +38,7 @@ To follow this tutorial, you need:
 -   A free Netdata Cloud account. [Sign up](https://app.netdata.cloud/sign-up?cloudRoute=/spaces) if you don't have one
     already.
 -   A working cluster running Kubernetes v1.9 or newer, with a Netdata deployment and connected parent/child nodes. See
-    our [Kubernetes deployment process](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/kubernetes.md) for details on deployment and
+    our [Kubernetes deployment process](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/kubernetes.md) for details on deployment and
     conneting to Cloud.
 -   The [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/) command line tool, within [one minor version
     difference](https://kubernetes.io/docs/tasks/tools/install-kubectl/#before-you-begin) of your cluster, on an
@@ -96,7 +96,7 @@ To get started, [sign in](https://app.netdata.cloud/sign-in?cloudRoute=/spaces) 
 to the War Room you connected your cluster to, if not **General**.
 
 Netdata Cloud is already visualizing your Kubernetes metrics, streamed in real-time from each node, in the
-[Overview](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/overview.md):
+[Overview](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/overview.md):
 
 ![Netdata's Kubernetes monitoring
 dashboard](https://user-images.githubusercontent.com/1153921/109037415-eafc5500-7687-11eb-8773-9b95941e3328.png)
@@ -118,8 +118,8 @@ cluster](https://user-images.githubusercontent.com/1153921/109042169-19c8fa00-76
 For example, the chart above shows a spike in the CPU utilization from `rabbitmq` every minute or so, along with a
 baseline CPU utilization of 10-15% across the cluster.
 
-Read about the [Overview](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/overview.md) and some best practices on [viewing
-an overview of your infrastructure](https://github.com/netdata/netdata/blob/master/docs/visualize/overview-infrastructure.md) for details on using composite charts to
+Read about the [Overview](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/overview.md) and some best practices on [viewing
+an overview of your infrastructure](https://github.com/khulnasoft/netdata/blob/master/docs/visualize/overview-infrastructure.md) for details on using composite charts to
 drill down into per-node performance metrics.
 
 ## Pod and container metrics
@@ -132,7 +132,7 @@ visualizations](https://user-images.githubusercontent.com/1153921/109049195-349f
 
 ### Health map
 
-The first visualization is the [health map](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/kubernetes.md#health-map),
+The first visualization is the [health map](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/kubernetes.md#health-map),
 which places each container into its own box, then varies the intensity of their color to visualize the resource
 utilization. By default, the health map shows the **average CPU utilization as a percentage of the configured limit**
 for every container in your cluster.
@@ -165,7 +165,7 @@ different namespaces.
 ![Time-series Kubernetes monitoring in Netdata
 Cloud](https://user-images.githubusercontent.com/1153921/109075210-126a1680-76b6-11eb-918d-5acdcdac152d.png)
 
-Each composite chart has a [definition bar](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/overview.md#definition-bar)
+Each composite chart has a [definition bar](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/overview.md#definition-bar)
 for complete customization. For example, grouping the top chart by `k8s_container_name` reveals new information.
 
 ![Changing time-series charts](https://user-images.githubusercontent.com/1153921/109075212-139b4380-76b6-11eb-836f-939482ae55fc.png)
@@ -188,7 +188,7 @@ metrics](https://user-images.githubusercontent.com/1153921/109054511-2eac8a00-76
 
 > The robot-shop cluster has more supported services, such as MySQL, which are not visible with zero configuration. This
 > is usually because of services running on non-default ports, using non-default names, or required passwords. Read up
-> on [configuring service discovery](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/kubernetes.md#configure-service-discovery) to collect
+> on [configuring service discovery](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/kubernetes.md#configure-service-discovery) to collect
 > more service metrics.
 
 Service metrics are essential to infrastructure monitoring, as they're the best indicator of the end-user experience,
@@ -241,6 +241,6 @@ clusters of all sizes.
   collector](https://github.com/netdata/go.d.plugin/blob/master/modules/k8s_kubelet/README.md)
 - [Netdata Agent · `kube-proxy`
   collector](https://github.com/netdata/go.d.plugin/blob/master/modules/k8s_kubeproxy/README.md)
-- [Netdata Agent · `cgroups.plugin`](https://github.com/netdata/netdata/blob/master/collectors/cgroups.plugin/README.md)
+- [Netdata Agent · `cgroups.plugin`](https://github.com/khulnasoft/netdata/blob/master/collectors/cgroups.plugin/README.md)
 
 

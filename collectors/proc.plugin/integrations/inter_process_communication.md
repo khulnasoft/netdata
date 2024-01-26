@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/integrations/inter_process_communication.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/integrations/inter_process_communication.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
 sidebar_label: "Inter Process Communication"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/IPC"
@@ -93,8 +93,8 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ semaphores_used ](https://github.com/netdata/netdata/blob/master/health/health.d/ipc.conf) | system.ipc_semaphores | IPC semaphore utilization |
-| [ semaphore_arrays_used ](https://github.com/netdata/netdata/blob/master/health/health.d/ipc.conf) | system.ipc_semaphore_arrays | IPC semaphore arrays utilization |
+| [ semaphores_used ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/ipc.conf) | system.ipc_semaphores | IPC semaphore utilization |
+| [ semaphore_arrays_used ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/ipc.conf) | system.ipc_semaphore_arrays | IPC semaphore arrays utilization |
 
 
 ## Setup

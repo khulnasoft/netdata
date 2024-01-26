@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/integrations/getifaddrs.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/integrations/getifaddrs.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
 sidebar_label: "getifaddrs"
 learn_status: "Published"
 learn_rel_path: "Data Collection/FreeBSD"
@@ -93,13 +93,13 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ interface_speed ](https://github.com/netdata/netdata/blob/master/health/health.d/net.conf) | net.net | network interface ${label:device} current speed |
-| [ inbound_packets_dropped_ratio ](https://github.com/netdata/netdata/blob/master/health/health.d/net.conf) | net.drops | ratio of inbound dropped packets for the network interface ${label:device} over the last 10 minutes |
-| [ outbound_packets_dropped_ratio ](https://github.com/netdata/netdata/blob/master/health/health.d/net.conf) | net.drops | ratio of outbound dropped packets for the network interface ${label:device} over the last 10 minutes |
-| [ 1m_received_packets_rate ](https://github.com/netdata/netdata/blob/master/health/health.d/net.conf) | net.packets | average number of packets received by the network interface ${label:device} over the last minute |
-| [ 10s_received_packets_storm ](https://github.com/netdata/netdata/blob/master/health/health.d/net.conf) | net.packets | ratio of average number of received packets for the network interface ${label:device} over the last 10 seconds, compared to the rate over the last minute |
-| [ interface_inbound_errors ](https://github.com/netdata/netdata/blob/master/health/health.d/net.conf) | net.errors | number of inbound errors for the network interface ${label:device} in the last 10 minutes |
-| [ interface_outbound_errors ](https://github.com/netdata/netdata/blob/master/health/health.d/net.conf) | net.errors | number of outbound errors for the network interface ${label:device} in the last 10 minutes |
+| [ interface_speed ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/net.conf) | net.net | network interface ${label:device} current speed |
+| [ inbound_packets_dropped_ratio ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/net.conf) | net.drops | ratio of inbound dropped packets for the network interface ${label:device} over the last 10 minutes |
+| [ outbound_packets_dropped_ratio ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/net.conf) | net.drops | ratio of outbound dropped packets for the network interface ${label:device} over the last 10 minutes |
+| [ 1m_received_packets_rate ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/net.conf) | net.packets | average number of packets received by the network interface ${label:device} over the last minute |
+| [ 10s_received_packets_storm ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/net.conf) | net.packets | ratio of average number of received packets for the network interface ${label:device} over the last 10 seconds, compared to the rate over the last minute |
+| [ interface_inbound_errors ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/net.conf) | net.errors | number of inbound errors for the network interface ${label:device} in the last 10 minutes |
+| [ interface_outbound_errors ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/net.conf) | net.errors | number of outbound errors for the network interface ${label:device} in the last 10 minutes |
 
 
 ## Setup
@@ -126,7 +126,7 @@ The file format is a modified INI syntax. The general structure is:
     option3 = some third value
 ```
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

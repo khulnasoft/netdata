@@ -1806,7 +1806,7 @@ int main (int argc, char **argv) {
                     " options ipmi_si kipmid_max_busy_us=10\n"
                     "\n"
                     " For more information:\n"
-                    " https://github.com/netdata/netdata/tree/master/collectors/freeipmi.plugin\n"
+                    " https://github.com/khulnasoft/netdata/tree/master/collectors/freeipmi.plugin\n"
                     "\n"
                     , program_name, VERSION
                     , update_every

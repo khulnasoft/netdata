@@ -796,7 +796,7 @@ int main(int argc, char **argv) {
                     "  --help                  print this message and exit\n"
                     "\n"
                     " For more information:\n"
-                    " https://github.com/netdata/netdata/tree/master/collectors/nfacct.plugin\n"
+                    " https://github.com/khulnasoft/netdata/tree/master/collectors/nfacct.plugin\n"
                     "\n"
                     , VERSION
                     , netdata_update_every

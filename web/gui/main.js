@@ -668,13 +668,13 @@ function renderMachines(machinesArray) {
         if (machines) {
             html += (
                 `<div class="info-item">
-                    <a href="https://github.com/netdata/netdata/tree/master/registry#registry" target="_blank">Your nodes list is empty</a>
+                    <a href="https://github.com/khulnasoft/netdata/tree/master/registry#registry" target="_blank">Your nodes list is empty</a>
                 </div>`
             )
         } else {
             html += (
                 `<div class="info-item">
-                    <a href="https://github.com/netdata/netdata/tree/master/registry#registry" target="_blank">Failed to contact the registry</a>
+                    <a href="https://github.com/khulnasoft/netdata/tree/master/registry#registry" target="_blank">Failed to contact the registry</a>
                 </div>`
             )
         }
@@ -812,7 +812,7 @@ function renderMyNetdataMenu(machinesArray) {
             </div>
             <div class="agent-item">
                 <i class="fas fa-question-circle""></i>
-                <a href="https://github.com/netdata/netdata/tree/master/registry#registry" target="_blank">What is this?</a>
+                <a href="https://github.com/khulnasoft/netdata/tree/master/registry#registry" target="_blank">What is this?</a>
                 <div></div>
             </div>`
         )
@@ -2042,7 +2042,7 @@ function clipboardCopyBadgeEmbed(url) {
 function alarmsUpdateModal() {
     var active = '<h3>Raised Alarms</h3><table class="table">';
     var all = '<h3>All Running Alarms</h3><div class="panel-group" id="alarms_all_accordion" role="tablist" aria-multiselectable="true">';
-    var footer = '<hr/><a href="https://github.com/netdata/netdata/tree/master/web/api/badges#netdata-badges" target="_blank">netdata badges</a> refresh automatically. Their color indicates the state of the alarm: <span style="color: #e05d44"><b>&nbsp;red&nbsp;</b></span> is critical, <span style="color:#fe7d37"><b>&nbsp;orange&nbsp;</b></span> is warning, <span style="color: #4c1"><b>&nbsp;bright green&nbsp;</b></span> is ok, <span style="color: #9f9f9f"><b>&nbsp;light grey&nbsp;</b></span> is undefined (i.e. no data or no status), <span style="color: #000"><b>&nbsp;black&nbsp;</b></span> is not initialized. You can copy and paste their URLs to embed them in any web page.<br/>netdata can send notifications for these alarms. Check <a href="https://github.com/netdata/netdata/blob/master/health/notifications/health_alarm_notify.conf" target="_blank">this configuration file</a> for more information.';
+    var footer = '<hr/><a href="https://github.com/khulnasoft/netdata/tree/master/web/api/badges#netdata-badges" target="_blank">netdata badges</a> refresh automatically. Their color indicates the state of the alarm: <span style="color: #e05d44"><b>&nbsp;red&nbsp;</b></span> is critical, <span style="color:#fe7d37"><b>&nbsp;orange&nbsp;</b></span> is warning, <span style="color: #4c1"><b>&nbsp;bright green&nbsp;</b></span> is ok, <span style="color: #9f9f9f"><b>&nbsp;light grey&nbsp;</b></span> is undefined (i.e. no data or no status), <span style="color: #000"><b>&nbsp;black&nbsp;</b></span> is not initialized. You can copy and paste their URLs to embed them in any web page.<br/>netdata can send notifications for these alarms. Check <a href="https://github.com/khulnasoft/netdata/blob/master/health/notifications/health_alarm_notify.conf" target="_blank">this configuration file</a> for more information.';
 
     loadClipboard(function () {
     });
@@ -3050,17 +3050,17 @@ function notifyForUpdate(force) {
 
         if (sha1 === null) {
             save = false;
-            versionLog('<p><big>Failed to get your netdata version!</big></p><p>You can always get the latest netdata from <a href="https://github.com/netdata/netdata" target="_blank">its github page</a>.</p>');
+            versionLog('<p><big>Failed to get your netdata version!</big></p><p>You can always get the latest netdata from <a href="https://github.com/khulnasoft/netdata" target="_blank">its github page</a>.</p>');
         } else if (sha2 === null) {
             save = false;
-            versionLog('<p><big>Failed to get the latest netdata version.</big></p><p>You can always get the latest netdata from <a href="https://github.com/netdata/netdata" target="_blank">its github page</a>.</p>');
+            versionLog('<p><big>Failed to get the latest netdata version.</big></p><p>You can always get the latest netdata from <a href="https://github.com/khulnasoft/netdata" target="_blank">its github page</a>.</p>');
         } else if (versionsMatch(sha1, sha2)) {
             save = true;
-            versionLog('<p><big>You already have the latest netdata!</big></p><p>No update yet?<br/>We probably need some motivation to keep going on!</p><p>If you haven\'t already, <a href="https://github.com/netdata/netdata" target="_blank">give netdata a <b><i class="fas fa-star"></i></b> at its github page</a>.</p>');
+            versionLog('<p><big>You already have the latest netdata!</big></p><p>No update yet?<br/>We probably need some motivation to keep going on!</p><p>If you haven\'t already, <a href="https://github.com/khulnasoft/netdata" target="_blank">give netdata a <b><i class="fas fa-star"></i></b> at its github page</a>.</p>');
         } else {
             save = true;
             var compare = 'https://learn.netdata.cloud/docs/agent/changelog/';
-            versionLog('<p><big><strong>New version of netdata available!</strong></big></p><p>Latest version: <b><code>' + sha2 + '</code></b></p><p><a href="' + compare + '" target="_blank">Click here for the changes log</a> and<br/><a href="https://github.com/netdata/netdata/tree/master/packaging/installer/UPDATE.md" target="_blank">click here for directions on updating</a> your netdata installation.</p><p>We suggest to review the changes log for new features you may be interested, or important bug fixes you may need.<br/>Keeping your netdata updated is generally a good idea.</p>');
+            versionLog('<p><big><strong>New version of netdata available!</strong></big></p><p>Latest version: <b><code>' + sha2 + '</code></b></p><p><a href="' + compare + '" target="_blank">Click here for the changes log</a> and<br/><a href="https://github.com/khulnasoft/netdata/tree/master/packaging/installer/UPDATE.md" target="_blank">click here for directions on updating</a> your netdata installation.</p><p>We suggest to review the changes log for new features you may be interested, or important bug fixes you may need.<br/>Keeping your netdata updated is generally a good idea.</p>');
 
             document.getElementById('update_badge').innerHTML = '!';
         }

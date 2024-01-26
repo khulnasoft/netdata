@@ -1317,7 +1317,7 @@ NETDATA_DOUBLE *rrd2rrdr_ks2(
 
     // copy the points of the dimension to a contiguous array
     // there is no need to check for empty values, since empty values are already zero
-    // https://github.com/netdata/netdata/blob/6e3144683a73a2024d51425b20ecfd569034c858/web/api/queries/average/average.c#L41-L43
+    // https://github.com/khulnasoft/netdata/blob/6e3144683a73a2024d51425b20ecfd569034c858/web/api/queries/average/average.c#L41-L43
     memcpy(ret, r->v, rrdr_rows(r) * sizeof(NETDATA_DOUBLE));
 
 cleanup:

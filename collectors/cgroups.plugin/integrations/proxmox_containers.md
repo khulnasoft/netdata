@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/cgroups.plugin/integrations/proxmox_containers.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/cgroups.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/cgroups.plugin/integrations/proxmox_containers.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/cgroups.plugin/metadata.yaml"
 sidebar_label: "Proxmox Containers"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Containers and VMs"
@@ -140,10 +140,10 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ cgroup_10min_cpu_usage ](https://github.com/netdata/netdata/blob/master/health/health.d/cgroups.conf) | cgroup.cpu_limit | average cgroup CPU utilization over the last 10 minutes |
-| [ cgroup_ram_in_use ](https://github.com/netdata/netdata/blob/master/health/health.d/cgroups.conf) | cgroup.mem_usage | cgroup memory utilization |
-| [ cgroup_1m_received_packets_rate ](https://github.com/netdata/netdata/blob/master/health/health.d/cgroups.conf) | cgroup.net_packets | average number of packets received by the network interface ${label:device} over the last minute |
-| [ cgroup_10s_received_packets_storm ](https://github.com/netdata/netdata/blob/master/health/health.d/cgroups.conf) | cgroup.net_packets | ratio of average number of received packets for the network interface ${label:device} over the last 10 seconds, compared to the rate over the last minute |
+| [ cgroup_10min_cpu_usage ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/cgroups.conf) | cgroup.cpu_limit | average cgroup CPU utilization over the last 10 minutes |
+| [ cgroup_ram_in_use ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/cgroups.conf) | cgroup.mem_usage | cgroup memory utilization |
+| [ cgroup_1m_received_packets_rate ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/cgroups.conf) | cgroup.net_packets | average number of packets received by the network interface ${label:device} over the last minute |
+| [ cgroup_10s_received_packets_storm ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/cgroups.conf) | cgroup.net_packets | ratio of average number of received packets for the network interface ${label:device} over the last 10 seconds, compared to the rate over the last minute |
 
 
 ## Setup

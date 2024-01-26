@@ -19,10 +19,10 @@ To see your plan and billing setting you need:
 1. Click on the **Plan & Billing** tab
 1. On this page you will be presented with information on your current plan, billing settings, and usage information:
    1. At the top of the page you will see:
-      - **Credit** amount which refers to any amount you have available to use on future invoices or subscription changes ([Plan changes and credit balance](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/plans.md#plan-changes-and-credit-balance)) - this is displayed once you have had an active paid subscription with us
+      - **Credit** amount which refers to any amount you have available to use on future invoices or subscription changes ([Plan changes and credit balance](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/plans.md#plan-changes-and-credit-balance)) - this is displayed once you have had an active paid subscription with us
       - **Billing email** the email that was specified to be linked to tha plan subscription. This is where invoices, payment, and subscription-related notifications will be sent.
       - **Billing options and Invoices** is the link to our billing provider Customer Portal where you will be able to:
-         - See the current subscription. There will always be 2 subscriptions active for the two pricing components mentioned on [Netdata Plans documentation page](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/plans.md#plans)
+         - See the current subscription. There will always be 2 subscriptions active for the two pricing components mentioned on [Netdata Plans documentation page](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/plans.md#plans)
          - Change directly the payment method associated to current subscriptions
          - View, add, delete or change your default payment methods
          - View or change or Billing information:
@@ -37,7 +37,7 @@ To see your plan and billing setting you need:
    1. At the bottom, you will find your Usage chart that displays:
       - Daily count - The weighted 90th percentile of the live node count during the day, taking time as the weight. If you have 30 live nodes throughout the day
       except for a two hour peak of 44 live nodes, the daily value is 31.
-      - Period count: The 90th percentile of the daily counts for this period up to the date. The last value for the period is used as the number of nodes for the bill for that period. See more details in [running nodes and billing](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/plans.md#running-nodes-and-billing) (only applicable if you are on a paid plan subscription)
+      - Period count: The 90th percentile of the daily counts for this period up to the date. The last value for the period is used as the number of nodes for the bill for that period. See more details in [running nodes and billing](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/plans.md#running-nodes-and-billing) (only applicable if you are on a paid plan subscription)
       - Committed nodes: The number of nodes committed to in the yearly plan. In case the period count is higher than the number of committed nodes, the difference is billed as overage.
 
 
@@ -77,7 +77,7 @@ To see your plan and billing setting you need:
 Notes:
 * Since there is an active plan you won't be redirected to our billing provider, the checkout if performed as soon as you click on **Checkout**
 * The change to your plan will be applied as soon as the checkout process is completed successfully
-* Downgrade or cancellations may have impacts on some of notification method settings or user accesses to your space, for more details please check [Plan changes and credit balance](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/plans.md#plan-changes-and-credit-balance)
+* Downgrade or cancellations may have impacts on some of notification method settings or user accesses to your space, for more details please check [Plan changes and credit balance](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/plans.md#plan-changes-and-credit-balance)
 
 ## FAQ
 
@@ -91,7 +91,7 @@ After an initial failed payment, we will attempt to process your payment every w
 
 For the next 24 hours, you will be able to use all your current notification method configurations. After 24 hours, any of the notification method configurations that aren't available on your space's plan will be automatically disabled.
 
-Cancellation might affect users in your Space. Please check what roles are available on the [Community plan](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/plans.md#areas-impacted-by-plans). Users with unavailable roles on the Community plan will immediately have restricted access to the Space.
+Cancellation might affect users in your Space. Please check what roles are available on the [Community plan](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/plans.md#areas-impacted-by-plans). Users with unavailable roles on the Community plan will immediately have restricted access to the Space.
 
 ### 3. Which currencies do you support?
 
@@ -123,7 +123,7 @@ Every time you purchase or renew a Plan, two separate Invoices are generated:
   
   On the following month you will receive an Invoice based on your monthly usage.
 
-You can find some further details on the [Netdata Plans page](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/plans.md#plans).
+You can find some further details on the [Netdata Plans page](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/plans.md#plans).
 
 > ⚠️ We expect this to change to a single invoice in the future, but currently do not have a concrete timeline for when this change will happen.
 

@@ -2,7 +2,7 @@
 
 The Netdata daemon is practically a synonym for the Netdata Agent, as it controls its 
 entire operation. We support various methods to 
-[start, stop, or restart the daemon](https://github.com/netdata/netdata/blob/master/docs/configure/start-stop-restart.md).
+[start, stop, or restart the daemon](https://github.com/khulnasoft/netdata/blob/master/docs/configure/start-stop-restart.md).
 
 This document provides some basic information on the command line options, log files, and how to debug and troubleshoot
 
@@ -33,10 +33,10 @@ The command line options of the Netdata 1.10.0 version are the following:
  All rights reserved.
 
  Home Page  : https://netdata.cloud
- Source Code: https://github.com/netdata/netdata
+ Source Code: https://github.com/khulnasoft/netdata
  Docs       : https://learn.netdata.cloud
- Support    : https://github.com/netdata/netdata/issues
- License    : https://github.com/netdata/netdata/blob/master/LICENSE.md
+ Support    : https://github.com/khulnasoft/netdata/issues
+ License    : https://github.com/khulnasoft/netdata/blob/master/LICENSE.md
 
  Twitter    : https://twitter.com/netdatahq
  LinkedIn   : https://linkedin.com/company/netdata-cloud/
@@ -114,7 +114,7 @@ The command line options of the Netdata 1.10.0 version are the following:
   - USR2                   Reload health configuration.
 ```
 
-You can send commands during runtime via [netdatacli](https://github.com/netdata/netdata/blob/master/cli/README.md).
+You can send commands during runtime via [netdatacli](https://github.com/khulnasoft/netdata/blob/master/cli/README.md).
 
 ## Log files
 
@@ -143,7 +143,7 @@ For most Netdata programs (including standard external plugins shipped by netdat
 | `ERROR` | Something that might disable a part of netdata.<br/>The log line includes `errno` (if it is not zero).                    |
 | `FATAL` | Something prevented a program from running.<br/>The log line includes `errno` (if it is not zero) and the program exited. |
 
-The `FATAL` and `ERROR` messages will always appear in the logs, and `INFO`can be filtered using [severity level](https://github.com/netdata/netdata/tree/master/daemon/config#logs-section-options) option.
+The `FATAL` and `ERROR` messages will always appear in the logs, and `INFO`can be filtered using [severity level](https://github.com/khulnasoft/netdata/tree/master/daemon/config#logs-section-options) option.
 
 So, when auto-detection of data collection fail, `ERROR` lines are logged and the relevant modules are disabled, but the
 program continues to run.
@@ -152,7 +152,7 @@ When a Netdata program cannot run at all, a `FATAL` line is logged.
 
 ### collector.log
 
-The `collector.log` is the `stderr` of all [collectors](https://github.com/netdata/netdata/blob/master/collectors/COLLECTORS.md)
+The `collector.log` is the `stderr` of all [collectors](https://github.com/khulnasoft/netdata/blob/master/collectors/COLLECTORS.md)
  run by `netdata`.
 
 So if any process, in the Netdata process tree, writes anything to its standard error,
@@ -282,7 +282,7 @@ all programs), edit `netdata.conf` and set:
   process nice level = -1
 ```
 
-then execute this to [restart Netdata](https://github.com/netdata/netdata/blob/master/docs/configure/start-stop-restart.md):
+then execute this to [restart Netdata](https://github.com/khulnasoft/netdata/blob/master/docs/configure/start-stop-restart.md):
 
 ```sh
 sudo systemctl restart netdata
@@ -346,7 +346,7 @@ Netdata on Alpine Linux (that uses **musl** instead of **glibc**) is this:
 Since Netdata already uses minimal memory allocations while it runs (i.e. it adapts its memory on start, so that while
 repeatedly collects data it does not do memory allocations), it already instructs the system memory allocator to
 minimize the memory arenas for each thread. We have also added [2 configuration
-options](https://github.com/netdata/netdata/blob/5645b1ee35248d94e6931b64a8688f7f0d865ec6/src/main.c#L410-L418) to allow
+options](https://github.com/khulnasoft/netdata/blob/5645b1ee35248d94e6931b64a8688f7f0d865ec6/src/main.c#L410-L418) to allow
 you tweak these settings: `glibc malloc arena max for plugins` and `glibc malloc arena max for netdata`.
 
 However, even if we instructed the memory allocator to use just one arena, it

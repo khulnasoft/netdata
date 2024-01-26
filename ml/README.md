@@ -1,6 +1,6 @@
 <!--
 title: "Configure machine learning (ML) powered anomaly detection"
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/ml/README.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/ml/README.md"
 description: "This is an in-depth look at how Netdata uses ML to detect anomalies."
 sidebar_label: "Configure machine learning (ML) powered anomaly detection"
 learn_status: "Published"
@@ -16,7 +16,7 @@ Machine learning is a subfield of artificial intelligence that enables computers
 
 The primary goal of implementing machine learning features in Netdata is to enable users to detect and alert on anomalies in their systems with advanced anomaly detection capabilities. Netdata's machine learning features are designed to be highly customizable and scalable, so users can tailor the ML models and training process to their specific requirements and monitor systems of any size or complexity.
 
-As of [`v1.32.0`](https://github.com/netdata/netdata/releases/tag/v1.32.0), Netdata comes with ML powered [anomaly detection](https://en.wikipedia.org/wiki/Anomaly_detection) capabilities built into it and available to use out of the box, with zero configuration required (ML was enabled by default in `v1.35.0-29-nightly` in [this PR](https://github.com/netdata/netdata/pull/13158), previously it required a one line config change).
+As of [`v1.32.0`](https://github.com/khulnasoft/netdata/releases/tag/v1.32.0), Netdata comes with ML powered [anomaly detection](https://en.wikipedia.org/wiki/Anomaly_detection) capabilities built into it and available to use out of the box, with zero configuration required (ML was enabled by default in `v1.35.0-29-nightly` in [this PR](https://github.com/khulnasoft/netdata/pull/13158), previously it required a one line config change).
 
 🚧 **Note**: If you would like to get involved and help us with some feedback, email us at analytics-ml-team@netdata.cloud, comment on the [beta launch post](https://community.netdata.cloud/t/anomaly-advisor-beta-launch/2717) in the Netdata community, or come join us in the [🤖-ml-powered-monitoring](https://discord.gg/4eRSEUpJnc) channel of the Netdata discord.
 
@@ -120,7 +120,7 @@ To enable or disable anomaly detection:
 
 > 📑 Note
 > 
-> If you would like to learn more about configuring Netdata please see the [Configuration section](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md) of our documentation.
+> If you would like to learn more about configuring Netdata please see the [Configuration section](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md) of our documentation.
 
 Below is a list of all the available configuration params and their default values.
 
@@ -152,7 +152,7 @@ Below is a list of all the available configuration params and their default valu
 
 If you would like to run ML on a parent instead of at the edge, some configuration options are illustrated below.
 
-This example assumes 3 child nodes [streaming](https://github.com/netdata/netdata/blob/master/streaming/README.md) to 1 parent node and illustrates the main ways you might want to configure running ML for the children on the parent, running ML on the children themselves, or even a mix of approaches.
+This example assumes 3 child nodes [streaming](https://github.com/khulnasoft/netdata/blob/master/streaming/README.md) to 1 parent node and illustrates the main ways you might want to configure running ML for the children on the parent, running ML on the children themselves, or even a mix of approaches.
 
 ![parent_child_options](https://user-images.githubusercontent.com/2178292/164439761-8fb7dddd-c4d8-4329-9f44-9a794937a086.png)
 
@@ -275,5 +275,5 @@ The anomaly rate across all dimensions of a node.
 - Netdata uses [dlib](https://github.com/davisking/dlib) under the hood for its core ML features.
 - You should benchmark Netdata resource usage before and after enabling ML. Typical overhead ranges from 1-2% additional CPU at most.
 - The "anomaly bit" has been implemented to be a building block to underpin many more ML based use cases that we plan to deliver soon.
-- At its core Netdata uses an approach and problem formulation very similar to the Netdata python [anomalies collector](https://github.com/netdata/netdata/blob/master/collectors/python.d.plugin/anomalies/README.md), just implemented in a much much more efficient and scalable way in the agent in c++. So if you would like to learn more about the approach and are familiar with Python that is a useful resource to explore, as is the corresponding [deep dive tutorial](https://nbviewer.org/github/netdata/community/blob/main/netdata-agent-api/netdata-pandas/anomalies_collector_deepdive.ipynb) where the default model used is PCA instead of K-Means but the overall approach and formulation is similar.
+- At its core Netdata uses an approach and problem formulation very similar to the Netdata python [anomalies collector](https://github.com/khulnasoft/netdata/blob/master/collectors/python.d.plugin/anomalies/README.md), just implemented in a much much more efficient and scalable way in the agent in c++. So if you would like to learn more about the approach and are familiar with Python that is a useful resource to explore, as is the corresponding [deep dive tutorial](https://nbviewer.org/github/netdata/community/blob/main/netdata-agent-api/netdata-pandas/anomalies_collector_deepdive.ipynb) where the default model used is PCA instead of K-Means but the overall approach and formulation is similar.
 - Check out our ML related blog posts over at [https://blog.netdata.cloud](https://blog.netdata.cloud/tags/machine-learning)

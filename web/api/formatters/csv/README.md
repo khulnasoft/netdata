@@ -1,6 +1,6 @@
 <!--
 title: "CSV formatter"
-custom_edit_url: https://github.com/netdata/netdata/edit/master/web/api/formatters/csv/README.md
+custom_edit_url: https://github.com/khulnasoft/netdata/edit/master/web/api/formatters/csv/README.md
 sidebar_label: "CSV formatter"
 learn_status: "Published"
 learn_topic_type: "References"
@@ -9,7 +9,7 @@ learn_rel_path: "Developers/Web/Api/Formatters"
 
 # CSV formatter
 
-The CSV formatter presents [results of database queries](https://github.com/netdata/netdata/blob/master/web/api/queries/README.md) in the following formats:
+The CSV formatter presents [results of database queries](https://github.com/khulnasoft/netdata/blob/master/web/api/queries/README.md) in the following formats:
 
 | format|content type|description|
 | :----:|:----------:|:----------|

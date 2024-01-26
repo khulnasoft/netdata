@@ -13,14 +13,14 @@ These charts provide a lot of useful information, so that you can:
 - View the combined anomaly rate of all underlying data with the [Anomaly Rate ribbon](#anomaly-rate-ribbon)
 - Explore even more details about a chart's metrics through [hovering over certain elements of it](#hover-over-the-chart)
 - Use intuitive tooling and shortcuts to pan, zoom or highlight areas of interest in your charts
-- On highlight, get easy access to [Metric Correlations](https://github.com/netdata/netdata/blob/master/docs/cloud/insights/metric-correlations.md) to see other metrics with similar patterns
+- On highlight, get easy access to [Metric Correlations](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/insights/metric-correlations.md) to see other metrics with similar patterns
 - Have the dimensions sorted based on name or value
 - View information about the chart, its plugin, context, and type
 - View individual metric collection status about a chart
 
 These charts are available on Netdata Cloud's
-[Overview tab](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/overview.md), Single Node tab and
-on your [Custom Dashboards](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/dashboards.md).
+[Overview tab](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/overview.md), Single Node tab and
+on your [Custom Dashboards](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/dashboards.md).
 
 ## Overview
 
@@ -42,8 +42,8 @@ With a quick glance you have immediate information available at your disposal:
 While Netdata's charts require no configuration and are easy to interact with, they have a lot of underlying complexity. To meaningfully organize charts out of the box based on what's happening in your nodes, Netdata uses the concepts of [dimensions](#dimensions), [contexts](#contexts), and [families](#families).
 
 Understanding how these work will help you more easily navigate the dashboard,
-[write new alerts](https://github.com/netdata/netdata/blob/master/health/REFERENCE.md), or play around
-with the [API](https://github.com/netdata/netdata/blob/master/web/api/README.md).
+[write new alerts](https://github.com/khulnasoft/netdata/blob/master/health/REFERENCE.md), or play around
+with the [API](https://github.com/khulnasoft/netdata/blob/master/web/api/README.md).
 
 ### Dimensions
 
@@ -71,7 +71,7 @@ whereas anything after the `.` is specified either by the chart's developer or b
 
 By default, a chart's type affects where it fits in the menu, while its family creates submenus.
 
-Netdata also relies on contexts for [alert configuration](https://github.com/netdata/netdata/blob/master/health/REFERENCE.md) (the [`on` line](https://github.com/netdata/netdata/blob/master/health/REFERENCE.md#alert-line-on)).
+Netdata also relies on contexts for [alert configuration](https://github.com/khulnasoft/netdata/blob/master/health/REFERENCE.md) (the [`on` line](https://github.com/khulnasoft/netdata/blob/master/health/REFERENCE.md#alert-line-on)).
 
 ### Families
 
@@ -104,7 +104,7 @@ When you start interacting with a chart, you'll notice valuable information on t
 
 The elements that you can find on this top bar are:
 
-- **Netdata icon**: this indicates that data is continuously being updated, this happens if [Time controls](https://github.com/netdata/netdata/blob/master/docs/dashboard/visualization-date-and-time-controls.md#time-controls) are in Play or Force Play mode.
+- **Netdata icon**: this indicates that data is continuously being updated, this happens if [Time controls](https://github.com/khulnasoft/netdata/blob/master/docs/dashboard/visualization-date-and-time-controls.md#time-controls) are in Play or Force Play mode.
 - **Chart title**: on the chart title you can see the title together with the metric being displayed, as well as the unit of measurement.
 - **Chart status icon**: possible values are: Loading, Timeout, Error or No data, otherwise this icon is not shown.
 
@@ -262,7 +262,7 @@ By default the aggregation applied is _average_ but the user can choose differen
 - Delta
 - Single or Double exponential smoothing
 
-For more details on each, you can refer to our Agent's HTTP API details on [Data Queries - Data Grouping](https://github.com/netdata/netdata/blob/master/web/api/queries/README.md#data-grouping).
+For more details on each, you can refer to our Agent's HTTP API details on [Data Queries - Data Grouping](https://github.com/khulnasoft/netdata/blob/master/web/api/queries/README.md#data-grouping).
 
 ### Reset to defaults
 
@@ -318,7 +318,7 @@ All these indicators are also visualized per dimension, in the pop-over that app
 
 ## Play, Pause and Reset
 
-Your charts are controlled using the available [Time controls](https://github.com/netdata/netdata/blob/master/docs/dashboard/visualization-date-and-time-controls.md#time-controls).
+Your charts are controlled using the available [Time controls](https://github.com/khulnasoft/netdata/blob/master/docs/dashboard/visualization-date-and-time-controls.md#time-controls).
 Besides these, when interacting with the chart you can also activate these controls by:
 
 - Hovering over any chart to temporarily pause it - this momentarily switches time control to Pause, so that you can
@@ -363,7 +363,7 @@ it like pushing the current timeframe off the screen to see what came before or 
 Selecting timeframes is useful when you see an interesting spike or change in a chart and want to investigate further by:
 
 - Looking at the same period of time on other charts/sections
-- Running [metric correlations](https://github.com/netdata/netdata/blob/master/docs/cloud/insights/metric-correlations.md) to filter metrics that also show something different in the selected period, vs the previous one
+- Running [metric correlations](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/insights/metric-correlations.md) to filter metrics that also show something different in the selected period, vs the previous one
 
 | Interaction                        | Keyboard/mouse                                           | Touchpad/touchscreen |
 |:-----------------------------------|:---------------------------------------------------------|:---------------------|

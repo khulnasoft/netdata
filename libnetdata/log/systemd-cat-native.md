@@ -22,7 +22,7 @@ printf "MESSAGE=hello world\nPRIORITY=6\n\n" | systemd-cat-native
 
 The result:
 
-![image](https://github.com/netdata/netdata/assets/2662304/689d5e03-97ee-40a8-a690-82b7710cef7c)
+![image](https://github.com/khulnasoft/netdata/assets/2662304/689d5e03-97ee-40a8-a690-82b7710cef7c)
 
 
 Sending `PRIORITY=3` (error):
@@ -32,7 +32,7 @@ printf "MESSAGE=hey, this is error\nPRIORITY=3\n\n" | systemd-cat-native
 ```
 
 The result:
-![image](https://github.com/netdata/netdata/assets/2662304/faf3eaa5-ac56-415b-9de8-16e6ceed9280)
+![image](https://github.com/khulnasoft/netdata/assets/2662304/faf3eaa5-ac56-415b-9de8-16e6ceed9280)
 
 Sending multi-line log entries (in this example we replace the text `--NEWLINE--` with a newline in the log entry):
 
@@ -42,7 +42,7 @@ printf "MESSAGE=hello--NEWLINE--world\nPRIORITY=6\n\n" | systemd-cat-native --ne
 
 The result:
 
-![image](https://github.com/netdata/netdata/assets/2662304/d6037b4a-87da-4693-ae67-e07df0decdd9)
+![image](https://github.com/khulnasoft/netdata/assets/2662304/d6037b4a-87da-4693-ae67-e07df0decdd9)
 
 
 Processing the standard `\n` string can be tricky due to shell escaping. This works, but note that

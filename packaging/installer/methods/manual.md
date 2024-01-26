@@ -1,7 +1,7 @@
 <!--
 title: "Install Netdata on Linux from a Git checkout"
 description: "Use the Netdata Agent source code from GitHub, plus helper scripts to set up your system, to install Netdata without packages or binaries."
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/packaging/installer/methods/manual.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/packaging/installer/methods/manual.md"
 sidebar_label: "From a Git checkout"
 learn_status: "Published"
 learn_rel_path: "Installation/Installation methods"
@@ -23,7 +23,7 @@ To install the latest git version of Netdata, please follow these 2 steps:
 ## Prepare your system
 
 Before you begin, make sure that your repo and the repo's submodules are clean from any previous builds and up to date.
-Otherwise, [perform a cleanup](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/manual.md#perform-a-cleanup-in-your-netdata-repo)
+Otherwise, [perform a cleanup](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/manual.md#perform-a-cleanup-in-your-netdata-repo)
 
 Use our automatic requirements installer (_no need to be `root`_), which attempts to find the packages that
 should be installed on your system to build and run Netdata. It supports a large variety of major Linux distributions
@@ -46,7 +46,7 @@ and other operating systems and is regularly tested. You can find this tool [her
 -   **SUSE** Linux and its derivatives (including **openSUSE**)
 
 -   **SLE12** Must have your system registered with SUSE Customer Center or have the DVD. See
-    [#1162](https://github.com/netdata/netdata/issues/1162)
+    [#1162](https://github.com/khulnasoft/netdata/issues/1162)
 
 Install the packages for having a **basic Netdata installation** (system monitoring and many applications, without  `mysql` / `mariadb`, `named`, hardware sensors and `SNMP`):
 
@@ -61,9 +61,9 @@ curl -Ss 'https://raw.githubusercontent.com/netdata/netdata/master/packaging/ins
 ```
 
 If the above do not work for you, please [open a github
-issue](https://github.com/netdata/netdata/issues/new?title=packages%20installer%20failed&labels=installation%20help&body=The%20experimental%20packages%20installer%20failed.%0A%0AThis%20is%20what%20it%20says:%0A%0A%60%60%60txt%0A%0Aplease%20paste%20your%20screen%20here%0A%0A%60%60%60)
+issue](https://github.com/khulnasoft/netdata/issues/new?title=packages%20installer%20failed&labels=installation%20help&body=The%20experimental%20packages%20installer%20failed.%0A%0AThis%20is%20what%20it%20says:%0A%0A%60%60%60txt%0A%0Aplease%20paste%20your%20screen%20here%0A%0A%60%60%60)
 with a copy of the message you get on screen. We are trying to make it work everywhere (this is also why the script
-[reports back](https://github.com/netdata/netdata/issues/2054) success or failure for all its runs).
+[reports back](https://github.com/khulnasoft/netdata/issues/2054) success or failure for all its runs).
 
 ---
 
@@ -182,7 +182,7 @@ Do this to install and run Netdata:
 
 ```sh
 # download it - the directory 'netdata' will be created
-git clone https://github.com/netdata/netdata.git --depth=100 --recursive
+git clone https://github.com/khulnasoft/netdata.git --depth=100 --recursive
 cd netdata
 
 # run script with root privileges to build, install, start Netdata
@@ -205,22 +205,22 @@ cd netdata
 -   `--dont-start-it`: Prevent the installer from starting Netdata automatically.
 -   `--stable-channel`: Automatically update only on the release of new major versions.
 -   `--nightly-channel`: Automatically update on every new nightly build.
--   `--disable-telemetry`: Opt-out of [anonymous statistics](https://github.com/netdata/netdata/blob/master/docs/anonymous-statistics.md) we use to make
+-   `--disable-telemetry`: Opt-out of [anonymous statistics](https://github.com/khulnasoft/netdata/blob/master/docs/anonymous-statistics.md) we use to make
     Netdata better.
 -   `--no-updates`: Prevent automatic updates of any kind.
 -   `--reinstall`: If an existing install is detected, reinstall instead of trying to update it. Note that this
     cannot be used to change installation types.
--   `--local-files`: Used for [offline installations](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/offline.md). Pass four file paths: the Netdata
+-   `--local-files`: Used for [offline installations](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/offline.md). Pass four file paths: the Netdata
     tarball, the checksum file, the go.d plugin tarball, and the go.d plugin config tarball, to force kickstart run the
     process using those files. This option conflicts with the `--stable-channel` option. If you set this _and_
     `--stable-channel`, Netdata will use the local files.
 
 ### Connect node to Netdata Cloud during installation
 
-Unlike the [`kickstart.sh`](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/kickstart.md), the `netdata-installer.sh` script does
-not allow you to automatically [connect](https://github.com/netdata/netdata/blob/master/claim/README.md) your node to Netdata Cloud immediately after installation.
+Unlike the [`kickstart.sh`](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/kickstart.md), the `netdata-installer.sh` script does
+not allow you to automatically [connect](https://github.com/khulnasoft/netdata/blob/master/claim/README.md) your node to Netdata Cloud immediately after installation.
 
-See the [connect to cloud](https://github.com/netdata/netdata/blob/master/claim/README.md) doc for details on connecting a node with a manual installation of Netdata.
+See the [connect to cloud](https://github.com/khulnasoft/netdata/blob/master/claim/README.md) doc for details on connecting a node with a manual installation of Netdata.
 
 ### 'nonrepresentable section on output' errors
 

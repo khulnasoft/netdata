@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/integrations/net.inet.udp.stats.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/integrations/net.inet.udp.stats.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
 sidebar_label: "net.inet.udp.stats"
 learn_status: "Published"
 learn_rel_path: "Data Collection/FreeBSD"
@@ -75,8 +75,8 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ 1m_ipv4_udp_receive_buffer_errors ](https://github.com/netdata/netdata/blob/master/health/health.d/udp_errors.conf) | ipv4.udperrors | average number of UDP receive buffer errors over the last minute |
-| [ 1m_ipv4_udp_send_buffer_errors ](https://github.com/netdata/netdata/blob/master/health/health.d/udp_errors.conf) | ipv4.udperrors | average number of UDP send buffer errors over the last minute |
+| [ 1m_ipv4_udp_receive_buffer_errors ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/udp_errors.conf) | ipv4.udperrors | average number of UDP receive buffer errors over the last minute |
+| [ 1m_ipv4_udp_send_buffer_errors ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/udp_errors.conf) | ipv4.udperrors | average number of UDP send buffer errors over the last minute |
 
 
 ## Setup
@@ -103,7 +103,7 @@ The file format is a modified INI syntax. The general structure is:
     option3 = some third value
 ```
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

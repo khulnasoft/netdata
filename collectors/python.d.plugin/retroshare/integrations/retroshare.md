@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/retroshare/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/retroshare/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/retroshare/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/retroshare/metadata.yaml"
 sidebar_label: "RetroShare"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Media Services"
@@ -76,7 +76,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ retroshare_dht_working ](https://github.com/netdata/netdata/blob/master/health/health.d/retroshare.conf) | retroshare.dht | number of DHT peers |
+| [ retroshare_dht_working ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/retroshare.conf) | retroshare.dht | number of DHT peers |
 
 
 ## Setup
@@ -97,7 +97,7 @@ The configuration file name for this integration is `python.d/retroshare.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

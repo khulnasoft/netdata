@@ -1,7 +1,7 @@
 <!--
 title: "Install Netdata on FreeBSD"
 description: "Install Netdata on FreeBSD to monitor the health and performance of bare metal or VMs with thousands of real-time, per-second metrics."
-custom_edit_url: https://github.com/netdata/netdata/edit/master/packaging/installer/methods/freebsd.md
+custom_edit_url: https://github.com/khulnasoft/netdata/edit/master/packaging/installer/methods/freebsd.md
 sidebar_label: "FreeBSD"
 learn_status: "Published"
 learn_rel_path: "Installation/Install on specific environments"
@@ -13,7 +13,7 @@ learn_rel_path: "Installation/Install on specific environments"
 > details of the installation process, such as version numbers for downloadable packages, before proceeding.
 >
 > You can help improve this document by [submitting a
-> PR](https://github.com/netdata/netdata/edit/master/packaging/installer/methods/freebsd.md) with your recommended
+> PR](https://github.com/khulnasoft/netdata/edit/master/packaging/installer/methods/freebsd.md) with your recommended
 > improvements or changes. Thank you!
 
 ## Install dependencies
@@ -50,14 +50,14 @@ If you would prefer to manually install Netdata, the following steps can help yo
 Download Netdata:
 
 ```sh
-fetch https://github.com/netdata/netdata/releases/download/v1.36.1/netdata-v1.36.1.tar.gz
+fetch https://github.com/khulnasoft/netdata/releases/download/v1.36.1/netdata-v1.36.1.tar.gz
 ```
 
 > ⚠️ Verify the latest version by either navigating to [Netdata's latest
-> release](https://github.com/netdata/netdata/releases/latest) or using `curl`:
+> release](https://github.com/khulnasoft/netdata/releases/latest) or using `curl`:
 >
 > ```bash
-> basename $(curl -Ls -o /dev/null -w %{url_effective} https://github.com/netdata/netdata/releases/latest)
+> basename $(curl -Ls -o /dev/null -w %{url_effective} https://github.com/khulnasoft/netdata/releases/latest)
 > ```
 
 Unzip the downloaded file:
@@ -90,7 +90,7 @@ You can now access the Netdata dashboard by navigating to `http://NODE:19999`, r
 
 Starting with v1.30, Netdata collects anonymous usage information by default and sends it to a self hosted PostHog instance within the Netdata infrastructure. To read
 more about the information collected and how to opt-out, check the [anonymous statistics
-page](https://github.com/netdata/netdata/blob/master/docs/anonymous-statistics.md).
+page](https://github.com/khulnasoft/netdata/blob/master/docs/anonymous-statistics.md).
 
 ## Updating the Agent on FreeBSD
 If you have not passed the `--auto-update` or `-u` parameter for the installer to enable automatic updating, repeat the last step to update Netdata whenever a new version becomes available. 
@@ -134,7 +134,7 @@ The following options are mutually exclusive and specifiy special operations oth
 - `--uninstall`: Uninstall an existing installation of Netdata. Fails if there is no existing install.
 - `--claim-only`: If there is an existing install, only try to claim it without attempting to update it. If there is no existing install, install and claim Netdata normally.
 - `--repositories-only`: Only install repository configuration packages instead of doing a full install of Netdata. Automatically sets --native-only.
-- `--prepare-offline-install-source`: Instead of insallling the agent, prepare a directory that can be used to install on another system without needing to download anything. See our [offline installation documentation](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/offline.md) for more info.
+- `--prepare-offline-install-source`: Instead of insallling the agent, prepare a directory that can be used to install on another system without needing to download anything. See our [offline installation documentation](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/offline.md) for more info.
 
 Additionally, the following environment variables may be used to further customize how the script runs (most users
 should not need to use special values for any of these):

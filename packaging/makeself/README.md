@@ -1,7 +1,7 @@
 <!--
 title: "Netdata static binary build"
 description: "Users can build the static 64-bit binary package that we ship with every release of the open-source Netdata Agent for debugging or specialize purposes."
-custom_edit_url: https://github.com/netdata/netdata/edit/master/packaging/makeself/README.md
+custom_edit_url: https://github.com/khulnasoft/netdata/edit/master/packaging/makeself/README.md
 sidebar_label: "Static binary packages"
 learn_status: "Published"
 learn_rel_path: "Installation/Installation methods"
@@ -26,7 +26,7 @@ you can do so by adding `--static-only` to the options you pass to the installer
 ## Building a static binary package
 
 Before you begin, make sure that your repo and the repo's submodules are clean from any previous builds and up to date.
-Otherwise, [perform a cleanup](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/manual.md#perform-a-cleanup-in-your-netdata-repo)
+Otherwise, [perform a cleanup](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/manual.md#perform-a-cleanup-in-your-netdata-repo)
 
 
 To build the static binary 64-bit distribution package, into the root folder on the netdata repo, run:

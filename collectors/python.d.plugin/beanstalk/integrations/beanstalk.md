@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/beanstalk/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/beanstalk/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/beanstalk/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/beanstalk/metadata.yaml"
 sidebar_label: "Beanstalk"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Message Brokers"
@@ -98,7 +98,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ beanstalk_server_buried_jobs ](https://github.com/netdata/netdata/blob/master/health/health.d/beanstalkd.conf) | beanstalk.current_jobs | number of buried jobs across all tubes. You need to manually kick them so they can be processed. Presence of buried jobs in a tube does not affect new jobs. |
+| [ beanstalk_server_buried_jobs ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/beanstalkd.conf) | beanstalk.current_jobs | number of buried jobs across all tubes. You need to manually kick them so they can be processed. Presence of buried jobs in a tube does not affect new jobs. |
 
 
 ## Setup
@@ -118,7 +118,7 @@ The configuration file name for this integration is `python.d/beanstalk.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

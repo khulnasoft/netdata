@@ -2,7 +2,7 @@
 title: "Deploy Netdata with Ansible"
 description: "Deploy an infrastructure monitoring solution in minutes with the Netdata Agent and Ansible. Use and customize a simple playbook for monitoring as code."
 image: /img/seo/guides/deploy/ansible.png
-custom_edit_url: https://github.com/netdata/netdata/edit/master/packaging/installer/methods/ansible.md
+custom_edit_url: https://github.com/khulnasoft/netdata/edit/master/packaging/installer/methods/ansible.md
 sidebar_label: "Ansible"
 learn_status: "Published"
 learn_rel_path: "Installation/Install on specific environments"
@@ -10,7 +10,7 @@ learn_rel_path: "Installation/Install on specific environments"
 
 # Deploy Netdata with Ansible
 
-Netdata's [one-line kickstart](https://github.com/netdata/netdata/blob/master/packaging/installer/README.md#install-on-linux-with-one-line-installer) is zero-configuration, highly adaptable, and compatible with tons
+Netdata's [one-line kickstart](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/README.md#install-on-linux-with-one-line-installer) is zero-configuration, highly adaptable, and compatible with tons
 of different operating systems and Linux distributions. You can use it on bare metal, VMs, containers, and everything
 in-between.
 
@@ -104,8 +104,8 @@ two different SSH keys supplied by AWS.
 ### Edit the `vars/main.yml` file
 
 In order to connect your node(s) to your Space in Netdata Cloud, and see all their metrics in real-time in [composite
-charts](https://github.com/netdata/netdata/blob/master/docs/visualize/overview-infrastructure.md) or perform [Metric
-Correlations](https://github.com/netdata/netdata/blob/master/docs/cloud/insights/metric-correlations.md), you need to set the `claim_token`
+charts](https://github.com/khulnasoft/netdata/blob/master/docs/visualize/overview-infrastructure.md) or perform [Metric
+Correlations](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/insights/metric-correlations.md), you need to set the `claim_token`
 and `claim_room` variables.
 
 To find your `claim_token` and `claim_room`, go to Netdata Cloud, then click on your Space's name in the top navigation,
@@ -130,7 +130,7 @@ hostname of the node, the playbook disables that local dashboard by setting `web
 security boost by not allowing any unwanted access to the local dashboard.
 
 You can read more about this decision, or other ways you might lock down the local dashboard, in our [node security
-doc](https://github.com/netdata/netdata/blob/master/docs/netdata-security.md).
+doc](https://github.com/khulnasoft/netdata/blob/master/docs/netdata-security.md).
 
 > Curious about why Netdata's dashboard is open by default? Read our [blog
 > post](https://www.netdata.cloud/blog/netdata-agent-dashboard/) on that zero-configuration design decision.

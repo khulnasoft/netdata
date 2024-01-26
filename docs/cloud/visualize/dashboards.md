@@ -9,13 +9,13 @@ Click on the **Dashboards** tab in any War Room to get started.
 
 From the Dashboards tab, click on the **+** button.
 
-<img width="98" alt=" Green plus button " src="https://github.com/netdata/netdata/assets/73346910/511e2b38-e751-4a88-bc7d-bcd49764b7f6"/>
+<img width="98" alt=" Green plus button " src="https://github.com/khulnasoft/netdata/assets/73346910/511e2b38-e751-4a88-bc7d-bcd49764b7f6"/>
 
 
 In the modal, give your new dashboard a name, and click **+ Add**.
 
 - The **Add Chart** button on the top right of the interface adds your first chart card. From the dropdown, select either **All Nodes** or a specific
-node. Next, select the context. You'll see a preview of the chart before you finish adding it. In this modal you can also [interact with the chart](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/interact-new-charts.md), meaning you can configure all the aspects of the [NIDL framework](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/interact-new-charts.md#nidl-framework) of the chart and more in detail, you can:
+node. Next, select the context. You'll see a preview of the chart before you finish adding it. In this modal you can also [interact with the chart](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/interact-new-charts.md), meaning you can configure all the aspects of the [NIDL framework](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/interact-new-charts.md#nidl-framework) of the chart and more in detail, you can:
   - define which `group by` method to use
   - select the aggregation function over the data source
   - select nodes
@@ -24,7 +24,7 @@ node. Next, select the context. You'll see a preview of the chart before you fin
   - select labels
   - select the aggregation function over time
   
-  After you are done configuring the chart, you can also change the type of the chart from the right hand side of the [Title bar](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/interact-new-charts.md#title-bar), and select which of the final dimensions you want to be visible and in what order, from the [Dimensions bar](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/interact-new-charts.md#dimensions-bar).
+  After you are done configuring the chart, you can also change the type of the chart from the right hand side of the [Title bar](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/interact-new-charts.md#title-bar), and select which of the final dimensions you want to be visible and in what order, from the [Dimensions bar](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/interact-new-charts.md#dimensions-bar).
 
 - The **Add Text** button on the top right of the interface creates a new card with user-defined text, which you can use to describe or document a
 particular dashboard's meaning and purpose.
@@ -41,13 +41,13 @@ of any number of **cards**, which can contain charts or text.
 
 ### Chart cards
 
-The charts you add to any dashboard are [fully interactive](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/interact-new-charts.md), just like any other Netdata chart. You can zoom in and out, highlight timeframes, and more.
+The charts you add to any dashboard are [fully interactive](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/interact-new-charts.md), just like any other Netdata chart. You can zoom in and out, highlight timeframes, and more.
 
 Charts also synchronize as you interact with them, even across contexts _or_ nodes.
 
 ### Text cards
 
-You can use text cards as notes to explain to other members of the [War Room](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/organize-your-infrastrucutre-invite-your-team.md#netdata-cloud-war-rooms) the purpose of the dashboard's arrangement. 
+You can use text cards as notes to explain to other members of the [War Room](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/organize-your-infrastrucutre-invite-your-team.md#netdata-cloud-war-rooms) the purpose of the dashboard's arrangement. 
 
 ### Move cards
 
@@ -96,6 +96,6 @@ Because of the visual complexity of individual charts, dashboards require a mini
 ## What's next?
 
 Once you've designed a dashboard or two, make sure
-to [invite your team](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/organize-your-infrastrucutre-invite-your-team.md#invite-your-team) if
+to [invite your team](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/organize-your-infrastrucutre-invite-your-team.md#invite-your-team) if
 you haven't already. You can add these new users to the same War Room to let them see the same dashboards without any
 effort.

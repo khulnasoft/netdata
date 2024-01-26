@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/tc.plugin/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/tc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/tc.plugin/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/tc.plugin/metadata.yaml"
 sidebar_label: "tc QoS classes"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/Network"
@@ -117,7 +117,7 @@ The file format is a modified INI syntax. The general structure is:
     option3 = some third value
 ```
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata
@@ -159,7 +159,7 @@ An example of class IDs mapped to names in that file can be:
 2:48 NetworkControl
 ```
 
-You can read more about setting up the tc rules in rc.local in this [GitHub issue](https://github.com/netdata/netdata/issues/4563#issuecomment-455711973).
+You can read more about setting up the tc rules in rc.local in this [GitHub issue](https://github.com/khulnasoft/netdata/issues/4563#issuecomment-455711973).
 
 
 ```yaml

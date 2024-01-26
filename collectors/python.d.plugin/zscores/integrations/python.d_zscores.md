@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/zscores/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/zscores/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/zscores/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/zscores/metadata.yaml"
 sidebar_label: "python.d zscores"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Other"
@@ -20,7 +20,7 @@ Module: zscores
 By using smoothed, rolling [Z-Scores](https://en.wikipedia.org/wiki/Standard_score) for selected metrics or charts you can narrow down your focus and shorten root cause analysis.
 
 
-This collector uses the [Netdata rest api](https://github.com/netdata/netdata/blob/master/web/api/README.md) to get the `mean` and `stddev`
+This collector uses the [Netdata rest api](https://github.com/khulnasoft/netdata/blob/master/web/api/README.md) to get the `mean` and `stddev`
 for each dimension on specified charts over a time range (defined by `train_secs` and `offset_secs`).
 
 For each dimension it will calculate a Z-Score as `z = (x - mean) / stddev` (clipped at `z_clip`). Scores are then smoothed over
@@ -100,7 +100,7 @@ The configuration file name for this integration is `python.d/zscores.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

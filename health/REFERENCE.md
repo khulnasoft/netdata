@@ -4,13 +4,13 @@ Netdata's health watchdog is highly configurable, with support for dynamic thres
 more. You can tweak any of the existing alerts based on your infrastructure's topology or specific monitoring needs, or
 create new entities.
 
-You can use health alerts in conjunction with any of Netdata's [collectors](https://github.com/netdata/netdata/blob/master/collectors/README.md) (see
-the [supported collector list](https://github.com/netdata/netdata/blob/master/collectors/COLLECTORS.md)) to monitor the health of your systems, containers, and
+You can use health alerts in conjunction with any of Netdata's [collectors](https://github.com/khulnasoft/netdata/blob/master/collectors/README.md) (see
+the [supported collector list](https://github.com/khulnasoft/netdata/blob/master/collectors/COLLECTORS.md)) to monitor the health of your systems, containers, and
 applications in real time.
 
 While you can see active alerts both on the local dashboard and Netdata Cloud, all health alerts are configured _per
 node_ via individual Netdata Agents. If you want to deploy a new alert across your
-[infrastructure](https://github.com/netdata/netdata/blob/master/docs/quickstart/infrastructure.md), you must configure each node with the same health configuration
+[infrastructure](https://github.com/khulnasoft/netdata/blob/master/docs/quickstart/infrastructure.md), you must configure each node with the same health configuration
 files.
 
 ## Edit health configuration files
@@ -19,14 +19,14 @@ You can configure the Agent's health watchdog service by editing files in two lo
 
 - The `[health]` section in `netdata.conf`. By editing the daemon's behavior, you can disable health monitoring
     altogether, run health checks more or less often, and more. See
-    [daemon configuration](https://github.com/netdata/netdata/blob/master/daemon/config/README.md#health-section-options) for a table of
+    [daemon configuration](https://github.com/khulnasoft/netdata/blob/master/daemon/config/README.md#health-section-options) for a table of
     all the available settings, their default values, and what they control.
 
 - The individual `.conf` files in `health.d/`. These health entity files are organized by the type of metric they are
     performing calculations on or their associated collector. You should edit these files using the `edit-config`
     script. For example: `sudo ./edit-config health.d/cpu.conf`.
 
-Navigate to your [Netdata config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md) and
+Navigate to your [Netdata config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md) and
 use `edit-config` to make changes to any of these files.
 
 ### Edit individual alerts
@@ -72,7 +72,7 @@ Save the file and [reload Netdata's health configuration](#reload-health-configu
 ## Disable or silence alerts
 
 Alerts and notifications can be disabled permanently via configuration changes, or temporarily, via the
-[health management API](https://github.com/netdata/netdata/blob/master/web/api/health/README.md). The
+[health management API](https://github.com/khulnasoft/netdata/blob/master/web/api/health/README.md). The
 available options are described below.
 
 ### Disable all alerts
@@ -82,7 +82,7 @@ In the `netdata.conf` `[health]` section, set `enabled` to `no`, and restart the
 ### Disable some alerts
 
 In the `netdata.conf` `[health]` section, set `enabled alarms` to a
-[simple pattern](https://github.com/netdata/netdata/edit/master/libnetdata/simple_pattern/README.md) that
+[simple pattern](https://github.com/khulnasoft/netdata/edit/master/libnetdata/simple_pattern/README.md) that
 excludes one or more alerts. e.g. `enabled alarms = !oom_kill *` will load all alerts except `oom_kill`.
 
 You can also [edit the file where the alert is defined](#edit-individual-alerts), comment out its definition,
@@ -102,7 +102,7 @@ This action requires that you [reload Netdata's health configuration](#reload-he
 
 When you need to frequently disable all or some alerts from triggering during certain times (for instance
 when running backups) you can use the
-[health management API](https://github.com/netdata/netdata/blob/master/web/api/health/README.md).
+[health management API](https://github.com/khulnasoft/netdata/blob/master/web/api/health/README.md).
 The API allows you to issue commands to control the health engine's behavior without changing configuration,
 or restarting the agent.
 
@@ -110,7 +110,7 @@ or restarting the agent.
 
 If you want health checks to keep running and alerts to keep getting triggered, but notifications to be
 suppressed temporarily, you can use the
-[health management API](https://github.com/netdata/netdata/blob/master/web/api/health/README.md).
+[health management API](https://github.com/khulnasoft/netdata/blob/master/web/api/health/README.md).
 The API allows you to issue commands to control the health engine's behavior without changing configuration,
 or restarting the agent.
 
@@ -122,7 +122,7 @@ your systems, containers, and applications work.
 Read the [health entity reference](#health-entity-reference) for a full listing of the format,
 syntax, and functionality of health entities.
 
-To write a new health entity into a new file, navigate to your [Netdata config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md),
+To write a new health entity into a new file, navigate to your [Netdata config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md),
 then use `touch` to create a new file in the `health.d/` directory. Use `edit-config` to start editing the file.
 
 As an example, let's create a `ram-usage.conf` file.
@@ -216,7 +216,7 @@ Netdata parses the following lines. Beneath the table is an in-depth explanation
 - The `every` line is **required** if not using `lookup`.
 - Each entity **must** have at least one of the following lines: `lookup`, `calc`, `warn`, or `crit`.
 - A few lines use space-separated lists to define how the entity behaves. You can use `*` as a wildcard or prefix with
-    `!` for a negative match. Order is important, too! See our [simple patterns docs](https://github.com/netdata/netdata/blob/master/libnetdata/simple_pattern/README.md) for
+    `!` for a negative match. Order is important, too! See our [simple patterns docs](https://github.com/khulnasoft/netdata/blob/master/libnetdata/simple_pattern/README.md) for
     more examples.
 - Lines terminated by a `\` are spliced together with the next line. The backslash is removed and the following line is
     joined with the current one. No space is inserted, so you may split a line anywhere, even in the middle of a word.
@@ -402,7 +402,7 @@ hosts: server1 server2 database* !redis3 redis*
 #### Alert line `plugin`
 
 The `plugin` line filters which plugin within the context this alert should apply to. The value is a space-separated
-list of [simple patterns](https://github.com/netdata/netdata/blob/master/libnetdata/simple_pattern/README.md). For example,
+list of [simple patterns](https://github.com/khulnasoft/netdata/blob/master/libnetdata/simple_pattern/README.md). For example,
 you can create a filter for an alert that applies specifically to `python.d.plugin`:
 
 ```yaml
@@ -416,7 +416,7 @@ comprehensive example using both.
 #### Alert line `module`
 
 The `module` line filters which module within the context this alert should apply to. The value is a space-separated
-list of [simple patterns](https://github.com/netdata/netdata/blob/master/libnetdata/simple_pattern/README.md). For
+list of [simple patterns](https://github.com/khulnasoft/netdata/blob/master/libnetdata/simple_pattern/README.md). For
 example, you can create an alert that applies only on the `isc_dhcpd` module started by `python.d.plugin`:
 
 ```yaml
@@ -428,7 +428,7 @@ module: isc_dhcpd
 
 The `charts` line filters which chart this alert should apply to. It is only available on entities using the
 [`template`](#alert-line-alarm-or-template) line.
-The value is a space-separated list of [simple patterns](https://github.com/netdata/netdata/blob/master/libnetdata/simple_pattern/README.md). For
+The value is a space-separated list of [simple patterns](https://github.com/khulnasoft/netdata/blob/master/libnetdata/simple_pattern/README.md). For
 example, a template that applies to `disk.svctm` (Average Service Time) context, but excludes the disk `sdb` from alerts:
 
 ```yaml
@@ -447,9 +447,9 @@ The format is:
 lookup: METHOD AFTER [at BEFORE] [every DURATION] [OPTIONS] [of DIMENSIONS] [foreach DIMENSIONS]
 ```
 
-The full [database query API](https://github.com/netdata/netdata/blob/master/web/api/queries/README.md) is supported. In short:
+The full [database query API](https://github.com/khulnasoft/netdata/blob/master/web/api/queries/README.md) is supported. In short:
 
-- `METHOD` is one of  the available [grouping methods](https://github.com/netdata/netdata/blob/master/web/api/queries/README.md#grouping-methods) such as `average`, `min`, `max` etc.
+- `METHOD` is one of  the available [grouping methods](https://github.com/khulnasoft/netdata/blob/master/web/api/queries/README.md#grouping-methods) such as `average`, `min`, `max` etc.
      This is required.
 
 - `AFTER` is a relative number of seconds, but it also accepts a single letter for changing
@@ -464,7 +464,7 @@ The full [database query API](https://github.com/netdata/netdata/blob/master/web
      above too).
 
 - `OPTIONS` is a space separated list of `percentage`, `absolute`, `min2max`, `unaligned`,
-     `match-ids`, `match-names`. Check the [badges](https://github.com/netdata/netdata/blob/master/web/api/badges/README.md) documentation for more info.
+     `match-ids`, `match-names`. Check the [badges](https://github.com/khulnasoft/netdata/blob/master/web/api/badges/README.md) documentation for more info.
 
 - `of DIMENSIONS` is optional and has to be the last parameter. Dimensions have to be separated
      by `,` or `|`. The space characters found in dimensions will be kept as-is (a few dimensions
@@ -652,7 +652,7 @@ good idea to tell Netdata to not clear the notification, by using the `no-clear-
 
 #### Alert line `host labels`
 
-Defines the list of labels present on a host. See our [host labels guide](https://github.com/netdata/netdata/blob/master/docs/guides/using-host-labels.md) for
+Defines the list of labels present on a host. See our [host labels guide](https://github.com/khulnasoft/netdata/blob/master/docs/guides/using-host-labels.md) for
 an explanation of host labels and how to implement them.
 
 For example, let's suppose that `netdata.conf` is configured with the following labels:
@@ -685,7 +685,7 @@ that will be applied to all hosts installed in the last decade with the followin
 host labels: installed = 201*
 ```
 
-See our [simple patterns docs](https://github.com/netdata/netdata/blob/master/libnetdata/simple_pattern/README.md) for more examples.
+See our [simple patterns docs](https://github.com/khulnasoft/netdata/blob/master/libnetdata/simple_pattern/README.md) for more examples.
 
 #### Alert line `chart labels`
 
@@ -714,7 +714,7 @@ chart labels: mount_point=/mnt/disk1 device=sda
 Will create the alert if the `mount_point` is `/mnt/disk1` or the `device` is `sda`. Furthermore, if a chart label name
 is specified that does not exist in the chart, the chart won't be matched.
 
-See our [simple patterns docs](https://github.com/netdata/netdata/blob/master/libnetdata/simple_pattern/README.md) for more examples.
+See our [simple patterns docs](https://github.com/khulnasoft/netdata/blob/master/libnetdata/simple_pattern/README.md) for more examples.
 
 #### Alert line `summary`
 
@@ -860,14 +860,14 @@ You can find all the variables that can be used for a given chart, using
 Agent dashboard. For example, [variables for the `system.cpu` chart of the
 registry](https://registry.my-netdata.io/api/v1/alarm_variables?chart=system.cpu).
 
-> If you don't know how to find the CHART_NAME, you can read about it [here](https://github.com/netdata/netdata/blob/master/web/README.md#charts).
+> If you don't know how to find the CHART_NAME, you can read about it [here](https://github.com/khulnasoft/netdata/blob/master/web/README.md#charts).
 
 Netdata supports 3 internal indexes for variables that will be used in health monitoring.
 
 <details><summary>The variables below can be used in both chart alerts and context templates.</summary>
 
 Although the `alarm_variables` link shows you variables for a particular chart, the same variables can also be used in
-templates for charts belonging to a given [context](https://github.com/netdata/netdata/blob/master/web/README.md#contexts). The reason is that all charts of a given
+templates for charts belonging to a given [context](https://github.com/khulnasoft/netdata/blob/master/web/README.md#contexts). The reason is that all charts of a given
 context are essentially identical, with the only difference being the family that identifies a particular hardware or software instance.
 
 </details>
@@ -1141,9 +1141,9 @@ lookup: mean -10s of user
 
 Since [`z = (x - mean) / stddev`](https://en.wikipedia.org/wiki/Standard_score) we create two input alerts, one for `mean` and one for `stddev` and then use them both as inputs in our final `cpu_user_zscore` alert.
 
-### Example 8 - [Anomaly rate](https://github.com/netdata/netdata/blob/master/ml/README.md#anomaly-rate) based CPU dimensions alert
+### Example 8 - [Anomaly rate](https://github.com/khulnasoft/netdata/blob/master/ml/README.md#anomaly-rate) based CPU dimensions alert
 
-Warning if 5 minute rolling [anomaly rate](https://github.com/netdata/netdata/blob/master/ml/README.md#anomaly-rate) for any CPU dimension is above 5%, critical if it goes above 20%:
+Warning if 5 minute rolling [anomaly rate](https://github.com/khulnasoft/netdata/blob/master/ml/README.md#anomaly-rate) for any CPU dimension is above 5%, critical if it goes above 20%:
 
 ```yaml
 template: ml_5min_cpu_dims
@@ -1162,9 +1162,9 @@ template: ml_5min_cpu_dims
 The `lookup` line will calculate the average anomaly rate of each `system.cpu` dimension over the last 5 minues. In this case
 Netdata will create alerts for all dimensions of the chart.
 
-### Example 9 - [Anomaly rate](https://github.com/netdata/netdata/blob/master/ml/README.md#anomaly-rate) based CPU chart alert
+### Example 9 - [Anomaly rate](https://github.com/khulnasoft/netdata/blob/master/ml/README.md#anomaly-rate) based CPU chart alert
 
-Warning if 5 minute rolling [anomaly rate](https://github.com/netdata/netdata/blob/master/ml/README.md#anomaly-rate) averaged across all CPU dimensions is above 5%, critical if it goes above 20%:
+Warning if 5 minute rolling [anomaly rate](https://github.com/khulnasoft/netdata/blob/master/ml/README.md#anomaly-rate) averaged across all CPU dimensions is above 5%, critical if it goes above 20%:
 
 ```yaml
 template: ml_5min_cpu_chart
@@ -1183,9 +1183,9 @@ template: ml_5min_cpu_chart
 The `lookup` line will calculate the average anomaly rate across all `system.cpu` dimensions over the last 5 minues. In this case
 Netdata will create one alert for the chart.
 
-### Example 10 - [Anomaly rate](https://github.com/netdata/netdata/blob/master/ml/README.md#anomaly-rate) based node level alert
+### Example 10 - [Anomaly rate](https://github.com/khulnasoft/netdata/blob/master/ml/README.md#anomaly-rate) based node level alert
 
-Warning if 5 minute rolling [anomaly rate](https://github.com/netdata/netdata/blob/master/ml/README.md#anomaly-rate) averaged across all ML enabled dimensions is above 5%, critical if it goes above 20%:
+Warning if 5 minute rolling [anomaly rate](https://github.com/khulnasoft/netdata/blob/master/ml/README.md#anomaly-rate) averaged across all ML enabled dimensions is above 5%, critical if it goes above 20%:
 
 ```yaml
 template: ml_5min_node
@@ -1201,7 +1201,7 @@ template: ml_5min_node
     info: rolling 5min anomaly rate for all ML enabled dims
 ```
 
-The `lookup` line will use the `anomaly_rate` dimension of the `anomaly_detection.anomaly_rate` ML chart to calculate the average [node level anomaly rate](https://github.com/netdata/netdata/blob/master/ml/README.md#node-anomaly-rate) over the last 5 minues.
+The `lookup` line will use the `anomaly_rate` dimension of the `anomaly_detection.anomaly_rate` ML chart to calculate the average [node level anomaly rate](https://github.com/khulnasoft/netdata/blob/master/ml/README.md#node-anomaly-rate) over the last 5 minues.
 
 ## Use dimension templates to create dynamic alerts
 
@@ -1222,7 +1222,7 @@ is where the magic happens.
 
 You use the `foreach` parameter to specify which dimensions you want to monitor with this single alert. You can separate
 them with a comma (`,`) or a pipe (`|`). You can also use
-a [Netdata simple pattern](https://github.com/netdata/netdata/blob/master/libnetdata/simple_pattern/README.md) to create
+a [Netdata simple pattern](https://github.com/khulnasoft/netdata/blob/master/libnetdata/simple_pattern/README.md) to create
 many alerts with a regex-like syntax.
 
 The `foreach` parameter _has_ to be the last parameter in your `lookup` line, and if you have both `of` and `foreach` in
@@ -1293,7 +1293,7 @@ Let's look at some other examples of how `foreach` works, so you can best apply 
 In the last example, we used `foreach system,user,nice` to create three distinct alerts using dimension templates. But
 what if you want to quickly create alerts for _all_ the dimensions of a given chart?
 
-Use a [simple pattern](https://github.com/netdata/netdata/blob/master/libnetdata/simple_pattern/README.md)! One example of a simple pattern is a single wildcard
+Use a [simple pattern](https://github.com/khulnasoft/netdata/blob/master/libnetdata/simple_pattern/README.md)! One example of a simple pattern is a single wildcard
 (`*`).
 
 Instead of monitoring system CPU usage, let's monitor per-application CPU usage using the `apps.cpu` chart. Passing a
@@ -1312,7 +1312,7 @@ This entity will now create alerts for every dimension in the `apps.cpu` chart. 
 10 or more dimensions, using the wildcard ensures you catch every CPU-hogging process.
 
 To learn more about how to use simple patterns with dimension templates, see
-our [simple patterns documentation](https://github.com/netdata/netdata/blob/master/libnetdata/simple_pattern/README.md).
+our [simple patterns documentation](https://github.com/khulnasoft/netdata/blob/master/libnetdata/simple_pattern/README.md).
 
 ### Using `foreach` with alert templates
 
@@ -1368,7 +1368,7 @@ health configuration files!
 
 ## Troubleshooting
 
-You can compile Netdata with [debugging](https://github.com/netdata/netdata/blob/master/daemon/README.md#debugging) and then set in `netdata.conf`:
+You can compile Netdata with [debugging](https://github.com/khulnasoft/netdata/blob/master/daemon/README.md#debugging) and then set in `netdata.conf`:
 
 ```yaml
 [global]

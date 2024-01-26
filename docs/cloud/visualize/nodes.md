@@ -11,12 +11,12 @@ single row, first featuring that node's alert status (yellow for warnings, red f
 system, some essential information about the node, followed by columns of user-defined key metrics represented in
 real-time charts.
 
-Use the [Overview](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/overview.md) for monitoring an infrastructure in real time using
+Use the [Overview](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/overview.md) for monitoring an infrastructure in real time using
 composite charts and Netdata's familiar dashboard UI.
 
 Check the [node
-filter](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/node-filter.md) and the [Visualization date time controls
-selector](https://github.com/netdata/netdata/blob/master/docs/dashboard/visualization-date-and-time-controls.md) for tools available on the utility bar.
+filter](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/node-filter.md) and the [Visualization date time controls
+selector](https://github.com/khulnasoft/netdata/blob/master/docs/dashboard/visualization-date-and-time-controls.md) for tools available on the utility bar.
 
 ## Add and customize metrics columns
 
@@ -31,9 +31,9 @@ These customizations appear for anyone else with access to that War Room.
 ## See more metrics in Netdata Cloud
 
 If you want to add more metrics to your War Rooms and they don't show up when you add new metrics to Nodes, you likely
-need to configure those nodes to collect from additional data sources. See our [collectors configuration reference](https://github.com/netdata/netdata/blob/master/collectors/REFERENCE.md) 
+need to configure those nodes to collect from additional data sources. See our [collectors configuration reference](https://github.com/khulnasoft/netdata/blob/master/collectors/REFERENCE.md) 
 to learn how to use dozens of pre-installed collectors that can instantly collect from your favorite services and applications.
 
-If you want to see up to 30 days of historical metrics in Cloud (and more on individual node dashboards), read about [changing how long Netdata stores metrics](https://github.com/netdata/netdata/blob/master/docs/store/change-metrics-storage.md). Also, see our
-[calculator](https://github.com/netdata/netdata/blob/master/docs/store/change-metrics-storage.md#calculate-the-system-resources-ram-disk-space-needed-to-store-metrics)
+If you want to see up to 30 days of historical metrics in Cloud (and more on individual node dashboards), read about [changing how long Netdata stores metrics](https://github.com/khulnasoft/netdata/blob/master/docs/store/change-metrics-storage.md). Also, see our
+[calculator](https://github.com/khulnasoft/netdata/blob/master/docs/store/change-metrics-storage.md#calculate-the-system-resources-ram-disk-space-needed-to-store-metrics)
 for finding the disk and RAM you need to store metrics for a certain period of time.

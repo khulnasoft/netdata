@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/ebpf.plugin/integrations/ebpf_process.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/ebpf.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/ebpf.plugin/integrations/ebpf_process.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/ebpf.plugin/metadata.yaml"
 sidebar_label: "eBPF Process"
 learn_status: "Published"
 learn_rel_path: "Data Collection/eBPF"

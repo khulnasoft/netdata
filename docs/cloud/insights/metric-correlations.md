@@ -1,7 +1,7 @@
 <!--
 title: "Metric Correlations"
 description: "Quickly find metrics and charts closely related to a particular timeframe of interest anywhere in your infrastructure to discover the root cause faster."
-custom_edit_url: "https://github.com/netdata/netdata/blob/master/docs/cloud/insights/metric-correlations.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/blob/master/docs/cloud/insights/metric-correlations.md"
 sidebar_label: "Metric Correlations"
 learn_status: "Published"
 learn_topic_type: "Tasks"
@@ -44,8 +44,8 @@ So when you first run MC it will use the most sensible and general defaults. But
 
 There are two algorithms available that aim to score metrics based on how much they have changed between the baseline and highlight windows.
 
-- `KS2` - A statistical test ([Two-sample Kolmogorov Smirnov](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test#Two-sample_Kolmogorov%E2%80%93Smirnov_test)) comparing the distribution of the highlighted window to the baseline to try and quantify which metrics have most evidence of a significant change. You can explore our implementation [here](https://github.com/netdata/netdata/blob/d917f9831c0a1638ef4a56580f321eb6c9a88037/database/metric_correlations.c#L212).
-- `Volume` -  A heuristic measure based on the percentage change in averages between highlighted window and baseline, with various edge cases sensibly controlled for. You can explore our implementation [here](https://github.com/netdata/netdata/blob/d917f9831c0a1638ef4a56580f321eb6c9a88037/database/metric_correlations.c#L516).
+- `KS2` - A statistical test ([Two-sample Kolmogorov Smirnov](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test#Two-sample_Kolmogorov%E2%80%93Smirnov_test)) comparing the distribution of the highlighted window to the baseline to try and quantify which metrics have most evidence of a significant change. You can explore our implementation [here](https://github.com/khulnasoft/netdata/blob/d917f9831c0a1638ef4a56580f321eb6c9a88037/database/metric_correlations.c#L212).
+- `Volume` -  A heuristic measure based on the percentage change in averages between highlighted window and baseline, with various edge cases sensibly controlled for. You can explore our implementation [here](https://github.com/khulnasoft/netdata/blob/d917f9831c0a1638ef4a56580f321eb6c9a88037/database/metric_correlations.c#L516).
 
 ### Aggregation
 
@@ -53,9 +53,9 @@ Behind the scenes, Netdata will aggregate the raw data as needed such that arbit
 
 ### Data
 
-Netdata is different from typical observability agents since, in addition to just collecting raw metric values, it will by default also assign an "[Anomaly Bit](https://github.com/netdata/netdata/tree/master/ml#anomaly-bit---100--anomalous-0--normal)" related to each collected metric each second. This bit will be 0 for "normal" and 1 for "anomalous". This means that each metric also natively has an "[Anomaly Rate](https://github.com/netdata/netdata/tree/master/ml#anomaly-rate---averageanomaly-bit)" associated with it and, as such, MC can be run against the raw metric values or their corresponding anomaly rates.
+Netdata is different from typical observability agents since, in addition to just collecting raw metric values, it will by default also assign an "[Anomaly Bit](https://github.com/khulnasoft/netdata/tree/master/ml#anomaly-bit---100--anomalous-0--normal)" related to each collected metric each second. This bit will be 0 for "normal" and 1 for "anomalous". This means that each metric also natively has an "[Anomaly Rate](https://github.com/khulnasoft/netdata/tree/master/ml#anomaly-rate---averageanomaly-bit)" associated with it and, as such, MC can be run against the raw metric values or their corresponding anomaly rates.
 
-**Note**: Read more [here](https://github.com/netdata/netdata/blob/master/ml/README.md) to learn more about the native anomaly detection features within netdata.
+**Note**: Read more [here](https://github.com/khulnasoft/netdata/blob/master/ml/README.md) to learn more about the native anomaly detection features within netdata.
 
 - `Metrics` - Run MC on the raw metric values.
 - `Anomaly Rate` - Run MC on the corresponding anomaly rate for each metric.
@@ -74,7 +74,7 @@ Should you still want to, disabling nodes for Metric Correlation on the agent is
 
 ## Usage tips!
 
-- When running Metric Correlations from the [Overview tab](https://github.com/netdata/netdata/blob/master/docs/cloud/visualize/overview.md#overview-and-single-node-view) across multiple nodes, you might find better results if you iterate on the initial results by grouping by node to then filter to nodes of interest and run the Metric Correlations again. So a typical workflow in this case would be to:
+- When running Metric Correlations from the [Overview tab](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/visualize/overview.md#overview-and-single-node-view) across multiple nodes, you might find better results if you iterate on the initial results by grouping by node to then filter to nodes of interest and run the Metric Correlations again. So a typical workflow in this case would be to:
   - If unsure which nodes you are interested in then run MC on all nodes. 
   - Within the initial results returned group the most interesting chart by node to see if the changes are across all nodes or a subset of nodes.
   - If you see a subset of nodes clearly jump out when you group by node, then filter for just those nodes of interest and run the MC again. This will result in less aggregation needing to be done by Netdata and so should help give clearer results as you interact with the slider.

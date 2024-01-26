@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/boinc/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/boinc/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/boinc/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/boinc/metadata.yaml"
 sidebar_label: "BOINC"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Distributed Computing Systems"
@@ -77,10 +77,10 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ boinc_total_tasks ](https://github.com/netdata/netdata/blob/master/health/health.d/boinc.conf) | boinc.tasks | average number of total tasks over the last 10 minutes |
-| [ boinc_active_tasks ](https://github.com/netdata/netdata/blob/master/health/health.d/boinc.conf) | boinc.tasks | average number of active tasks over the last 10 minutes |
-| [ boinc_compute_errors ](https://github.com/netdata/netdata/blob/master/health/health.d/boinc.conf) | boinc.states | average number of compute errors over the last 10 minutes |
-| [ boinc_upload_errors ](https://github.com/netdata/netdata/blob/master/health/health.d/boinc.conf) | boinc.states | average number of failed uploads over the last 10 minutes |
+| [ boinc_total_tasks ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/boinc.conf) | boinc.tasks | average number of total tasks over the last 10 minutes |
+| [ boinc_active_tasks ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/boinc.conf) | boinc.tasks | average number of active tasks over the last 10 minutes |
+| [ boinc_compute_errors ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/boinc.conf) | boinc.states | average number of compute errors over the last 10 minutes |
+| [ boinc_upload_errors ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/boinc.conf) | boinc.states | average number of failed uploads over the last 10 minutes |
 
 
 ## Setup
@@ -100,7 +100,7 @@ The configuration file name for this integration is `python.d/boinc.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

@@ -43,7 +43,7 @@ or more. Hover over each icon to see the full name in a tooltip.
 
 To add a new Space click on the green **+** button. Enter the name of the Space and click **Save**.
 
-![Switch between Spaces](https://github.com/netdata/netdata/assets/70198089/aa0d7a2f-02ec-4c01-a2d9-1f99642f2496)
+![Switch between Spaces](https://github.com/khulnasoft/netdata/assets/70198089/aa0d7a2f-02ec-4c01-a2d9-1f99642f2496)
 
 ### Manage Spaces
 
@@ -56,7 +56,7 @@ will open a side tab in which you can:
 2. _Edit the War Rooms*_, click on the **War rooms** tab to add or remove War Rooms.
 
 3. _Connect nodes*_, click on **Nodes** tab. Copy the claiming script to your node and run it. See the
-   [connect to Cloud doc](https://github.com/netdata/netdata/blob/master/claim/README.md) for details.
+   [connect to Cloud doc](https://github.com/khulnasoft/netdata/blob/master/claim/README.md) for details.
 
 4. _Manage the users*_, click on **Users**.
    The [invitation doc](#invite-your-team)
@@ -158,10 +158,10 @@ You will be prompted to enter the email addresses of the users you want to invit
 Next, choose the War Rooms you want to invite these users to. Once logged in, these users are not restricted only to
 these War Rooms. They can be invited to others, or join any that are public.
 
-Next, pick a role for the invited user. You can read more about [which roles are available](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/role-based-access.md#what-roles-are-available) based on your [subscription plan](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/plans.md).
+Next, pick a role for the invited user. You can read more about [which roles are available](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/role-based-access.md#what-roles-are-available) based on your [subscription plan](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/plans.md).
 
 Click the **Send** button to send an email invitation, which will prompt them
-to [sign up](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/sign-in.md) and join your Space.
+to [sign up](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/sign-in.md) and join your Space.
 
 ![image](https://user-images.githubusercontent.com/70198089/227888899-8511081b-0157-4e22-81d9-898cc464dcb0.png)
 

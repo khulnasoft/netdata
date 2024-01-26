@@ -2,13 +2,13 @@
 blank_issues_enabled: false
 contact_links:
   - name: "Netdata Agent: Question"
-    url: https://github.com/netdata/netdata/discussions/new?category=q-a
+    url: https://github.com/khulnasoft/netdata/discussions/new?category=q-a
     about: Ask a question about Netdata Agent
   - name: "Netdata Cloud"
-    url: https://github.com/netdata/netdata-cloud/issues/new/choose
+    url: https://github.com/khulnasoft/netdata-cloud/issues/new/choose
     about: Create a report to help us improve our web application
   - name: "Netdata Mobile App"
-    url: https://github.com/netdata/netdata-cloud/issues/new/choose
+    url: https://github.com/khulnasoft/netdata-cloud/issues/new/choose
     about: Create a report to help us improve our Mobile App
   - name: Community
     url: https://netdata.cloud/community

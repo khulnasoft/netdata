@@ -885,7 +885,7 @@ static int is_digits_only(const char *s) {
 
 static int is_cgroup_k8s_container(const char *id) {
     // examples:
-    // https://github.com/netdata/netdata/blob/0fc101679dcd12f1cb8acdd07bb4c85d8e553e53/collectors/cgroups.plugin/cgroup-name.sh#L121-L147
+    // https://github.com/khulnasoft/netdata/blob/0fc101679dcd12f1cb8acdd07bb4c85d8e553e53/collectors/cgroups.plugin/cgroup-name.sh#L121-L147
     const char *p = id;
     const char *pp = NULL;
     int i = 0;
@@ -1010,7 +1010,7 @@ static inline void discovery_process_first_time_seen_cgroup(struct cgroup *cg) {
 }
 
 static int discovery_is_cgroup_duplicate(struct cgroup *cg) {
-    // https://github.com/netdata/netdata/issues/797#issuecomment-241248884
+    // https://github.com/khulnasoft/netdata/issues/797#issuecomment-241248884
     struct cgroup *c;
     for (c = discovered_cgroup_root; c; c = c->discovered_next) {
         if (c != cg && c->enabled && (is_cgroup_systemd_service(c) == is_cgroup_systemd_service(cg)) &&

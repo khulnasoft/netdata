@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/apps.plugin/integrations/users.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/apps.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/apps.plugin/integrations/users.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/apps.plugin/metadata.yaml"
 sidebar_label: "Users"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Processes and System Services"

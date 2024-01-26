@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/integrations/memory_usage.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/integrations/memory_usage.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
 sidebar_label: "Memory Usage"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/Memory"
@@ -106,10 +106,10 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ ram_in_use ](https://github.com/netdata/netdata/blob/master/health/health.d/ram.conf) | system.ram | system memory utilization |
-| [ ram_available ](https://github.com/netdata/netdata/blob/master/health/health.d/ram.conf) | mem.available | percentage of estimated amount of RAM available for userspace processes, without causing swapping |
-| [ used_swap ](https://github.com/netdata/netdata/blob/master/health/health.d/swap.conf) | mem.swap | swap memory utilization |
-| [ 1hour_memory_hw_corrupted ](https://github.com/netdata/netdata/blob/master/health/health.d/memory.conf) | mem.hwcorrupt | amount of memory corrupted due to a hardware failure |
+| [ ram_in_use ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/ram.conf) | system.ram | system memory utilization |
+| [ ram_available ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/ram.conf) | mem.available | percentage of estimated amount of RAM available for userspace processes, without causing swapping |
+| [ used_swap ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/swap.conf) | mem.swap | swap memory utilization |
+| [ 1hour_memory_hw_corrupted ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/memory.conf) | mem.hwcorrupt | amount of memory corrupted due to a hardware failure |
 
 
 ## Setup

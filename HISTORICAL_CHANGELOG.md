@@ -1,12 +1,12 @@
 netdata (1.10.0) - 2018-03-27
 
  Please check full changelog at github.
- <https://github.com/netdata/netdata/releases>
+ <https://github.com/khulnasoft/netdata/releases>
 
 netdata (1.9.0) - 2017-12-17
 
  Please check full changelog at github.
- <https://github.com/netdata/netdata/releases>
+ <https://github.com/khulnasoft/netdata/releases>
 
 netdata (1.8.0) - 2017-09-17
 
@@ -125,7 +125,7 @@ netdata (1.6.0) - 2017-03-20
     menu on the dashboard.
 
     For more information check:
-    <https://github.com/netdata/netdata/tree/master/streaming#monitoring-ephemeral-nodes>
+    <https://github.com/khulnasoft/netdata/tree/master/streaming#monitoring-ephemeral-nodes>
 
 -   monitoring ephemeral containers and VM guests
 
@@ -133,7 +133,7 @@ netdata (1.6.0) - 2017-03-20
     disk metrics, disabling automatically their alarms too.
 
     For more information check:
-    <https://github.com/netdata/netdata/tree/master/collectors/cgroups.plugin#monitoring-ephemeral-containers>
+    <https://github.com/khulnasoft/netdata/tree/master/collectors/cgroups.plugin#monitoring-ephemeral-containers>
 
 -   apps.plugin ported for FreeBSD
 
@@ -148,7 +148,7 @@ netdata (1.6.0) - 2017-03-20
     and web sites!
 
     For more information check:
-    <https://github.com/netdata/netdata/blob/master/collectors/python.d.plugin/web_log#web_log>
+    <https://github.com/khulnasoft/netdata/blob/master/collectors/python.d.plugin/web_log#web_log>
 
 -   backends
 
@@ -174,7 +174,7 @@ netdata (1.6.0) - 2017-03-20
     It also supports alarms (including the number of sensors in critical state).
 
     For more information, check:
-    <https://github.com/netdata/netdata/tree/master/collectors/freeipmi.plugin>
+    <https://github.com/khulnasoft/netdata/tree/master/collectors/freeipmi.plugin>
 
 -   new plugins
 
@@ -443,20 +443,20 @@ netdata (1.3.0) - 2016-08-28
  required to be installed on a system to allow it work.
  For more information, please check the installation page:
 
- <https://github.com/netdata/netdata/tree/master/installer#installation>
+ <https://github.com/khulnasoft/netdata/tree/master/installer#installation>
 
  In detail:
 
 -   netdata has alarms!
 
     Based on the POLL we made on github
-    (<https://github.com/netdata/netdata/issues/436>),
+    (<https://github.com/khulnasoft/netdata/issues/436>),
     health monitoring was the winner. So here it is!
 
     netdata now has a powerful health monitoring system embedded.
     Please check the wiki page:
 
-    <https://github.com/netdata/netdata/tree/master/health>
+    <https://github.com/khulnasoft/netdata/tree/master/health>
 
 -   netdata has badges!
 
@@ -464,7 +464,7 @@ netdata (1.3.0) - 2016-08-28
     collected metrics.
     Please check the wiki page:
 
-    <https://github.com/netdata/netdata/tree/master/web/api/badges>
+    <https://github.com/khulnasoft/netdata/tree/master/web/api/badges>
 
 -   netdata plugins are now written in Python!
 

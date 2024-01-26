@@ -11,7 +11,7 @@ It automatically discovers available journal sources, allows advanced filtering,
 representations and supports exploring the logs of both individual servers and the logs on infrastructure wide
 journal centralization servers.
 
-![image](https://github.com/netdata/netdata/assets/2662304/691b7470-ec56-430c-8b81-0c9e49012679)
+![image](https://github.com/khulnasoft/netdata/assets/2662304/691b7470-ec56-430c-8b81-0c9e49012679)
 
 ## Key features
 
@@ -32,7 +32,7 @@ journal centralization servers.
 `systemd-journal.plugin` is a Netdata Function Plugin.
 
 To protect your privacy, as with all Netdata Functions, a free Netdata Cloud user account is required to access it.
-For more information check [this discussion](https://github.com/netdata/netdata/discussions/16136).
+For more information check [this discussion](https://github.com/khulnasoft/netdata/discussions/16136).
 
 ### Limitations
 
@@ -76,7 +76,7 @@ Other than the above, this plugin supports all features of `systemd` journals.
 The plugin automatically detects the available journal sources, based on the journal files available in
 `/var/log/journal` (persistent logs) and `/run/log/journal` (volatile logs).
 
-![journal-sources](https://github.com/netdata/netdata/assets/2662304/28e63a3e-6809-4586-b3b0-80755f340e31)
+![journal-sources](https://github.com/khulnasoft/netdata/assets/2662304/28e63a3e-6809-4586-b3b0-80755f340e31)
 
 The plugin, by default, merges all journal sources together, to provide a unified view of all log messages available.
 
@@ -171,14 +171,14 @@ The annotations are not searchable with full-text search. They are only added fo
 
 All journal fields available in the journal files are offered as columns on the UI. Use the gear button above the table:
 
-![image](https://github.com/netdata/netdata/assets/2662304/cd75fb55-6821-43d4-a2aa-033792c7f7ac)
+![image](https://github.com/khulnasoft/netdata/assets/2662304/cd75fb55-6821-43d4-a2aa-033792c7f7ac)
 
 ### Journal fields as additional info to each log entry
 
 When you click a log line, the `info` sidebar will open on the right of the screen, to provide the full list of fields
 related to this log line. You can close this `info` sidebar, by selecting the filter icon at its top.
 
-![image](https://github.com/netdata/netdata/assets/2662304/3207794c-a61b-444c-8ffe-6c07cbc90ae2)
+![image](https://github.com/khulnasoft/netdata/assets/2662304/3207794c-a61b-444c-8ffe-6c07cbc90ae2)
 
 ### Journal fields as filters
 
@@ -196,7 +196,7 @@ Internally the plugin has:
 Keep in mind that the values presented in the filters, and their sorting is affected by the "full data queries"
 setting:
 
-![image](https://github.com/netdata/netdata/assets/2662304/ac710d46-07c2-487b-8ce3-e7f767b9ae0f)
+![image](https://github.com/khulnasoft/netdata/assets/2662304/ac710d46-07c2-487b-8ce3-e7f767b9ae0f)
 
 When "full data queries" is off, empty values are hidden and cannot be selected. This is due to a limitation of
 `libsystemd` that does not allow negative or empty matches. Also, values with zero counters may appear in the list.
@@ -221,7 +221,7 @@ The histogram presented by the plugin is interactive:
 - **Pan**, either with global date-time picker, or by dragging with the mouse the chart to the left or the right.
 - **Click**, to quickly jump to the highlighted point in time in the log entries.
 
-![image](https://github.com/netdata/netdata/assets/2662304/d3dcb1d1-daf4-49cf-9663-91b5b3099c2d)
+![image](https://github.com/khulnasoft/netdata/assets/2662304/d3dcb1d1-daf4-49cf-9663-91b5b3099c2d)
 
 ## PLAY mode
 
@@ -402,7 +402,7 @@ You need a free Netdata Cloud account only to verify your identity and enable th
 Netdata Functions. Once this is done, all the data flow directly from your Netdata agent
 to your web browser.
 
-Also check [this discussion](https://github.com/netdata/netdata/discussions/16136).
+Also check [this discussion](https://github.com/khulnasoft/netdata/discussions/16136).
 
 When you access Netdata via `https://app.netdata.cloud`, your data travel via Netdata Cloud,
 but they are not stored in Netdata Cloud. This is to allow you access your Netdata agents from
@@ -457,11 +457,11 @@ For more options and reference to documentation, check `man systemd-journal-remo
 
 #### _passive_ journal centralization without encryption
 
-If you want to setup your own passive journal centralization setup without encryption, [check out guide on it](https://github.com/netdata/netdata/blob/master/collectors/systemd-journal.plugin/passive_journal_centralization_guide_no_encryption.md).
+If you want to setup your own passive journal centralization setup without encryption, [check out guide on it](https://github.com/khulnasoft/netdata/blob/master/collectors/systemd-journal.plugin/passive_journal_centralization_guide_no_encryption.md).
 
 #### _passive_ journal centralization with encryption using self-signed certificates
 
-If you want to setup your own passive journal centralization setup using self-signed certificates for encryption, [check out guide on it](https://github.com/netdata/netdata/blob/master/collectors/systemd-journal.plugin/passive_journal_centralization_guide_self_signed_certs.md).
+If you want to setup your own passive journal centralization setup using self-signed certificates for encryption, [check out guide on it](https://github.com/khulnasoft/netdata/blob/master/collectors/systemd-journal.plugin/passive_journal_centralization_guide_self_signed_certs.md).
 
 #### Limitations when using a logs centralization server
 

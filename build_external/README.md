@@ -1,6 +1,6 @@
 <!--
 title: "External build-system"
-custom_edit_url: https://github.com/netdata/netdata/edit/master/build_external/README.md
+custom_edit_url: https://github.com/khulnasoft/netdata/edit/master/build_external/README.md
 sidebar_label: "External build-system"
 learn_status: "Published"
 learn_topic_type: "References"

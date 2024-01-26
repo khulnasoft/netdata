@@ -472,7 +472,7 @@ class AtaNormalized(BaseAtaSmartAttribute):
 class Ata3(BaseAtaSmartAttribute):
     def value(self):
         value = int(self.raw_value)
-        # https://github.com/netdata/netdata/issues/5919
+        # https://github.com/khulnasoft/netdata/issues/5919
         #
         # 3;151;38684000679;
         # 423 (Average 447)
@@ -497,8 +497,8 @@ class Ata190(BaseAtaSmartAttribute):
 
 
 class Ata194(BaseAtaSmartAttribute):
-    # https://github.com/netdata/netdata/issues/3041
-    # https://github.com/netdata/netdata/issues/5919
+    # https://github.com/khulnasoft/netdata/issues/3041
+    # https://github.com/khulnasoft/netdata/issues/5919
     #
     # The low byte is the current temperature, the third lowest is the maximum, and the fifth lowest is the minimum
     def value(self):

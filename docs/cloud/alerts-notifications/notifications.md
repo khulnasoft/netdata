@@ -8,26 +8,26 @@ you or your team.
 
 Having this information centralized helps you:
 * Have a clear view of the health across your infrastructure, seeing all alerts in one place.
-* Easily [set up your alert notification process](https://github.com/netdata/netdata/blob/master/docs/cloud/alerts-notifications/manage-notification-methods.md): 
+* Easily [set up your alert notification process](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/alerts-notifications/manage-notification-methods.md): 
 methods to use and where to use them, filtering rules, etc.
-* Quickly troubleshoot using [Metric Correlations](https://github.com/netdata/netdata/blob/master/docs/cloud/insights/metric-correlations.md)
-or [Anomaly Advisor](https://github.com/netdata/netdata/blob/master/docs/cloud/insights/anomaly-advisor.md)
+* Quickly troubleshoot using [Metric Correlations](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/insights/metric-correlations.md)
+or [Anomaly Advisor](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/insights/anomaly-advisor.md)
 
 If a node is getting disconnected often or has many alerts, we protect you and your team from alert fatigue by sending
 you a flood protection notification. Getting one of these notifications is a good signal of health or performance issues
 on that node.
 
-Admins must enable alert notifications for their [Space(s)](https://github.com/netdata/netdata/blob/master/docs/cloud/alerts-notifications/manage-notification-methods.md#manage-space-notification-settings). All users in a
+Admins must enable alert notifications for their [Space(s)](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/alerts-notifications/manage-notification-methods.md#manage-space-notification-settings). All users in a
 Space can then personalize their notifications settings from within their [account
-menu](https://github.com/netdata/netdata/blob/master/docs/cloud/alerts-notifications/#manage-user-notification-settings).
+menu](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/alerts-notifications/#manage-user-notification-settings).
 
 <Callout type="notice">
 
 Centralized alert notifications from Netdata Cloud is a independent process from [notifications from
-Netdata](https://github.com/netdata/netdata/blob/master/docs/monitor/enable-notifications.md). You can enable one or the other, or both, based on your needs. However,
+Netdata](https://github.com/khulnasoft/netdata/blob/master/docs/monitor/enable-notifications.md). You can enable one or the other, or both, based on your needs. However,
 the alerts you see in Netdata Cloud are based on those streamed from your Netdata-monitoring nodes. If you want to tweak
 or add new alert that you see in Netdata Cloud, and receive via centralized alert notifications, you must
-[configure](https://github.com/netdata/netdata/blob/master/health/REFERENCE.md) each node's alert watchdog.
+[configure](https://github.com/khulnasoft/netdata/blob/master/health/REFERENCE.md) each node's alert watchdog.
 
 </Callout>
 
@@ -93,7 +93,7 @@ These are: PagerDuty, Slack, Opsgenie
 
 Netdata Cloud provides you a Silencing Rule engine which allows you to mute alert notifications. This muting action is specific to alert state transition notifications, it doesn't include node unreachable state transitions.
 
-The Silencing Rule engine is flexible and allows you to enter silence rules for the two main entities involved on alert notifications and can be set using different attributes. The main entities you can enter are **Nodes** and **Alerts** which can be used in combination or isolation to target specific needs - see some examples [here](https://github.com/netdata/netdata/blob/master/docs/cloud/alerts-notifications/manage-alert-notification-silencing-rules.md#silencing-rules-examples).
+The Silencing Rule engine is flexible and allows you to enter silence rules for the two main entities involved on alert notifications and can be set using different attributes. The main entities you can enter are **Nodes** and **Alerts** which can be used in combination or isolation to target specific needs - see some examples [here](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/alerts-notifications/manage-alert-notification-silencing-rules.md#silencing-rules-examples).
 
 ### Scope definition for Nodes
 * **Space:** silencing the space, selecting `All Rooms`, silences all alert state transitions from any node claimed to the space.
@@ -104,16 +104,16 @@ if the node should be silenced for the entire space or just for specific rooms (
 
 ### Scope definition for Alerts
 * **Alert name:** silencing a specific alert name silences all alert state transitions for that specific alert. 
-* **Alert context:** silencing a specific alert context will silence all alert state transitions for alerts targeting that chart context, for more details check [alert configuration docs](https://github.com/netdata/netdata/blob/master/health/REFERENCE.md#alert-line-on).
-* **Alert role:** silencing a specific alert role will silence all the alert state transitions for alerts that are configured to be specific role recipients, for more details check [alert configuration docs](https://github.com/netdata/netdata/blob/master/health/REFERENCE.md#alert-line-to).
+* **Alert context:** silencing a specific alert context will silence all alert state transitions for alerts targeting that chart context, for more details check [alert configuration docs](https://github.com/khulnasoft/netdata/blob/master/health/REFERENCE.md#alert-line-on).
+* **Alert role:** silencing a specific alert role will silence all the alert state transitions for alerts that are configured to be specific role recipients, for more details check [alert configuration docs](https://github.com/khulnasoft/netdata/blob/master/health/REFERENCE.md#alert-line-to).
 
 Beside the above two main entities there are another two important settings that you can define on a silencing rule:
 * Who does the rule affect? **All user** in the space or **Myself**
 * When does is to apply? **Immediately** or on a **Schedule** (when setting immediately you can set duration)
 
-For further help on setting alert notification silencing rules go to [Manage Alert Notification Silencing Rules](https://github.com/netdata/netdata/blob/master/docs/cloud/alerts-notifications/manage-alert-notification-silencing-rules.md).
+For further help on setting alert notification silencing rules go to [Manage Alert Notification Silencing Rules](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/alerts-notifications/manage-alert-notification-silencing-rules.md).
 
-> ⚠️ This feature is only available for [Netdata paid plans](https://github.com/netdata/netdata/edit/master/docs/cloud/manage/plans.md).
+> ⚠️ This feature is only available for [Netdata paid plans](https://github.com/khulnasoft/netdata/edit/master/docs/cloud/manage/plans.md).
 
 ## Flood protection
 

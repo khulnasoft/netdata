@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/integrations/entropy.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/integrations/entropy.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
 sidebar_label: "Entropy"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/System"
@@ -107,7 +107,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ lowest_entropy ](https://github.com/netdata/netdata/blob/master/health/health.d/entropy.conf) | system.entropy | minimum number of bits of entropy available for the kernel’s random number generator |
+| [ lowest_entropy ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/entropy.conf) | system.entropy | minimum number of bits of entropy available for the kernel’s random number generator |
 
 
 ## Setup

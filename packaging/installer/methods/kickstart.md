@@ -1,7 +1,7 @@
 <!--
 title: "Install Netdata with kickstart.sh"
 description: "The kickstart.sh script installs Netdata from source, including all dependencies required to connect to Netdata Cloud, with a single command."
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/packaging/installer/methods/kickstart.md"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/packaging/installer/methods/kickstart.md"
 sidebar_label: "One line installer (kickstart.sh)"
 learn_status: "Published"
 learn_rel_path: "Installation/Installation methods"
@@ -21,7 +21,7 @@ import TabItem from '@theme/TabItem';
 
 This script works on all Linux distributions and macOS environments, by detecting the optimal method of installing Netdata directly to the operating system (it will never install a docker image of Netdata - to run Netdata in a container [check Installing with Docker](https://learn.netdata.cloud/docs/installing/docker)).
 
-If you are installing on macOS, make sure to check the [install documentation for macOS](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/macos.md) before continuing.
+If you are installing on macOS, make sure to check the [install documentation for macOS](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/macos.md) before continuing.
 
 
 ## Verify script integrity
@@ -40,7 +40,7 @@ If the script is valid, this command will return `OK, VALID`.
 
 > :bulb: Tip
 >
-> If you are unsure whether you want nightly or stable releases, read the [installation guide](https://github.com/netdata/netdata/blob/master/packaging/installer/README.md#nightly-vs-stable-releases).  
+> If you are unsure whether you want nightly or stable releases, read the [installation guide](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/README.md#nightly-vs-stable-releases).  
 
 To install Netdata, run the following as your normal user:
 
@@ -147,7 +147,7 @@ By default, the kickstart script will provide a Netdata agent installation that 
 - `--claim-rooms`
   Specify a comma-separated list of tokens for each War Room this node should appear in.
 - `--claim-proxy`
-  Specify a proxy to use when connecting to the cloud in the form of `http://[user:pass@]host:ip` for an HTTP(S) proxy. See [connecting through a proxy](https://github.com/netdata/netdata/blob/master/claim/README.md#connect-through-a-proxy) for details.
+  Specify a proxy to use when connecting to the cloud in the form of `http://[user:pass@]host:ip` for an HTTP(S) proxy. See [connecting through a proxy](https://github.com/khulnasoft/netdata/blob/master/claim/README.md#connect-through-a-proxy) for details.
 - `--claim-only`
   If there is an existing install, only try to claim it without attempting to update it. If there is no existing install, install and claim Netdata normally.
 - `--require-cloud`
@@ -189,7 +189,7 @@ The following options are mutually exclusive and specify special operations othe
 - `--repositories-only`
   Only install repository configuration packages instead of doing a full install of Netdata. Automatically sets --native-only.
 - `--prepare-offline-install-source`
-  Instead of insallling the agent, prepare a directory that can be used to install on another system without needing to download anything. See our [offline installation documentation](https://github.com/netdata/netdata/blob/master/packaging/installer/methods/offline.md) for more info.
+  Instead of insallling the agent, prepare a directory that can be used to install on another system without needing to download anything. See our [offline installation documentation](https://github.com/khulnasoft/netdata/blob/master/packaging/installer/methods/offline.md) for more info.
 
 ### environment variables
 

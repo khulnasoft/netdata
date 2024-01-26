@@ -323,7 +323,7 @@ else
   info="${17}"               # a short description of the alarm
   value_string="${18}"       # friendly value (with units)
   # shellcheck disable=SC2034
-  # variable is unused, but https://github.com/netdata/netdata/pull/5164#discussion_r255572947
+  # variable is unused, but https://github.com/khulnasoft/netdata/pull/5164#discussion_r255572947
   old_value_string="${19}"   # friendly old value (with units), previously named "old_value_string"
   calc_expression="${20}"    # contains the expression that was evaluated to trigger the alarm
   calc_param_values="${21}"  # the values of the parameters in the expression, at the time of the evaluation

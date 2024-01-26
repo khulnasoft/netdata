@@ -11,7 +11,7 @@
     },
     "license": {
       "name": "GPL v3+",
-      "url": "https://github.com/netdata/netdata/blob/master/LICENSE"
+      "url": "https://github.com/khulnasoft/netdata/blob/master/LICENSE"
     }
   },
   "servers": [

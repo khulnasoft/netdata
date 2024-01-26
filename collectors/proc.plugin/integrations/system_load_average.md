@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/integrations/system_load_average.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/integrations/system_load_average.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/proc.plugin/metadata.yaml"
 sidebar_label: "System Load Average"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems/System"
@@ -98,11 +98,11 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ load_cpu_number ](https://github.com/netdata/netdata/blob/master/health/health.d/load.conf) | system.load | number of active CPU cores in the system |
-| [ load_average_15 ](https://github.com/netdata/netdata/blob/master/health/health.d/load.conf) | system.load | system fifteen-minute load average |
-| [ load_average_5 ](https://github.com/netdata/netdata/blob/master/health/health.d/load.conf) | system.load | system five-minute load average |
-| [ load_average_1 ](https://github.com/netdata/netdata/blob/master/health/health.d/load.conf) | system.load | system one-minute load average |
-| [ active_processes ](https://github.com/netdata/netdata/blob/master/health/health.d/processes.conf) | system.active_processes | system process IDs (PID) space utilization |
+| [ load_cpu_number ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/load.conf) | system.load | number of active CPU cores in the system |
+| [ load_average_15 ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/load.conf) | system.load | system fifteen-minute load average |
+| [ load_average_5 ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/load.conf) | system.load | system five-minute load average |
+| [ load_average_1 ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/load.conf) | system.load | system one-minute load average |
+| [ active_processes ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/processes.conf) | system.active_processes | system process IDs (PID) space utilization |
 
 
 ## Setup

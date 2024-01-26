@@ -201,7 +201,7 @@ void ebpf_process_remove_pids()
 void ebpf_process_send_apps_data(struct ebpf_target *root, ebpf_module_t *em)
 {
     struct ebpf_target *w;
-    // This algorithm is improved in https://github.com/netdata/netdata/pull/16030
+    // This algorithm is improved in https://github.com/khulnasoft/netdata/pull/16030
     collected_number values[5];
 
     for (w = root; w; w = w->next) {

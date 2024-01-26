@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/integrations/vm.stats.vm.v_swappgs.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/integrations/vm.stats.vm.v_swappgs.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/freebsd.plugin/metadata.yaml"
 sidebar_label: "vm.stats.vm.v_swappgs"
 learn_status: "Published"
 learn_rel_path: "Data Collection/FreeBSD"
@@ -74,7 +74,7 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ 30min_ram_swapped_out ](https://github.com/netdata/netdata/blob/master/health/health.d/swap.conf) | mem.swapio | percentage of the system RAM swapped in the last 30 minutes |
+| [ 30min_ram_swapped_out ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/swap.conf) | mem.swapio | percentage of the system RAM swapped in the last 30 minutes |
 
 
 ## Setup
@@ -101,7 +101,7 @@ The file format is a modified INI syntax. The general structure is:
     option3 = some third value
 ```
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

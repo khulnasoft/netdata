@@ -1,7 +1,7 @@
 <!--
 title: "Monitor a Hadoop cluster with Netdata"
 sidebar_label: "Monitor a Hadoop cluster with Netdata"
-custom_edit_url: https://github.com/netdata/netdata/edit/master/docs/guides/monitor-hadoop-cluster.md
+custom_edit_url: https://github.com/khulnasoft/netdata/edit/master/docs/guides/monitor-hadoop-cluster.md
 learn_status: "Published"
 learn_topic_type: "Tasks"
 learn_rel_path: "Miscellaneous"
@@ -164,7 +164,7 @@ jobs:
     address : 203.0.113.10:2182
 ```
 
-Finally, [restart Netdata](https://github.com/netdata/netdata/blob/master/docs/configure/start-stop-restart.md).
+Finally, [restart Netdata](https://github.com/khulnasoft/netdata/blob/master/docs/configure/start-stop-restart.md).
 
 ```sh
 sudo systemctl restart netdata
@@ -188,4 +188,4 @@ sudo /etc/netdata/edit-config health.d/zookeeper.conf
 ```
 
 For more information about editing the defaults or writing new alert entities, see our 
-[health monitoring documentation](https://github.com/netdata/netdata/blob/master/health/README.md).
+[health monitoring documentation](https://github.com/khulnasoft/netdata/blob/master/health/README.md).

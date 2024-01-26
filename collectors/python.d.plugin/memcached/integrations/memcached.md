@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/memcached/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/memcached/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/memcached/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/memcached/metadata.yaml"
 sidebar_label: "Memcached"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Databases"
@@ -88,9 +88,9 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ memcached_cache_memory_usage ](https://github.com/netdata/netdata/blob/master/health/health.d/memcached.conf) | memcached.cache | cache memory utilization |
-| [ memcached_cache_fill_rate ](https://github.com/netdata/netdata/blob/master/health/health.d/memcached.conf) | memcached.cache | average rate the cache fills up (positive), or frees up (negative) space over the last hour |
-| [ memcached_out_of_cache_space_time ](https://github.com/netdata/netdata/blob/master/health/health.d/memcached.conf) | memcached.cache | estimated time the cache will run out of space if the system continues to add data at the same rate as the past hour |
+| [ memcached_cache_memory_usage ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/memcached.conf) | memcached.cache | cache memory utilization |
+| [ memcached_cache_fill_rate ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/memcached.conf) | memcached.cache | average rate the cache fills up (positive), or frees up (negative) space over the last hour |
+| [ memcached_out_of_cache_space_time ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/memcached.conf) | memcached.cache | estimated time the cache will run out of space if the system continues to add data at the same rate as the past hour |
 
 
 ## Setup
@@ -107,7 +107,7 @@ The configuration file name for this integration is `python.d/memcached.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

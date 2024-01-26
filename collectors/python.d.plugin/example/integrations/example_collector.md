@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/example/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/python.d.plugin/example/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/example/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/python.d.plugin/example/metadata.yaml"
 sidebar_label: "Example collector"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Other"
@@ -19,7 +19,7 @@ Module: example
 
 Example collector that generates some random numbers as metrics.
 
-If you want to write your own collector, read our [writing a new Python module](https://github.com/netdata/netdata/blob/master/collectors/python.d.plugin/README.md#how-to-write-a-new-module) tutorial.
+If you want to write your own collector, read our [writing a new Python module](https://github.com/khulnasoft/netdata/blob/master/collectors/python.d.plugin/README.md#how-to-write-a-new-module) tutorial.
 
 
 The `get_data()` function uses `random.randint()` to generate a random number which will be collected as a metric.
@@ -87,7 +87,7 @@ The configuration file name for this integration is `python.d/example.conf`.
 
 
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

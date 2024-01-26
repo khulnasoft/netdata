@@ -9,7 +9,7 @@ info:
     url: https://netdata.cloud
   license:
     name: GPL v3+
-    url: https://github.com/netdata/netdata/blob/master/LICENSE
+    url: https://github.com/khulnasoft/netdata/blob/master/LICENSE
 servers:
   - url: https://registry.my-netdata.io
   - url: http://registry.my-netdata.io

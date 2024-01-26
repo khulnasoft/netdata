@@ -1,7 +1,7 @@
 <!--
 title: "Install Netdata on pfSense"
 description: "Install Netdata on pfSense to monitor the health and performance of firewalls with thousands of real-time, per-second metrics."
-custom_edit_url: https://github.com/netdata/netdata/edit/master/packaging/installer/methods/pfsense.md
+custom_edit_url: https://github.com/khulnasoft/netdata/edit/master/packaging/installer/methods/pfsense.md
 sidebar_label: "pfSense"
 learn_status: "Published"
 learn_rel_path: "Installation/Install on specific environments"
@@ -13,7 +13,7 @@ learn_rel_path: "Installation/Install on specific environments"
 > details of the installation process, such as version numbers for downloadable packages, before proceeding.
 >
 > You can help improve this document by [submitting a
-> PR](https://github.com/netdata/netdata/edit/master/packaging/installer/methods/pfsense.md) with your recommended
+> PR](https://github.com/khulnasoft/netdata/edit/master/packaging/installer/methods/pfsense.md) with your recommended
 > improvements or changes. Thank you!
 
 ## Install prerequisites/dependencies

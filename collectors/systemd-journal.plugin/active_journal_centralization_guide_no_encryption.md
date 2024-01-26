@@ -53,7 +53,7 @@ http://server.ip:19531/browse
 
 A simple page like this will be presented:
 
-![image](https://github.com/netdata/netdata/assets/2662304/4da88bf8-6398-468b-a359-68db0c9ad419)
+![image](https://github.com/khulnasoft/netdata/assets/2662304/4da88bf8-6398-468b-a359-68db0c9ad419)
 
 ### Use it with `curl`
 

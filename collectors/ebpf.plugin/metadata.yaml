@@ -1065,7 +1065,7 @@ modules:
         list: []
     alerts:
       - name: sync_freq
-        link: https://github.com/netdata/netdata/blob/master/health/health.d/synchronization.conf
+        link: https://github.com/khulnasoft/netdata/blob/master/health/health.d/synchronization.conf
         metric: mem.sync
         info:
           number of sync() system calls. Every call causes all pending modifications to filesystem metadata and cached file data to be written to the
@@ -3177,7 +3177,7 @@ modules:
       module_name: process
       monitored_instance:
         name: eBPF Process
-        link: "https://github.com/netdata/netdata/"
+        link: "https://github.com/khulnasoft/netdata/"
         categories:
           - data-collection.ebpf
         icon_filename: "ebpf.jpg"

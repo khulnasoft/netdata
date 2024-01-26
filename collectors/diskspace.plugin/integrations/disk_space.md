@@ -1,6 +1,6 @@
 <!--startmeta
-custom_edit_url: "https://github.com/netdata/netdata/edit/master/collectors/diskspace.plugin/README.md"
-meta_yaml: "https://github.com/netdata/netdata/edit/master/collectors/diskspace.plugin/metadata.yaml"
+custom_edit_url: "https://github.com/khulnasoft/netdata/edit/master/collectors/diskspace.plugin/README.md"
+meta_yaml: "https://github.com/khulnasoft/netdata/edit/master/collectors/diskspace.plugin/metadata.yaml"
 sidebar_label: "Disk space"
 learn_status: "Published"
 learn_rel_path: "Data Collection/Linux Systems"
@@ -81,8 +81,8 @@ The following alerts are available:
 
 | Alert name  | On metric | Description |
 |:------------|:----------|:------------|
-| [ disk_space_usage ](https://github.com/netdata/netdata/blob/master/health/health.d/disks.conf) | disk.space | disk ${label:mount_point} space utilization |
-| [ disk_inode_usage ](https://github.com/netdata/netdata/blob/master/health/health.d/disks.conf) | disk.inodes | disk ${label:mount_point} inode utilization |
+| [ disk_space_usage ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/disks.conf) | disk.space | disk ${label:mount_point} space utilization |
+| [ disk_inode_usage ](https://github.com/khulnasoft/netdata/blob/master/health/health.d/disks.conf) | disk.inodes | disk ${label:mount_point} inode utilization |
 
 
 ## Setup
@@ -109,7 +109,7 @@ The file format is a modified INI syntax. The general structure is:
     option3 = some third value
 ```
 You can edit the configuration file using the `edit-config` script from the
-Netdata [config directory](https://github.com/netdata/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
+Netdata [config directory](https://github.com/khulnasoft/netdata/blob/master/docs/configure/nodes.md#the-netdata-config-directory).
 
 ```bash
 cd /etc/netdata 2>/dev/null || cd /opt/netdata/etc/netdata

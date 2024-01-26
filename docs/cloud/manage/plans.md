@@ -11,7 +11,7 @@ We also provide paid subscriptions that designed to provide additional features 
 > keep using the legacy **Member** role with the exact same permissions as it has currently.
 >
 > If you move from the **Early Bird** plan to a paid plan, you will not be able to return to the **Early Bird** plan again. The **Community** free plan will always be available to you, but it does not allow
-> you to invite or change users using the Member role. See more details on our [roles and plans](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/role-based-access.md#what-roles-are-available) documentation.
+> you to invite or change users using the Member role. See more details on our [roles and plans](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/role-based-access.md#what-roles-are-available) documentation.
 
 ### Plans
 
@@ -55,12 +55,12 @@ If, for a given month, your usage is over these committed nodes we will charge t
 
 It is ok to change your mind. We allow to change your plan, billing frequency or adjust the committed nodes, on yearly plans, at any time.
 
-To achieve this you can check the [Update plan](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/view-plan-billing.md#update-plan) section.
+To achieve this you can check the [Update plan](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/view-plan-billing.md#update-plan) section.
 
 > ⚠️ On a downgrade (going to a new plan with less benefits) or cancellation of an active subscription, please note that you will have all your notification methods configurations active **for a period of 24 hours**.
 > After that, any notification methods unavailable in your new plan at that time will be automatically disabled. You can always re-enable them once you move to a paid plan that includes them.
 
-> ⚠️ Downgrade or cancellation may affect users in your Space. Please check what roles are available on the [each plans](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/plans.md#areas-impacted-by-plans). Users with unavailable roles on the new plan will immediately have restricted access to the Space.
+> ⚠️ Downgrade or cancellation may affect users in your Space. Please check what roles are available on the [each plans](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/plans.md#areas-impacted-by-plans). Users with unavailable roles on the new plan will immediately have restricted access to the Space.
 
 > ⚠️ Any credit given to you will be available to use on future paid subscriptions with us. It will be available until the the **end of the following year**.
 
@@ -79,7 +79,7 @@ Depending on the plan associated to your space you will have different roles ava
 | **Billing**<p>Users with this role can handle billing options and invoices.</p> | - | - | :heavy_check_mark: | - |
 | **Member** ⚠️ Legacy role<p>Users with this role can create War Rooms and invite other Members.</p><p>They can only see the War Rooms they belong to and all Nodes in the All Nodes room.</p>| - | - | - | :heavy_check_mark: |
 
-For more details check the documentation under [Role-Based Access model](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/role-based-access.md).
+For more details check the documentation under [Role-Based Access model](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/role-based-access.md).
 
 ##### Events feed
 
@@ -91,7 +91,7 @@ The plan you have subscribed on your space will determine the amount of historic
 | **Topology events**<p>Node state transition events, e.g. live or offline.</p>| 4 hours | 7 days | 14 days |
 | **Alert events**<p>Alert state transition events, can be seen as an alert history log.</p>| 4 hours | 7 days | 90 days |
 
-For more details check the documentation under [Events feed](https://github.com/netdata/netdata/blob/master/docs/cloud/insights/events-feed.md).
+For more details check the documentation under [Events feed](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/insights/events-feed.md).
 
 ##### Notification integrations
 
@@ -101,23 +101,23 @@ The plan on your space will determine what type of notifications methods will be
 * **Pro** - Email, Discord and webhook
 * **Business** - Unlimited, this includes Slack, PagerDuty, Opsgenie etc.
 
-For more details check the documentation under [Alert Notifications](https://github.com/netdata/netdata/blob/master/docs/cloud/alerts-notifications/notifications.md#alert-notifications).
+For more details check the documentation under [Alert Notifications](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/alerts-notifications/notifications.md#alert-notifications).
 
 ##### Alert notification silencing rules
 
 The plan on your space will determine if you are able to add alert notification silencing rules since this feature will only be available for paid plans: **Pro** or **Business**.
 
-For more details check the documentation under [Alert Notifications](https://github.com/netdata/netdata/blob/master/docs/cloud/alerts-notifications/notifications.md#silencing-alert-notifications).
+For more details check the documentation under [Alert Notifications](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/alerts-notifications/notifications.md#silencing-alert-notifications).
 
 ### Related Topics
 
 #### **Related Concepts**
 
-* [Spaces](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/organize-your-infrastrucutre-invite-your-team.md#netdata-cloud-spaces)
-* [Alert Notifications](https://github.com/netdata/netdata/blob/master/docs/cloud/alerts-notifications/notifications.md)
-* [Events feed](https://github.com/netdata/netdata/blob/master/docs/cloud/insights/events-feed.md)
-* [Role-Based Access model](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/role-based-access.md)
+* [Spaces](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/organize-your-infrastrucutre-invite-your-team.md#netdata-cloud-spaces)
+* [Alert Notifications](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/alerts-notifications/notifications.md)
+* [Events feed](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/insights/events-feed.md)
+* [Role-Based Access model](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/role-based-access.md)
 
 #### Related Tasks
 
-* [View Plan & Billing](https://github.com/netdata/netdata/blob/master/docs/cloud/manage/view-plan-billing.md)
+* [View Plan & Billing](https://github.com/khulnasoft/netdata/blob/master/docs/cloud/manage/view-plan-billing.md)
